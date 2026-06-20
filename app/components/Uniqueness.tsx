@@ -29,7 +29,7 @@ export default function Uniqueness() {
           {/* Left: narrative */}
           <div>
             <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
-              UNIQUENESS
+              WHAT IS CQ
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
               私たちの強みは、
@@ -38,15 +38,12 @@ export default function Uniqueness() {
             </h2>
 
             <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
-              社名「Lincqord」は、<strong className="text-foreground font-500">Linkage（つながり）</strong>・
-              <strong className="text-foreground font-500">CQ（文化知性）</strong>・
-              <strong className="text-foreground font-500">Chord（調和）</strong>の3つを組み合わせた造語。
-              CQの知恵で、多様な文化的背景を持つ人々の心をつなぐことを理念としています。
+              CQ（Cultural Intelligence／文化知性）とは、文化背景の異なる人々と協働し、
+              成果を出す力。グローバル時代のリーダーに求められる、思考と行動のフレームワークです。
             </p>
             <p className="mt-4 text-base lg:text-lg leading-relaxed text-muted">
-              ひとりひとりが人生で得た属性や経験が&ldquo;Difference（違い）&rdquo;＝文化を創る。
-              CQ（文化背景の異なる人々と協働し、成果を出す力）を体系的に高めることで、
-              その違いを&ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます。
+              Lincqordは、このCQを体系的に高めるメソッドで、あらゆる&ldquo;違い&rdquo;を
+              &ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます。
             </p>
 
             <a

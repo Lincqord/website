@@ -69,7 +69,7 @@ export default function Hero() {
               <img
                 src="/hero-people.png"
                 alt="多様な人々が集う組織のイメージ"
-                className="w-full h-full object-contain hero-image"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
