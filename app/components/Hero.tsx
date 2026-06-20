@@ -1,11 +1,6 @@
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white pt-16 lg:pt-20">
-      {/* soft brand background accent */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-24 -right-32 w-[42rem] h-[42rem] rounded-full opacity-15 blur-3xl bg-brand-gradient"
-      />
 
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center min-h-[calc(100vh-5rem)] py-16 lg:py-0">
@@ -32,13 +27,13 @@ export default function Hero() {
             <div className="mt-9 flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="bg-brand-gradient text-white text-center font-medium px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity shadow-sm"
+                className="btn-primary text-center font-medium px-8 py-3.5 rounded-full shadow-sm"
               >
                 無料で相談する
               </a>
               <a
                 href="#services"
-                className="text-center font-medium px-8 py-3.5 rounded-full border border-border text-foreground hover:border-brand-teal hover:text-brand-teal transition-colors"
+                className="btn-outline text-center font-medium px-8 py-3.5 rounded-full"
               >
                 サービスを見る
               </a>
@@ -52,7 +47,7 @@ export default function Hero() {
               <img
                 src="/hero-people.png"
                 alt="多様な人々が集う組織のイメージ"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain hero-blend"
               />
             </div>
           </div>

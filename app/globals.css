@@ -48,15 +48,44 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Brand gradient utilities (teal -> orange) */
-.bg-brand-gradient {
-  background: linear-gradient(100deg, var(--color-teal) 0%, var(--color-teal-soft) 45%, var(--color-orange) 100%);
-}
+/* Text accent: subtle teal->orange gradient (decorative text only, never on buttons) */
 .text-brand-gradient {
   background: linear-gradient(100deg, var(--color-teal) 0%, var(--color-teal-soft) 40%, var(--color-orange) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Buttons — solid colors for clear, comfortable clickable affordance */
+.btn-primary {
+  background: var(--color-teal);
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+.btn-primary:hover {
+  background: var(--color-teal-deep);
+}
+.btn-accent {
+  background: var(--color-orange);
+  color: #ffffff;
+  transition: filter 0.2s ease;
+}
+.btn-accent:hover {
+  filter: brightness(0.94);
+}
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.btn-outline:hover {
+  border-color: var(--color-teal);
+  color: var(--color-teal);
+}
+
+/* Hero image: blend the light image background into the page */
+.hero-blend {
+  mix-blend-mode: multiply;
 }
 
 /* Smooth scrolling for anchor nav */

@@ -68,7 +68,7 @@ export default function Services() {
         <div className="mt-12 text-center">
           <a
             href="#contact"
-            className="inline-block bg-brand-gradient text-white font-medium px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity shadow-sm"
+            className="inline-block btn-primary font-medium px-8 py-3.5 rounded-full shadow-sm"
           >
             サービスについて相談する
           </a>

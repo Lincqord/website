@@ -45,7 +45,7 @@ export default function Header() {
           <span className="text-xs text-muted">JP / EN</span>
           <a
             href="#contact"
-            className="bg-brand-gradient text-white font-display text-sm tracking-wide px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity"
+            className="btn-primary font-display text-sm tracking-wide px-6 py-2.5 rounded-full"
           >
             CONTACT
           </a>
@@ -85,7 +85,7 @@ export default function Header() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="bg-brand-gradient text-white text-center font-display tracking-wide px-6 py-3 rounded-full mt-2"
+            className="btn-primary text-center font-display tracking-wide px-6 py-3 rounded-full mt-2"
           >
             CONTACT
           </a>
