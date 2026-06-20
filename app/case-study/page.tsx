@@ -154,7 +154,7 @@ export default function CaseStudyPage() {
         lead="製造業・エネルギー・サービス業・商社など、業界を問わず多くの企業の変革を支援してきました。代表的な事例の課題・施策・成果をご紹介します。"
       />
 
-      <section className="bg-surface py-20 lg:py-28">
+      <section className="bg-white pb-20 lg:pb-28 pt-8 lg:pt-12">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 space-y-16">
           <div>
             <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">

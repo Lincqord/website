@@ -40,9 +40,8 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA + lang (desktop) */}
+        {/* CTA (desktop) */}
         <div className="hidden lg:flex items-center gap-4">
-          <span className="text-xs text-muted">JP / EN</span>
           <Link
             href="/contact"
             className="btn-primary font-display text-sm tracking-wide px-6 py-2.5 rounded-full"

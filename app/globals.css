@@ -48,12 +48,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Text accent: subtle teal->orange gradient (decorative text only, never on buttons) */
+/* Text accent: solid brand teal (was a gradient; single color per design feedback) */
 .text-brand-gradient {
-  background: linear-gradient(100deg, var(--color-teal) 0%, var(--color-teal-soft) 40%, var(--color-orange) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--color-teal);
 }
 
 /* Buttons — solid colors for clear, comfortable clickable affordance */
