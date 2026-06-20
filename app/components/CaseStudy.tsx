@@ -30,7 +30,7 @@ export default function CaseStudy() {
             </h2>
           </div>
           <a
-            href="#contact"
+            href="/case-study"
             className="text-sm font-500 text-brand-teal hover:underline shrink-0"
           >
             事例をもっと見る →

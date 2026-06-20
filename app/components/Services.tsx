@@ -75,7 +75,7 @@ export default function Services() {
               </ul>
 
               <a
-                href="#contact"
+                href="/services"
                 className="mt-7 inline-flex items-center gap-1 text-sm font-500 text-brand-teal hover:gap-2 transition-all"
               >
                 詳しく見る →

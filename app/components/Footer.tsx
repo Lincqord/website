@@ -1,12 +1,12 @@
 const NAV = [
-  { label: "ABOUT", href: "#about" },
-  { label: "SERVICES", href: "#services" },
-  { label: "UNIQUENESS", href: "#uniqueness" },
-  { label: "CASE STUDY", href: "#case-study" },
-  { label: "TEAM", href: "#team" },
-  { label: "NEWS", href: "#news" },
-  { label: "CAREERS", href: "#careers" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "ABOUT", href: "/about" },
+  { label: "SERVICES", href: "/services" },
+  { label: "UNIQUENESS", href: "/uniqueness" },
+  { label: "CASE STUDY", href: "/case-study" },
+  { label: "TEAM", href: "/team" },
+  { label: "NEWS", href: "/news" },
+  { label: "CAREERS", href: "/careers" },
+  { label: "CONTACT", href: "/contact" },
 ];
 
 export default function Footer() {

@@ -50,10 +50,10 @@ export default function Uniqueness() {
             </p>
 
             <a
-              href="#contact"
+              href="/uniqueness"
               className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-full"
             >
-              CQについて詳しく聞く
+              CQについて詳しく知る
             </a>
           </div>
 

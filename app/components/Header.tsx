@@ -4,13 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "ABOUT", href: "#about" },
-  { label: "SERVICES", href: "#services" },
-  { label: "UNIQUENESS", href: "#uniqueness" },
-  { label: "CASE STUDY", href: "#case-study" },
-  { label: "TEAM", href: "#team" },
-  { label: "NEWS", href: "#news" },
-  { label: "CAREERS", href: "#careers" },
+  { label: "ABOUT", href: "/about" },
+  { label: "SERVICES", href: "/services" },
+  { label: "UNIQUENESS", href: "/uniqueness" },
+  { label: "CASE STUDY", href: "/case-study" },
+  { label: "TEAM", href: "/team" },
+  { label: "NEWS", href: "/news" },
+  { label: "CAREERS", href: "/careers" },
 ];
 
 export default function Header() {
@@ -30,25 +30,25 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-7">
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="font-display text-sm tracking-wide text-foreground/80 hover:text-brand-teal transition-colors"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         {/* CTA + lang (desktop) */}
         <div className="hidden lg:flex items-center gap-4">
           <span className="text-xs text-muted">JP / EN</span>
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="btn-primary font-display text-sm tracking-wide px-6 py-2.5 rounded-full"
           >
             CONTACT
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -73,22 +73,22 @@ export default function Header() {
       {open && (
         <nav className="lg:hidden bg-white border-t border-border px-5 py-6 flex flex-col gap-4">
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
               className="font-display text-base tracking-wide text-foreground/85"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             onClick={() => setOpen(false)}
             className="btn-primary text-center font-display tracking-wide px-6 py-3 rounded-full mt-2"
           >
             CONTACT
-          </a>
+          </Link>
         </nav>
       )}
     </header>
