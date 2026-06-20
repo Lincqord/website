@@ -21,9 +21,9 @@ export default function NewsPage() {
   return (
     <main className="flex-1">
       <PageHero
-        eyebrow="NEWS"
-        title="ニュース・コラム"
-        lead="お知らせ、組織開発やCQに関するコラム、セミナー情報をお届けします。"
+        eyebrow="INSIGHTS"
+        title="知見・ノウハウ"
+        lead="お知らせ、組織開発やCQ（文化知性）に関するコラム、セミナー情報をお届けします。"
       />
 
       <section className="bg-white py-16 lg:py-24">

@@ -1,12 +1,12 @@
 const NAV = [
-  { label: "ABOUT", href: "/about" },
-  { label: "SERVICES", href: "/services" },
-  { label: "UNIQUENESS", href: "/uniqueness" },
-  { label: "CASE STUDY", href: "/case-study" },
-  { label: "TEAM", href: "/team" },
-  { label: "NEWS", href: "/news" },
-  { label: "CAREERS", href: "/careers" },
-  { label: "CONTACT", href: "/contact" },
+  { label: "私たちについて", href: "/about" },
+  { label: "CQとは", href: "/uniqueness" },
+  { label: "サービス", href: "/services" },
+  { label: "支援実績", href: "/case-study" },
+  { label: "知見・ノウハウ", href: "/news" },
+  { label: "採用情報", href: "/careers" },
+  { label: "資料ダウンロード", href: "/download" },
+  { label: "お問い合わせ", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -29,7 +29,7 @@ export default function Footer() {
               <a
                 key={item.label}
                 href={item.href}
-                className="font-display text-sm tracking-wide text-white/75 hover:text-white transition-colors"
+                className="text-sm text-white/75 hover:text-white transition-colors"
               >
                 {item.label}
               </a>

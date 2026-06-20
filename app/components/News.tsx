@@ -23,10 +23,10 @@ export default function News() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
             <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
-              NEWS
+              INSIGHTS
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-              ニュース・コラム
+              知見・ノウハウ
             </h2>
           </div>
           <a

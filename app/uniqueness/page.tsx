@@ -19,9 +19,9 @@ export default function UniquenessPage() {
   return (
     <main className="flex-1">
       <PageHero
-        eyebrow="UNIQUENESS"
-        title="私たちの強み"
-        lead="Lincqordの起点にあるのは、CQ（文化知性）。違いを“対立の火種”ではなく“成果の源泉”へと変える、その考え方をご紹介します。"
+        eyebrow="WHAT IS CQ"
+        title="CQ（文化知性）とは"
+        lead="Lincqord最大の強みであり、すべての起点。違いを“対立の火種”ではなく“成果の源泉”へと変える、CQ（文化知性）の考え方をご紹介します。"
       />
 
       {/* 社名の由来 */}

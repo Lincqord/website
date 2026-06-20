@@ -4,13 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "ABOUT", href: "/about" },
-  { label: "SERVICES", href: "/services" },
-  { label: "UNIQUENESS", href: "/uniqueness" },
-  { label: "CASE STUDY", href: "/case-study" },
-  { label: "TEAM", href: "/team" },
-  { label: "NEWS", href: "/news" },
-  { label: "CAREERS", href: "/careers" },
+  { label: "私たちについて", href: "/about" },
+  { label: "CQとは", href: "/uniqueness" },
+  { label: "サービス", href: "/services" },
+  { label: "支援実績", href: "/case-study" },
+  { label: "知見・ノウハウ", href: "/news" },
+  { label: "採用情報", href: "/careers" },
 ];
 
 export default function Header() {
@@ -28,25 +27,31 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-6">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="font-display text-sm tracking-wide text-foreground/80 hover:text-brand-teal transition-colors"
+              className="text-sm font-500 text-foreground/80 hover:text-brand-teal transition-colors whitespace-nowrap"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        {/* CTA (desktop) */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* CTAs (desktop) */}
+        <div className="hidden lg:flex items-center gap-3">
+          <Link
+            href="/download"
+            className="btn-outline text-sm font-500 px-5 py-2.5 rounded-full whitespace-nowrap"
+          >
+            資料ダウンロード
+          </Link>
           <Link
             href="/contact"
-            className="btn-primary font-display text-sm tracking-wide px-6 py-2.5 rounded-full"
+            className="btn-primary text-sm font-500 px-5 py-2.5 rounded-full whitespace-nowrap"
           >
-            CONTACT
+            お問い合わせ
           </Link>
         </div>
 
@@ -76,17 +81,24 @@ export default function Header() {
               key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="font-display text-base tracking-wide text-foreground/85"
+              className="text-base font-500 text-foreground/85"
             >
               {item.label}
             </Link>
           ))}
           <Link
+            href="/download"
+            onClick={() => setOpen(false)}
+            className="btn-outline text-center font-500 px-6 py-3 rounded-full mt-2"
+          >
+            資料ダウンロード
+          </Link>
+          <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="btn-primary text-center font-display tracking-wide px-6 py-3 rounded-full mt-2"
+            className="btn-primary text-center font-500 px-6 py-3 rounded-full"
           >
-            CONTACT
+            お問い合わせ
           </Link>
         </nav>
       )}
