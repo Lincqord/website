@@ -45,14 +45,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: visual — replace /public/hero-people.svg with the generated illustration */}
+          {/* Right: visual */}
           <div className="relative">
-            <div className="relative aspect-square w-full max-w-lg mx-auto rounded-[2rem] overflow-hidden shadow-lg">
+            <div className="relative aspect-square w-full max-w-xl mx-auto">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/hero-people.svg"
+                src="/hero-people.png"
                 alt="多様な人々が集う組織のイメージ"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
