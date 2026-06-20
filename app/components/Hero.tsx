@@ -1,9 +1,8 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white pt-16 lg:pt-20">
-
+    <section className="relative overflow-hidden bg-white">
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center min-h-[calc(100vh-5rem)] py-16 lg:py-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-6 items-center pt-28 lg:pt-36 pb-16 lg:pb-24">
           {/* Left: copy */}
           <div className="max-w-xl">
             <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-6">
@@ -40,14 +39,37 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: visual */}
+          {/* Right: visual with flowing decorations */}
           <div className="relative">
+            {/* decorative flowing lines (v1-inspired) */}
+            <svg
+              aria-hidden
+              viewBox="0 0 600 600"
+              className="absolute inset-0 w-full h-full pointer-events-none"
+              fill="none"
+            >
+              <circle cx="300" cy="300" r="240" stroke="var(--color-teal)" strokeOpacity="0.12" strokeWidth="1.5" />
+              <circle cx="300" cy="300" r="185" stroke="var(--color-orange)" strokeOpacity="0.12" strokeWidth="1.5" />
+              <path
+                d="M40 380 C 160 300, 220 460, 360 380 S 560 300, 580 360"
+                stroke="var(--color-teal)"
+                strokeOpacity="0.3"
+                strokeWidth="2"
+              />
+              <path
+                d="M30 430 C 180 360, 260 500, 400 420 S 560 360, 590 410"
+                stroke="var(--color-orange)"
+                strokeOpacity="0.3"
+                strokeWidth="2"
+              />
+            </svg>
+
             <div className="relative aspect-square w-full max-w-xl mx-auto">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/hero-people.png"
                 alt="多様な人々が集う組織のイメージ"
-                className="w-full h-full object-contain hero-blend"
+                className="w-full h-full object-contain hero-image"
               />
             </div>
           </div>

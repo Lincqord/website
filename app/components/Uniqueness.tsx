@@ -36,15 +36,19 @@ export default function Uniqueness() {
               <br />
               <span className="text-brand-teal">CQ（文化知性）</span>
             </h2>
+
             <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
-              CQ（Cultural Intelligence／文化知性）とは、国籍や世代、価値観などの
-              “違い”を超えて協働する力。世界中の研究で、これからの組織に不可欠な
-              ケイパビリティとして注目されています。
+              社名「Lincqord」は、<strong className="text-foreground font-500">Linkage（つながり）</strong>・
+              <strong className="text-foreground font-500">CQ（文化知性）</strong>・
+              <strong className="text-foreground font-500">Chord（調和）</strong>の3つを組み合わせた造語。
+              CQの知恵で、多様な文化的背景を持つ人々の心をつなぐことを理念としています。
             </p>
             <p className="mt-4 text-base lg:text-lg leading-relaxed text-muted">
-              Lincqordは、このCQを体系的に高めるメソッドで、多様性を
-              “対立の火種”ではなく“成果の源泉”へと変えていきます。
+              ひとりひとりが人生で得た属性や経験が&ldquo;Difference（違い）&rdquo;＝文化を創る。
+              CQ（文化背景の異なる人々と協働し、成果を出す力）を体系的に高めることで、
+              その違いを&ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます。
             </p>
+
             <a
               href="#contact"
               className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-full"

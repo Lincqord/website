@@ -83,12 +83,57 @@ body {
   color: var(--color-teal);
 }
 
-/* Hero image: blend the light image background into the page */
-.hero-blend {
+/* Hero image: feather edges to transparent + multiply so the
+   image's light background dissolves into the white page */
+.hero-image {
   mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(
+    ellipse 72% 72% at 50% 50%,
+    #000 55%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 72% 72% at 50% 50%,
+    #000 55%,
+    transparent 100%
+  );
 }
 
 /* Smooth scrolling for anchor nav */
 html {
   scroll-behavior: smooth;
+}
+
+/* Infinite logo marquee (right -> left) */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-anim {
+  animation: marquee-left 32s linear infinite;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-anim {
+    animation: none;
+  }
 }

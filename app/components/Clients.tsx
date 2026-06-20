@@ -12,6 +12,9 @@ const CLIENTS = [
 ];
 
 export default function Clients() {
+  // duplicate the list so the marquee can loop seamlessly (-50% shift)
+  const loop = [...CLIENTS, ...CLIENTS];
+
   return (
     <section className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -23,13 +26,15 @@ export default function Clients() {
             多くの企業に選ばれています
           </h2>
         </div>
+      </div>
 
-        {/* TODO: 各社ロゴ画像に差し替え（現状は社名テキスト） */}
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-border rounded-2xl overflow-hidden border border-border">
-          {CLIENTS.map((name) => (
+      {/* TODO: 各社ロゴ画像に差し替え（現状は社名テキスト） */}
+      <div className="mt-12 overflow-hidden marquee-mask">
+        <div className="flex w-max marquee-anim">
+          {loop.map((name, i) => (
             <div
-              key={name}
-              className="bg-white flex items-center justify-center h-24 px-4 text-center text-sm font-500 text-foreground/70"
+              key={`${name}-${i}`}
+              className="flex items-center justify-center h-20 px-10 shrink-0 text-base font-500 text-foreground/55 whitespace-nowrap"
             >
               {name}
             </div>

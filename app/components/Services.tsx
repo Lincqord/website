@@ -1,21 +1,29 @@
-const SERVICES = [
+const PILLARS = [
   {
     no: "01",
-    title: "組織開発コンサルティング",
-    body: "現状の組織課題を可視化し、多様性を成果につなげる仕組みづくりを伴走支援。戦略策定から制度・現場の実装までを一貫してサポートします。",
-    points: ["組織診断・アセスメント", "DEI戦略の策定", "制度・仕組みの設計"],
+    category: "コンサルティング・組織開発",
+    title: "組織の“違い”を、成果の源泉に変える",
+    body: "現状の可視化から戦略・仕組みの実装まで伴走。多様性が活きる組織文化を築きます。",
+    items: [
+      "DE&I戦略の策定・推進",
+      "組織文化の診断・改善",
+      "経営チームの一枚岩化",
+      "女性活躍推進 / ビジョン策定・浸透",
+      "グローバル経営・DXカルチャー醸成",
+    ],
   },
   {
     no: "02",
-    title: "エグゼクティブコーチング",
-    body: "経営層・リーダーの意思決定と対話の質を高めるコーチング。多様なメンバーの力を引き出すリーダーシップへの変革を後押しします。",
-    points: ["1on1コーチング", "リーダーシップ開発", "チームコーチング"],
-  },
-  {
-    no: "03",
-    title: "研修・ワークショップ",
-    body: "CQ（文化知性）を軸にした実践的な研修プログラム。知識で終わらせず、現場の行動と文化が変わる体験設計を提供します。",
-    points: ["CQ向上研修", "異文化マネジメント", "管理職・現場向け研修"],
+    category: "トレーニング・人材開発",
+    title: "“違い”を活かすリーダーと人材を育てる",
+    body: "CQ（文化知性）を軸に、経営層から現場まで、実務で成果を出す力を開発します。",
+    items: [
+      "次世代経営層・グローバルリーダー育成",
+      "女性リーダー育成",
+      "リテラシー / リーダーシップ開発",
+      "駐在員のセレクション・能力開発",
+      "外国人・日本人社員のCQ力開発",
+    ],
   },
 ];
 
@@ -30,37 +38,48 @@ export default function Services() {
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
             “違い”をチカラに変える、
             <br className="hidden sm:block" />
-            3つのアプローチ
+            2つのソリューション
           </h2>
           <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-            診断・変革・定着まで。組織のフェーズや課題に合わせて、最適なサービスを組み合わせて提供します。
+            組織のフェーズや課題に合わせて、コンサルティングとトレーニングを組み合わせて提供します。
           </p>
         </div>
 
-        <div className="mt-14 grid lg:grid-cols-3 gap-6">
-          {SERVICES.map((s) => (
+        <div className="mt-14 grid lg:grid-cols-2 gap-6">
+          {PILLARS.map((p) => (
             <div
-              key={s.no}
-              className="group relative rounded-2xl border border-border p-8 lg:p-9 hover:border-brand-teal/40 hover:shadow-lg transition-all"
+              key={p.no}
+              className="group relative rounded-2xl border border-border p-8 lg:p-10 hover:border-brand-teal/40 hover:shadow-lg transition-all flex flex-col"
             >
               <div className="flex items-baseline gap-3">
                 <span className="font-display text-2xl font-700 text-brand-gradient">
-                  {s.no}
+                  {p.no}
                 </span>
-                <span className="h-px flex-1 bg-border group-hover:bg-brand-teal/30 transition-colors" />
+                <span className="font-display tracking-wide text-sm text-brand-teal">
+                  {p.category}
+                </span>
               </div>
 
-              <h3 className="mt-5 text-xl font-700 leading-snug">{s.title}</h3>
-              <p className="mt-4 text-sm leading-relaxed text-muted">{s.body}</p>
+              <h3 className="mt-5 text-xl lg:text-2xl font-700 leading-snug">
+                {p.title}
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted">{p.body}</p>
 
-              <ul className="mt-6 space-y-2">
-                {s.points.map((pt) => (
-                  <li key={pt} className="flex items-center gap-2 text-sm">
-                    <span className="h-1.5 w-1.5 rounded-full bg-brand-orange shrink-0" />
-                    {pt}
+              <ul className="mt-6 space-y-2.5 flex-1">
+                {p.items.map((it) => (
+                  <li key={it} className="flex items-start gap-2.5 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-brand-orange shrink-0" />
+                    {it}
                   </li>
                 ))}
               </ul>
+
+              <a
+                href="#contact"
+                className="mt-7 inline-flex items-center gap-1 text-sm font-500 text-brand-teal hover:gap-2 transition-all"
+              >
+                詳しく見る →
+              </a>
             </div>
           ))}
         </div>
