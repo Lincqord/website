@@ -166,16 +166,16 @@ html {
   }
 }
 .aurora-1 {
-  animation: aurora-1 8s ease-in-out infinite;
+  animation: aurora-1 4s ease-in-out infinite;
 }
 .aurora-2 {
-  animation: aurora-2 10s ease-in-out infinite;
+  animation: aurora-2 5s ease-in-out infinite;
 }
 .aurora-3 {
-  animation: aurora-3 9s ease-in-out infinite;
+  animation: aurora-3 4.5s ease-in-out infinite;
 }
 .aurora-4 {
-  animation: aurora-4 11s ease-in-out infinite;
+  animation: aurora-4 6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
