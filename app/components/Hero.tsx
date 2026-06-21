@@ -67,7 +67,7 @@ export default function Hero() {
             <div className="relative aspect-square w-full max-w-md lg:max-w-lg mx-auto">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/hero-people-v2.png"
+                src="/hero-people-v3.png"
                 alt="多様な人々が集う組織のイメージ"
                 className="w-full h-full object-contain"
               />

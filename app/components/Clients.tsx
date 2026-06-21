@@ -1,18 +1,21 @@
+// h: 実際の表示高さ(px)。transform不使用のため画質劣化なし。
 const CLIENTS = [
-  "JT",
-  "豊田通商",
-  "旭化成ホームズ",
-  "SEKISUI",
-  "東北電力",
-  "東急リゾーツ&ステイ",
-  "日本山村硝子",
-  "豊通マシナリー",
-  "アポプラスステーション",
-  "elematec",
+  { name: "JT",                    file: "jt.png",                    h: 48 },
+  { name: "豊田通商",              file: "toyota-tsusho.png",          h: 48 },
+  { name: "旭化成ホームズ",        file: "asahikasei-homes.png",       h: 48 },
+  { name: "SEKISUI",               file: "sekisui.png",                h: 48 },
+  { name: "東北電力",              file: "tohoku-denryoku.png",        h: 48 },
+  { name: "東急リゾーツ&ステイ",  file: "tokyu-resorts&stay.png",     h: 72 },
+  { name: "日本山村硝子",          file: "nihon-yamamura-glass.png",   h: 48 },
+  { name: "豊通マシナリー",        file: "toyotsu-machinery.png",      h: 48 },
+  { name: "アポプラスステーション",file: "apo-plus-station.png",       h: 48 },
+  { name: "elematec",              file: "elematec.png",               h: 48 },
+  { name: "日本電技",              file: "nihon-dengi.png",            h: 48 },
+  { name: "大阪ガス",              file: "osaka-gas.png",              h: 60 },
+  { name: "T-NET JAPAN",           file: "t-net-japan.png",            h: 48 },
 ];
 
 export default function Clients() {
-  // duplicate the list so the marquee can loop seamlessly (-50% shift)
   const loop = [...CLIENTS, ...CLIENTS];
 
   return (
@@ -28,15 +31,20 @@ export default function Clients() {
         </div>
       </div>
 
-      {/* TODO: 各社ロゴ画像に差し替え（現状は社名テキスト） */}
       <div className="mt-12 overflow-hidden marquee-mask">
-        <div className="flex w-max marquee-anim">
-          {loop.map((name, i) => (
+        <div className="flex w-max marquee-anim items-center">
+          {loop.map((client, i) => (
             <div
-              key={`${name}-${i}`}
-              className="flex items-center justify-center h-20 px-10 shrink-0 text-base font-500 text-foreground/55 whitespace-nowrap"
+              key={`${client.name}-${i}`}
+              className="flex items-center justify-center shrink-0 px-10"
+              style={{ height: "160px" }}
             >
-              {name}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`/clients-processed/${client.file}`}
+                alt={client.name}
+                style={{ height: `${client.h}px`, width: "auto" }}
+              />
             </div>
           ))}
         </div>
