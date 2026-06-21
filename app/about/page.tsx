@@ -182,7 +182,7 @@ export default function AboutPage() {
                 bio: "Lincqord創業者。CQ（文化知性）を軸に、多様性を組織のチカラへ変える組織・人材開発をリードする。",
               },
               { name: "Member", role: "コンサルタント", bio: "（プロフィール準備中）" },
-              { name: "Member", role: "コーチ / ファシリテーター", bio: "（プロフィール準備中）" },
+              { name: "Member", role: "コンサルタント", bio: "（プロフィール準備中）" },
             ].map((m, i) => (
               <div key={i} className="text-center">
                 <div className="aspect-square rounded-2xl bg-gradient-to-br from-brand-teal/15 to-brand-orange/15" />
