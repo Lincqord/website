@@ -15,7 +15,7 @@ const PROBLEMS = [
 
 export default function Problem() {
   return (
-    <section id="problem" className="bg-surface py-24 lg:py-32">
+    <section id="problem" className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="max-w-3xl">
           <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
@@ -32,7 +32,7 @@ export default function Problem() {
           {PROBLEMS.map((p, i) => (
             <div
               key={p.title}
-              className="bg-white rounded-2xl border border-border p-8 hover:shadow-md transition-shadow"
+              className="bg-surface rounded-2xl border border-border p-8 hover:shadow-md transition-shadow"
             >
               <span className="font-display text-5xl font-700 text-brand-teal/25">
                 0{i + 1}

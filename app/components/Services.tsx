@@ -29,7 +29,7 @@ const PILLARS = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-white py-24 lg:py-32">
+    <section id="services" className="bg-surface py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="max-w-3xl">
           <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
@@ -49,7 +49,7 @@ export default function Services() {
           {PILLARS.map((p) => (
             <div
               key={p.no}
-              className="group relative rounded-2xl border border-border p-8 lg:p-10 hover:border-brand-teal/40 hover:shadow-lg transition-all flex flex-col"
+              className="group relative bg-white rounded-2xl border border-border p-8 lg:p-10 hover:border-brand-teal/40 hover:shadow-lg transition-all flex flex-col"
             >
               <div className="flex items-baseline gap-3">
                 <span className="font-display text-2xl font-700 text-brand-gradient">

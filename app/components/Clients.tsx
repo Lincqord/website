@@ -21,7 +21,7 @@ export default function Clients() {
   return (
     <section className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto">
+        <div className="max-w-2xl">
           <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
             OUR CLIENTS
           </p>
