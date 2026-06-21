@@ -101,6 +101,92 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ============================================
+   Hero Aurora — drifting brand-color blobs
+   ============================================ */
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(64px);
+  will-change: transform;
+  opacity: 0.55;
+}
+@media (min-width: 1024px) {
+  .aurora-blob {
+    filter: blur(96px);
+  }
+}
+
+@keyframes aurora-1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(16%, 10%) scale(1.2);
+  }
+  66% {
+    transform: translate(8%, 20%) scale(0.9);
+  }
+}
+@keyframes aurora-2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-18%, 14%) scale(1.15);
+  }
+  66% {
+    transform: translate(-6%, 4%) scale(0.95);
+  }
+}
+@keyframes aurora-3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1.05);
+  }
+  33% {
+    transform: translate(14%, -16%) scale(0.88);
+  }
+  66% {
+    transform: translate(20%, -6%) scale(1.1);
+  }
+}
+@keyframes aurora-4 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(0.95);
+  }
+  33% {
+    transform: translate(-16%, -12%) scale(1.18);
+  }
+  66% {
+    transform: translate(-22%, 6%) scale(0.92);
+  }
+}
+.aurora-1 {
+  animation: aurora-1 14s ease-in-out infinite;
+}
+.aurora-2 {
+  animation: aurora-2 17s ease-in-out infinite;
+}
+.aurora-3 {
+  animation: aurora-3 15s ease-in-out infinite;
+}
+.aurora-4 {
+  animation: aurora-4 19s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-1,
+  .aurora-2,
+  .aurora-3,
+  .aurora-4 {
+    animation: none;
+  }
+}
+
 /* Infinite logo marquee (right -> left) */
 @keyframes marquee-left {
   from {
