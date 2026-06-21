@@ -3,7 +3,6 @@ import Problem from "./components/Problem";
 import Services from "./components/Services";
 import Clients from "./components/Clients";
 import CaseStudy from "./components/CaseStudy";
-import MidCTA from "./components/MidCTA";
 import News from "./components/News";
 import Contact from "./components/Contact";
 import WaveDivider from "./components/WaveDivider";
@@ -25,7 +24,6 @@ export default function Home() {
       <CaseStudy />
 
       <WaveDivider from="surface" to="white" />
-      <MidCTA />
       <News />
 
       <WaveDivider from="white" to="surface" />
