@@ -11,7 +11,7 @@ export default function PageHero({
 }) {
   return (
     <>
-      <section className="relative overflow-hidden bg-surface pt-32 lg:pt-40 pb-12 lg:pb-16 flex items-center min-h-[19rem] lg:min-h-[23rem]">
+      <section className="relative overflow-hidden bg-surface pt-16 lg:pt-20 flex items-center min-h-[20rem] lg:min-h-[26rem]">
         {/* subtle decorative arcs */}
         <svg
           aria-hidden

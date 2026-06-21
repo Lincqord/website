@@ -3,9 +3,9 @@ import PageHero from "../components/PageHero";
 import PageCTA from "../components/PageCTA";
 
 export const metadata: Metadata = {
-  title: "導入事例 | Lincqord",
+  title: "支援実績 | Lincqord",
   description:
-    "Lincqordの導入事例。製造業・エネルギー・サービス業・商社など、各業界でのDE&I推進、CQの高い組織づくり、グローバルリーダー育成などの課題・施策・成果をご紹介します。",
+    "Lincqordの支援実績。製造業・エネルギー・サービス業・商社など、各業界でのDE&I推進、CQの高い組織づくり、グローバルリーダー育成などの課題・施策・成果をご紹介します。",
 };
 
 const CONSULTING_CASES = [
@@ -150,8 +150,8 @@ export default function CaseStudyPage() {
     <main className="flex-1">
       <PageHero
         eyebrow="CASE STUDY"
-        title="導入事例"
-        lead="製造業・エネルギー・サービス業・商社など、業界を問わず多くの企業の変革を支援してきました。代表的な事例の課題・施策・成果をご紹介します。"
+        title="支援実績"
+        lead="業界を問わず多くの企業の変革を支援してきました。代表的な事例の課題・施策・成果をご紹介します。"
       />
 
       <section className="bg-white pb-20 lg:pb-28 pt-8 lg:pt-12">

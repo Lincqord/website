@@ -44,7 +44,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="ABOUT"
         title="私たちについて"
-        lead="Lincqordは、CQ（文化知性）の知恵を用いるカルチャーの専門家集団。どちらかが一方に同化するのではなく、それぞれの個性を保ったまま協働できる“第三の組織文化”づくりを支援します。"
+        lead="Lincqordは、CQ（文化知性）の知恵を用いるカルチャーの専門家集団。それぞれの個性を保ったまま協働できる“第三の組織文化”づくりを支援します。"
       />
 
       {/* Mission / Vision */}
