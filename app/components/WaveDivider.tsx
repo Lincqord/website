@@ -1,6 +1,6 @@
 const COLORS: Record<string, string> = {
   white: "#ffffff",
-  surface: "#f5f7f8",
+  surface: "#e9eef0",
 };
 
 /**

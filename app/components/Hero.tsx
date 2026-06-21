@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-6 items-center pt-28 lg:pt-36 pb-16 lg:pb-24">
+        <div className="grid lg:grid-cols-2 gap-6 items-center pt-24 lg:pt-28 pb-12 lg:pb-16">
           {/* Left: copy */}
           <div className="max-w-xl">
             <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-6">
@@ -64,7 +64,7 @@ export default function Hero() {
               />
             </svg>
 
-            <div className="relative aspect-square w-full max-w-xl mx-auto">
+            <div className="relative aspect-square w-full max-w-md lg:max-w-lg mx-auto">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/hero-people-v2.png"
