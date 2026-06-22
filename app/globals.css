@@ -109,7 +109,7 @@ html {
   border-radius: 9999px;
   filter: blur(64px);
   will-change: transform;
-  opacity: 0.55;
+  opacity: 0.68;
 }
 @media (min-width: 1024px) {
   .aurora-blob {

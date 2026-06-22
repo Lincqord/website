@@ -52,7 +52,7 @@ export default function Hero() {
           }}
         />
         {/* soft white veil so text stays readable over the aurora */}
-        <div className="absolute inset-0 bg-white/30" />
+        <div className="absolute inset-0 bg-white/15" />
       </div>
 
       {/* Content */}
