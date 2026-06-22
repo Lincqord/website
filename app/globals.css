@@ -17,7 +17,7 @@
   --background: #ffffff;
   --foreground: #1a1a1a;
   --muted: #5c6670;
-  --surface: #e9eef0;
+  --surface: #eef4f6;
   --border: #e3e8ea;
 }
 
@@ -109,7 +109,7 @@ html {
   border-radius: 9999px;
   filter: blur(64px);
   will-change: transform;
-  opacity: 0.68;
+  opacity: 0.82;
 }
 @media (min-width: 1024px) {
   .aurora-blob {
