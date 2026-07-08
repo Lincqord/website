@@ -1,23 +1,23 @@
 const CQ_ELEMENTS = [
   {
-    label: "CQ Drive",
-    title: "動機",
-    body: "異なる文化や価値観に関わろうとする意欲・関心・自信。",
+    label: "動機",
+    title: "違いに向き合う意欲",
+    body: "違いを避けずに「向き合ってみよう」と思える心のエネルギー。",
   },
   {
-    label: "CQ Knowledge",
-    title: "知識",
-    body: "文化による考え方や行動の違いを理解する知識基盤。",
+    label: "知識",
+    title: "違いを知る知識",
+    body: "何が・なぜ違うのかを理解し、「文化の違い」として捉え直す土台。",
   },
   {
-    label: "CQ Strategy",
-    title: "戦略",
-    body: "状況を観察し、計画し、適応するメタ認知の力。",
+    label: "戦略",
+    title: "自分を俯瞰し調整する力",
+    body: "自分の当たり前を一歩引いて見直し、その場でやり方を修正する力。",
   },
   {
-    label: "CQ Action",
-    title: "行動",
-    body: "場面に応じて言動を適切に調整して実践する力。",
+    label: "行動",
+    title: "行動を変える力",
+    body: "相手や状況に合わせて、伝え方や進め方を柔軟に変えられる力。",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Uniqueness() {
           {/* Right: 4 elements */}
           <div>
             <p className="text-sm font-700 text-foreground/70 mb-5">
-              CQを構成する4つの要素
+              CQを構成する4つの力
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {CQ_ELEMENTS.map((el, i) => (
@@ -66,7 +66,7 @@ export default function Uniqueness() {
                   className="bg-white rounded-2xl border border-border p-6"
                 >
                   <span
-                    className={`font-display text-xs tracking-widest ${
+                    className={`text-xs font-700 tracking-widest ${
                       i % 2 === 0 ? "text-brand-teal" : "text-brand-orange"
                     }`}
                   >
