@@ -30,7 +30,7 @@ export interface StageDefinition {
   desc: string;
   /** 象徴的な「声」（引用） */
   voice: string;
-  /** 次の一手（処方箋） */
+  /** 次の一手（段階を進めるための打ち手） */
   rx: string[];
 }
 

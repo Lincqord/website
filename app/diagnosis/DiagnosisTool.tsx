@@ -185,7 +185,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
 
       <div className="mt-5 rounded-xl bg-surface px-5 py-4">
         <p className="text-sm font-700 text-brand-teal-deep">
-          次の一手（処方箋）
+          次の一手
         </p>
         <ul className="mt-2 space-y-1.5">
           {st.rx.map((item) => (
@@ -200,7 +200,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
       {/* 相談CTA */}
       <div className="mt-7 rounded-2xl border border-brand-teal/40 bg-gradient-to-br from-surface to-white p-6 lg:p-8 text-center">
         <p className="text-sm lg:text-base leading-relaxed">
-          <span className="font-700">この見立て、当たっていましたか？</span>
+          <span className="font-700">この結果、思い当たるところはありましたか？</span>
           <br />
           実際の組織はもっと複雑です。Lincqordは診断・対話・変革伴走で
           「違いをチカラにする組織」づくりを支援しています。

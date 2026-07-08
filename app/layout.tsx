@@ -21,7 +21,7 @@ const oswald = Oswald({
 export const metadata: Metadata = {
   title: "Lincqord | Differenceをチカラに、人と組織に革新を。",
   description:
-    "Lincqord（リンクォード）は、CQ（文化知性）を軸に多様性を組織のチカラへ変えるコンサルティング・コーチング・研修を提供します。",
+    "Lincqord（リンクォード）は、組織課題を文化の視点で捉え、CQ（文化知性）を軸に「現状を知る→対話する→変える→成果につなげる」のステップで、違いをチカラにする組織づくりを支援します。",
 };
 
 export default function RootLayout({

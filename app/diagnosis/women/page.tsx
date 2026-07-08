@@ -6,7 +6,7 @@ import { WOMEN_DIAGNOSIS } from "../data/women";
 export const metadata: Metadata = {
   title: "女性活躍、うちの会社はどの段階？｜組織の現在地診断",
   description:
-    "12の質問で、貴社の「女性活躍」の現在地を5段階モデル（無知・無関心→二極化→最小化→受容→適応）で見立てる簡易診断。約3分で、段階ごとの「次の一手」までわかります。",
+    "12の質問に答えるだけで、貴社の「女性活躍」の現在地が5段階（無知・無関心→二極化→最小化→受容→適応）でわかる無料の簡易診断。約3分で、段階ごとの「次の一手」までわかります。",
 };
 
 export default function WomenDiagnosisPage() {
