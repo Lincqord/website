@@ -2,32 +2,26 @@ import Link from "next/link";
 
 const PROBLEMS = [
   {
-    id: "C1",
     title: "中間管理職が疲弊している",
     body: "経営と若手の板挟み。調整・確認業務に追われ、変革の起点になれない。",
   },
   {
-    id: "C2",
     title: "女性活躍が「形だけ」になっている",
     body: "比率目標はあるが実態が伴わない。善意の配慮（慈悲的バイアス）が壁に。",
   },
   {
-    id: "C3",
     title: "優秀な若手ほど辞めていく・育たない",
     body: "指示待ち・チャレンジしない。若手の価値観と組織文化のギャップ。",
   },
   {
-    id: "C4",
     title: "経営チーム・組織長がバラバラ",
     body: "部門間の相互不可侵。対話の不在。次世代経営者も育っていない。",
   },
   {
-    id: "C5",
     title: "制度を変えても現場が変わらない",
     body: "ハード施策だけでソフト（意識・言動）が置き去り。施策が定着しない。",
   },
   {
-    id: "C6",
     title: "部門・世代・立場の間に壁がある",
     body: "一体感がない。対立、あるいは遠慮。「私たちのやり方」同士の衝突。",
   },
@@ -51,13 +45,11 @@ export default function Problem() {
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROBLEMS.map((p) => (
             <div
-              key={p.id}
+              key={p.title}
               className="bg-surface rounded-2xl border border-border p-8 hover:shadow-md transition-shadow"
             >
-              <span className="font-display text-5xl font-700 text-brand-teal/25">
-                {p.id}
-              </span>
-              <h3 className="mt-4 text-lg font-700 leading-snug">{p.title}</h3>
+              <span className="block h-1 w-10 rounded-full bg-brand-teal/40" />
+              <h3 className="mt-5 text-lg font-700 leading-snug">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">{p.body}</p>
             </div>
           ))}
@@ -70,13 +62,13 @@ export default function Problem() {
 
         <div className="mt-8 text-center">
           <Link
-            href="/diagnosis/women"
+            href="/diagnosis"
             className="inline-block btn-accent font-medium px-8 py-3.5 rounded-full shadow-sm"
           >
-            うちの会社はどの段階？ 3分でわかる組織診断（女性活躍編）
+            うちの会社はどの段階？ 3分でわかる組織診断
           </Link>
           <p className="mt-3 text-xs text-muted">
-            12の質問で、組織の現在地を5段階モデルで見立てます
+            いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられます
           </p>
         </div>
       </div>

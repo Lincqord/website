@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { label: "私たちについて", href: "/about" },
   { label: "CQとは", href: "/uniqueness" },
   { label: "サービス", href: "/services" },
+  { label: "組織診断", href: "/diagnosis" },
   { label: "支援実績", href: "/case-study" },
   { label: "知見・ノウハウ", href: "/news" },
   { label: "採用情報", href: "/careers" },
