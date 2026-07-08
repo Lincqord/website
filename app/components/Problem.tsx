@@ -1,15 +1,35 @@
+import Link from "next/link";
+
 const PROBLEMS = [
   {
-    title: "多様な人材を活かせていない",
-    body: "外国籍・中途・若手など、せっかくの“違い”が組織の中で埋もれ、個の力が成果につながっていない。",
+    id: "C1",
+    title: "中間管理職が疲弊している",
+    body: "経営と若手の板挟み。調整・確認業務に追われ、変革の起点になれない。",
   },
   {
-    title: "施策が定着しない",
-    body: "ダイバーシティ研修やDEI施策を実施しても、現場の行動や文化が変わらず一過性で終わってしまう。",
+    id: "C2",
+    title: "女性活躍が「形だけ」になっている",
+    body: "比率目標はあるが実態が伴わない。善意の配慮（慈悲的バイアス）が壁に。",
   },
   {
-    title: "組織の一体感が弱い",
-    body: "価値観や背景の違いがすれ違いや対立を生み、チームとしての推進力が発揮できていない。",
+    id: "C3",
+    title: "優秀な若手ほど辞めていく・育たない",
+    body: "指示待ち・チャレンジしない。若手の価値観と組織文化のギャップ。",
+  },
+  {
+    id: "C4",
+    title: "経営チーム・組織長がバラバラ",
+    body: "部門間の相互不可侵。対話の不在。次世代経営者も育っていない。",
+  },
+  {
+    id: "C5",
+    title: "制度を変えても現場が変わらない",
+    body: "ハード施策だけでソフト（意識・言動）が置き去り。施策が定着しない。",
+  },
+  {
+    id: "C6",
+    title: "部門・世代・立場の間に壁がある",
+    body: "一体感がない。対立、あるいは遠慮。「私たちのやり方」同士の衝突。",
   },
 ];
 
@@ -28,14 +48,14 @@ export default function Problem() {
           </h2>
         </div>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
-          {PROBLEMS.map((p, i) => (
+        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {PROBLEMS.map((p) => (
             <div
-              key={p.title}
+              key={p.id}
               className="bg-surface rounded-2xl border border-border p-8 hover:shadow-md transition-shadow"
             >
               <span className="font-display text-5xl font-700 text-brand-teal/25">
-                0{i + 1}
+                {p.id}
               </span>
               <h3 className="mt-4 text-lg font-700 leading-snug">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">{p.body}</p>
@@ -47,6 +67,18 @@ export default function Problem() {
           その課題、<span className="text-brand-gradient font-700">CQ（文化知性）</span>
           で解決できます。
         </p>
+
+        <div className="mt-8 text-center">
+          <Link
+            href="/diagnosis/women"
+            className="inline-block btn-accent font-medium px-8 py-3.5 rounded-full shadow-sm"
+          >
+            うちの会社はどの段階？ 3分でわかる組織診断（女性活躍編）
+          </Link>
+          <p className="mt-3 text-xs text-muted">
+            12の質問で、組織の現在地を5段階モデルで見立てます
+          </p>
+        </div>
       </div>
     </section>
   );
