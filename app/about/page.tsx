@@ -6,7 +6,7 @@ import WaveDivider from "../components/WaveDivider";
 export const metadata: Metadata = {
   title: "私たちについて | Lincqord",
   description:
-    "株式会社リンクォード（Lincqord）について。ミッション・ビジョン、Difference（違い）の考え方、社名の由来、会社概要、チーム。CQ（文化知性）を軸に“違い”をチカラにする組織づくりを支援します。",
+    "株式会社リンクォード（Lincqord）について。ミッション・ビジョン、Difference（違い）の考え方、社名の由来、会社概要、代表紹介。CQ（文化知性）を軸に“違い”をチカラにする組織づくりを支援します。",
 };
 
 const DIFFERENCE_LAYERS = [
@@ -169,35 +169,28 @@ export default function AboutPage() {
 
       <WaveDivider from="surface" to="white" />
 
-      {/* Team */}
-      <section id="team" className="bg-white py-20 lg:py-28">
+      {/* Founder */}
+      <section id="founder" className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
-            TEAM
+            FOUNDER
           </p>
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">チーム</h2>
-          <p className="mt-4 max-w-2xl text-muted leading-relaxed">
-            多様なバックグラウンドを持つカルチャーの専門家が集い、CQの知恵で組織変革を支援します。
-          </p>
+          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">代表</h2>
 
-          {/* TODO: 実際のメンバー情報（氏名・役職・経歴・写真）に差し替え */}
-          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "石井 由香梨",
-                role: "代表取締役",
-                bio: "Lincqord創業者。CQ（文化知性）を軸に、多様性を組織のチカラへ変える組織・人材開発をリードする。",
-              },
-              { name: "Member", role: "コンサルタント", bio: "（プロフィール準備中）" },
-              { name: "Member", role: "コンサルタント", bio: "（プロフィール準備中）" },
-            ].map((m, i) => (
-              <div key={i} className="text-center">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-brand-teal/15 to-brand-orange/15" />
-                <h3 className="mt-5 text-lg font-700">{m.name}</h3>
-                <p className="text-sm text-brand-teal">{m.role}</p>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{m.bio}</p>
-              </div>
-            ))}
+          {/* TODO: 代表写真・詳細経歴（書籍・登壇・資格等）に差し替え */}
+          <div className="mt-10 grid lg:grid-cols-[280px_1fr] gap-8 lg:gap-12 items-start max-w-4xl">
+            <div className="aspect-square w-56 lg:w-full rounded-2xl bg-gradient-to-br from-brand-teal/15 to-brand-orange/15" />
+            <div>
+              <h3 className="text-xl font-700">石井 由香梨</h3>
+              <p className="mt-1 text-sm text-brand-teal">
+                代表取締役 / Founder
+              </p>
+              <p className="mt-5 text-sm lg:text-base leading-relaxed text-muted">
+                Lincqord創業者。CQ（文化知性）を軸に、多様性を組織のチカラへ変える組織・人材開発をリードする。
+                経営チームの対話、女性活躍の風土改革、リーダーシップ開発など、
+                国内組織の「内なる多様性」に向き合う変革の現場に伴走している。
+              </p>
+            </div>
           </div>
         </div>
       </section>

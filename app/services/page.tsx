@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 type Service = {
+  id: string;
   name: string;
   desc: string;
   tools?: string[];
@@ -32,6 +33,7 @@ const STEPS: Step[] = [
     lead: "組織と人の現在地を可視化する",
     services: [
       {
+        id: "s1",
         name: "組織文化診断",
         desc: "組織文化と課題構造を定量×定性で可視化し、5段階モデルの現在地と優先課題を特定する。",
         tools: [
@@ -43,6 +45,7 @@ const STEPS: Step[] = [
         ],
       },
       {
+        id: "s2",
         name: "リーダー・個人アセスメント",
         desc: "リーダー・個人の意識構造や強みを可視化し、育成・登用・コーチングの起点にする。",
         tools: [
@@ -60,11 +63,13 @@ const STEPS: Step[] = [
     lead: "違いを扱える関係をつくる",
     services: [
       {
+        id: "s3",
         name: "経営チーム・組織長ダイアログ",
         desc: "経営層・組織長が本音で向き合い、認識を揃え、変革のリーダーシップを起動する対話セッション。",
         tools: ["システムコーチング", "2on2"],
       },
       {
+        id: "s4",
         name: "「違いをチカラに変える」ワークショップ",
         desc: "違いを「認識→理解→活かす」へ転換する対話型ワークショップ。テーマ別に展開。",
         themes: [
@@ -74,6 +79,7 @@ const STEPS: Step[] = [
         ],
       },
       {
+        id: "s5",
         name: "対話の場の設計・ファシリテーション",
         desc: "声を集め、聴き合い、動き出す「場」を設計・運営。組織の中に対話の文化を根づかせる。",
         tools: ["タウンホール", "座談会", "2on2"],
@@ -86,12 +92,14 @@ const STEPS: Step[] = [
     lead: "人と組織の変化を定着させる",
     services: [
       {
+        id: "s6",
         name: "リーダーシップ開発プログラム",
         desc: "階層・対象別に設計する研修プログラム。知識・感情・メタ認知・行動（CQの4つの力）を一気通貫で扱う。",
         themes: ["次世代経営層", "管理職", "女性リーダー", "若手・中堅"],
         tools: ["ファシリテーション・会議運営モジュール"],
       },
       {
+        id: "s7",
         name: "エグゼクティブ／チームコーチング",
         desc: "経営層個人の内省・メタ認知と、経営チーム・部門の「関係性そのもの」への働きかけを、プロコーチが伴走。",
         tools: [
@@ -102,6 +110,7 @@ const STEPS: Step[] = [
         ],
       },
       {
+        id: "s8",
         name: "組織開発コンサルティング（変革伴走）",
         desc: "診断・対話・育成を組み合わせ、変革テーマの方針策定から現場の定着まで中長期で伴走する。",
         themes: ["DE&I戦略", "ビジョン策定・浸透", "DX・働き方のカルチャー変革"],
@@ -115,6 +124,7 @@ const STEPS: Step[] = [
     subdued: true,
     services: [
       {
+        id: "s9",
         name: "成果の見える化・定着レビュー",
         desc: "変革の効果を定点観測し、行動変容→組織指標（エンゲージメント・離職率・登用率など）→事業成果への接続を可視化する。再診断とセットで「Before / After」を示し、次の一手につなげる。",
         tools: ["パルスサーベイ・再診断", "効果測定レポート", "経営報告会"],
@@ -220,7 +230,8 @@ export default function ServicesPage() {
                   {step.services.map((svc) => (
                     <div
                       key={svc.name}
-                      className="rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
+                      id={svc.id}
+                      className="scroll-mt-28 rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
                     >
                       <h4 className="text-base lg:text-lg font-700 leading-snug flex items-start gap-2.5">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-orange shrink-0" />
