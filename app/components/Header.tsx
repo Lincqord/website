@@ -20,11 +20,15 @@ export default function Header() {
     <header className="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md border-b border-border">
       <div className="mx-auto max-w-7xl px-5 lg:px-8 h-16 lg:h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-display text-2xl lg:text-3xl font-700 tracking-tight text-foreground"
-        >
-          Lincqord
+        <Link href="/" className="flex items-center shrink-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.png"
+            alt="Lincqord"
+            width={1647}
+            height={370}
+            className="h-7 lg:h-9 w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}

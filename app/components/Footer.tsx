@@ -17,7 +17,14 @@ export default function Footer() {
         <div className="grid lg:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <p className="font-display text-3xl font-700 text-white">Lincqord</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="Lincqord"
+              width={1647}
+              height={370}
+              className="h-9 w-auto brightness-0 invert"
+            />
             <p className="mt-4 text-sm leading-relaxed text-white/70 max-w-xs">
               CQ（文化知性）を軸に、多様性を組織のチカラへ。
               人と組織に革新をもたらすパートナーです。

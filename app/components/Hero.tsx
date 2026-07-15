@@ -58,9 +58,14 @@ export default function Hero() {
       {/* Content */}
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex flex-col items-center text-center min-h-[42rem] lg:min-h-[46rem] justify-center pt-24 lg:pt-28 pb-16">
-          <p className="font-display tracking-[0.25em] text-brand-teal text-sm lg:text-base mb-7">
-            DIFFERENCE IS POWER
-          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/difference-is-power.png"
+            alt="Difference Is Power"
+            width={2083}
+            height={237}
+            className="w-[19rem] sm:w-[26rem] lg:w-[34rem] h-auto mb-8"
+          />
 
           <h1 className="text-4xl sm:text-5xl lg:text-[3.8rem] font-900 leading-[1.22] tracking-tight text-foreground">
             <span className="text-brand-gradient">&ldquo;違い&rdquo;</span>を

@@ -55,12 +55,19 @@ export default function AboutPage() {
               MISSION
             </p>
             <h2 className="mt-4 text-2xl font-700 leading-snug">
-              組織に必要な“Difference”を築く
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/difference-is-power.png"
+                alt="Difference Is Power"
+                width={2083}
+                height={237}
+                className="w-full max-w-[22rem] h-auto"
+              />
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              同じような空間で、同じように考え、同じように働くだけでは、もう何も生まれません。
+              違いは、チカラだ。同じような空間で、同じように考え、同じように働くだけでは、もう何も生まれません。
               現代のビジネスに必要なのは、異なる発想・異なる仕組み・異なる空気——つまり
-              “Difference”。そしてその源泉は、異なる人々の調和です。
+              “Difference”。組織に必要な“Difference”を築く。それが私たちの使命です。
             </p>
           </div>
 
