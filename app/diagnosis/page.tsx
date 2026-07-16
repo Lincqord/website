@@ -4,6 +4,7 @@ import PageHero from "../components/PageHero";
 import { DIAGNOSIS_THEMES } from "./data";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "組織の現在地診断 | Lincqord",
   description:
     "貴社の組織課題は今、どの段階にあるのか。いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断です。6つの組織課題からお選びいただけます",

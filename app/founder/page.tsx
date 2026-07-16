@@ -41,27 +41,7 @@ export default function FounderPage() {
         </div>
       </section>
 
-      <WaveDivider from="white" to="surface" />
-
-      {/* Message */}
-      <section className="bg-surface py-20 lg:py-28">
-        <div className="mx-auto max-w-3xl px-5 lg:px-8">
-          <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
-            MESSAGE
-          </p>
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight leading-snug">
-            企業は市場に負けているのか、
-            <br />
-            それとも、自らの文化に負けているのか
-          </h2>
-          <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
-            組織の課題はすべて、「違い」のぶつかり合いから生まれます。
-            そしてその「違い」こそが、組織の最大の資源です。
-            Lincqordは、CQ（文化知性）の知恵で、違いを摩擦からチカラに変える
-            組織づくりをご一緒します
-          </p>
-        </div>
-      </section>
+      {/* MESSAGEセクションは公開時は一旦割愛（後日掲載の可能性あり。復元はgit履歴参照） */}
 
       <PageCTA />
     </main>

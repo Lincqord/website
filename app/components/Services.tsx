@@ -1,21 +1,17 @@
 const STEPS = [
   {
-    no: "APPROACH 1",
     title: "自分たちを知る",
     body: "組織文化診断やアンケート、アセスメント（LCP等）で、組織と一人ひとりの現在地を可視化します",
   },
   {
-    no: "APPROACH 2",
     title: "他者と対話する",
     body: "対話の技術を学び、座談会やシステムコーチング®で本音を扱える場を実践し、内省まで深めます",
   },
   {
-    no: "APPROACH 3",
     title: "個人と組織が変わる",
     body: "能力・意識・文化の3つの次元に働きかけ、人と組織の変化を実際に起こします",
   },
   {
-    no: "APPROACH 4",
     title: "成果を産む",
     body: "業務テーマの推進と定点観測で、変化を個人と組織の成果へつなげます",
   },
@@ -43,13 +39,10 @@ export default function Services() {
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {STEPS.map((s) => (
             <div
-              key={s.no}
+              key={s.title}
               className="bg-white rounded-2xl border border-border p-8 hover:border-brand-teal/40 hover:shadow-lg transition-all flex flex-col"
             >
-              <span className="font-display tracking-widest text-sm text-brand-orange">
-                {s.no}
-              </span>
-              <h3 className="mt-3 text-xl font-700 leading-snug">{s.title}</h3>
+              <h3 className="text-xl font-700 leading-snug">{s.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted flex-1">
                 {s.body}
               </p>

@@ -10,24 +10,6 @@ export const metadata: Metadata = {
     "株式会社リンクォード（Lincqord）の会社概要。ミッション・ビジョン、Difference（違い）の考え方、社名の由来、会社情報。CQ（文化知性）を軸に“違い”をチカラにする組織づくりを支援します",
 };
 
-const DIFFERENCE_LAYERS = [
-  {
-    label: "内向きな側面",
-    note: "本人の核となる属性",
-    items: ["年齢", "性自認", "国籍", "身体能力", "思考スタイル"],
-  },
-  {
-    label: "外向きの側面",
-    note: "人生で得た経験・選択",
-    items: ["婚姻関係", "雇用形態", "趣味", "出身地", "学歴", "勤続年数", "信条"],
-  },
-  {
-    label: "組織的な側面",
-    note: "所属組織に関わる属性",
-    items: ["所属部門", "職種", "事業内容", "業界内ポジション", "経済的地位"],
-  },
-];
-
 const COMPANY = [
   ["会社名", "株式会社リンクォード（Lincqord Inc.）"],
   ["代表取締役", "石井 由香梨"],
@@ -94,6 +76,25 @@ export default function CompanyPage() {
         </div>
       </section>
 
+      {/* Differenceをチカラにする組織 */}
+      <section className="bg-white pb-20 lg:pb-28">
+        <div className="mx-auto max-w-5xl px-5 lg:px-8">
+          <div className="rounded-2xl border border-border bg-white p-7 lg:p-12">
+            <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">
+              Differenceをチカラにする組織
+            </h2>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/difference-organization.png"
+              alt="Differenceをチカラにする組織 — 組織の視点と個人の視点、Logicの世界とMentalityの世界の4象限"
+              width={1536}
+              height={946}
+              className="mt-8 w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       <WaveDivider from="white" to="surface" />
 
       {/* Difference */}
@@ -108,26 +109,15 @@ export default function CompanyPage() {
             違いは幾重もの層で重なり合っています
           </p>
 
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            {DIFFERENCE_LAYERS.map((layer) => (
-              <div
-                key={layer.label}
-                className="rounded-2xl border border-border bg-white p-7"
-              >
-                <h3 className="text-lg font-700">{layer.label}</h3>
-                <p className="text-xs text-brand-teal mt-1">{layer.note}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {layer.items.map((it) => (
-                    <span
-                      key={it}
-                      className="text-xs rounded-full bg-surface border border-border px-3 py-1 text-foreground/75"
-                    >
-                      {it}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="mt-10 mx-auto max-w-3xl rounded-2xl border border-border bg-white p-6 lg:p-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/what-is-difference.jpg"
+              alt="Differenceとは何か — あなた自身を中心に、内向きな側面・外向きの側面・組織的な側面が重なり合う同心円"
+              width={768}
+              height={763}
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>

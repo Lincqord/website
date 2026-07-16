@@ -10,15 +10,13 @@ export type Case = {
 
 /* サービス連鎖用: /services ページの各サービスカード（アンカーid）との対応 */
 export const SERVICE_LINKS: Record<string, { name: string; href: string }> = {
-  s1: { name: "組織文化診断", href: "/services#know-org" },
-  s2: { name: "個人アセスメント", href: "/services#know-self" },
-  s3: { name: "経営チーム・組織長の対話", href: "/services#dialogue-do" },
-  s4: { name: "対話ワークショップ", href: "/services#dialogue-do" },
-  s5: { name: "対話の場づくり", href: "/services#dialogue-do" },
-  s6: { name: "リーダーシップ研修", href: "/services#grow-mindset" },
-  s7: { name: "エグゼクティブ／チームコーチング", href: "/services#grow-mindset" },
-  s8: { name: "組織変革プロジェクト", href: "/services#culture-change" },
-  s9: { name: "定点観測（成果の見える化）", href: "/services#results-org" },
+  "know-org": { name: "組織を知る", href: "/services#know-org" },
+  "know-self": { name: "個人を知る", href: "/services#know-self" },
+  "dialogue-do": { name: "対話をする", href: "/services#dialogue-do" },
+  "grow-skill": { name: "自分の能力を高める", href: "/services#grow-skill" },
+  "grow-mindset": { name: "自分の意識を変える", href: "/services#grow-mindset" },
+  "culture-change": { name: "組織の文化が変わる", href: "/services#culture-change" },
+  "results-individual": { name: "個人が成果を産む", href: "/services#results-individual" },
 };
 
 export const CHALLENGES: string[] = [
@@ -35,7 +33,7 @@ export const CASES: Case[] = [
   {
     industry: "消費財メーカー",
     theme: "「組織からの引き算」で進める女性活躍",
-    services: ["s1", "s4", "s6"],
+    services: ["know-org", "dialogue-do", "grow-mindset"],
     challenge: "女性活躍が「形だけ」になっている",
     issue:
       "制度や女性向け研修を重ねても女性管理職が増えず、「結局、形だけでは」という声が社内から出ていた",
@@ -47,7 +45,7 @@ export const CASES: Case[] = [
   {
     industry: "エネルギー系事業会社",
     theme: "組織長の対話から始める風土改革",
-    services: ["s1", "s3", "s8"],
+    services: ["know-org", "dialogue-do", "culture-change"],
     challenge: "制度を変えても現場が変わらない",
     issue:
       "制度や方針を変えても現場の行動が変わらず、改革が掛け声で終わることが繰り返されていた",
@@ -59,7 +57,7 @@ export const CASES: Case[] = [
   {
     industry: "エネルギー",
     theme: "経営チームの一枚岩化",
-    services: ["s1", "s3", "s7"],
+    services: ["know-org", "dialogue-do", "grow-mindset"],
     challenge: "経営チーム・組織長がバラバラ",
     issue:
       "業界自由化による環境変化のなか、分業主義の暗黙のタブーが経営の意思決定を阻害していた",
@@ -71,7 +69,7 @@ export const CASES: Case[] = [
   {
     industry: "専門商社",
     theme: "若手が誇りを持てるビジョンづくり",
-    services: ["s5", "s8"],
+    services: ["dialogue-do", "culture-change"],
     challenge: "優秀な若手ほど辞めていく・育たない",
     issue:
       "「顧客最優先」の文化のもとで若手が自分の人生を後回しにし、離職が続いていた",
@@ -84,7 +82,7 @@ export const CASES: Case[] = [
   {
     industry: "サービス業",
     theme: "女性社員の本音から始める風土改革",
-    services: ["s1", "s4"],
+    services: ["know-org", "dialogue-do"],
     challenge: "女性活躍が「形だけ」になっている",
     issue: "女性社員の離職率が高く、管理職の多くが男性という状況が常態化していた",
     action:
@@ -94,7 +92,7 @@ export const CASES: Case[] = [
   {
     industry: "インフラ",
     theme: "変革が定着する土壌づくり",
-    services: ["s5", "s6"],
+    services: ["dialogue-do", "grow-mindset"],
     challenge: "制度を変えても現場が変わらない",
     issue: "DX施策が各現場で定着せず、「変化へのアレルギー」が根深く存在した",
     action:
@@ -105,7 +103,7 @@ export const CASES: Case[] = [
   {
     industry: "インフラ",
     theme: "組織文化の可視化と対話",
-    services: ["s1", "s5"],
+    services: ["know-org", "dialogue-do"],
     challenge: "制度を変えても現場が変わらない",
     issue: "「冒険しない」文化が、業界構造の変化への対応を阻んでいた",
     action:
@@ -116,7 +114,7 @@ export const CASES: Case[] = [
   {
     industry: "製造業",
     theme: "違いを扱う「共通言語」づくり",
-    services: ["s5", "s6"],
+    services: ["dialogue-do", "grow-mindset"],
     challenge: "部門・世代・立場の間に壁がある",
     issue:
       "多様なメンバーの協働に向けて、違いを前向きに扱うための共通言語が必要だった",
@@ -128,7 +126,7 @@ export const CASES: Case[] = [
   {
     industry: "製造業",
     theme: "少数派の声が届く組織へ",
-    services: ["s1", "s3", "s5"],
+    services: ["know-org", "dialogue-do"],
     challenge: "部門・世代・立場の間に壁がある",
     issue:
       "強い企業文化の副作用で、女性やキャリア入社など少数派社員の活躍が阻まれていた",
@@ -140,7 +138,7 @@ export const CASES: Case[] = [
   {
     industry: "製造業",
     theme: "本社と海外拠点の相互理解",
-    services: ["s4"],
+    services: ["dialogue-do"],
     challenge: "部門・世代・立場の間に壁がある",
     issue: "本社中心の意思決定で拠点の意見が活かされず、摩擦が深刻化していた",
     action:
@@ -151,7 +149,7 @@ export const CASES: Case[] = [
   {
     industry: "商社",
     theme: "次世代経営チームの土台づくり",
-    services: ["s3", "s6"],
+    services: ["dialogue-do", "grow-skill"],
     challenge: "経営チーム・組織長がバラバラ",
     issue:
       "出身企業による視座・価値観の違いで部門間の協調が難しく、経営陣の対話も不足していた",
@@ -163,7 +161,7 @@ export const CASES: Case[] = [
   {
     industry: "製造業",
     theme: "女性リーダーが育つ環境づくり",
-    services: ["s4", "s6"],
+    services: ["dialogue-do", "grow-mindset"],
     challenge: "女性活躍が「形だけ」になっている",
     issue: "各種支援を行っても女性リーダー層が形成されず、施策の効果が限定的だった",
     action:
@@ -173,7 +171,7 @@ export const CASES: Case[] = [
   {
     industry: "製造業",
     theme: "前例踏襲を越えるリーダーシップ開発",
-    services: ["s2", "s6", "s8"],
+    services: ["know-self", "grow-mindset", "results-individual"],
     challenge: "制度を変えても現場が変わらない",
     issue: "保守的な企業文化と前例踏襲のリーダーシップで、新規事業が進展しなかった",
     action:
@@ -184,7 +182,7 @@ export const CASES: Case[] = [
   {
     industry: "サービス業",
     theme: "世代を越えた価値観の相互理解",
-    services: ["s4", "s5"],
+    services: ["dialogue-do"],
     challenge: "部門・世代・立場の間に壁がある",
     issue:
       "世代間の価値観ギャップとコミュニケーション不足で、技能・ノウハウの伝承に支障が出かねなかった",

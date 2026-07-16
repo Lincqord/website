@@ -187,22 +187,10 @@ export default function CQPage() {
 
       <WaveDivider from="white" to="surface" />
 
-      {/* 診断への導線 */}
-      <section className="bg-surface py-16 lg:py-20">
+      {/* 出典注記 */}
+      <section className="bg-surface py-12 lg:py-16">
         <div className="mx-auto max-w-3xl px-5 lg:px-8 text-center">
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
-            あなたの組織は、どの段階？
-          </h2>
-          <p className="mt-4 text-muted leading-relaxed">
-            いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断をご用意しています（約3分）
-          </p>
-          <Link
-            href="/diagnosis"
-            className="mt-7 inline-block btn-accent font-medium px-8 py-3.5 rounded-full shadow-sm"
-          >
-            3分でわかる組織診断を試す
-          </Link>
-          <p className="mt-10 text-xs leading-relaxed text-muted/80">
+          <p className="text-xs leading-relaxed text-muted/80">
             ※ CQは Earley &amp; Ang らの Cultural Intelligence 研究、5段階モデルは
             IDI（Intercultural Development Inventory）等の異文化発達研究に基づくフレームワークです。
             文化の違いを読み解く際には、国民文化を6つの次元で捉えるホフステードのモデルも活用します

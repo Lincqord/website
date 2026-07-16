@@ -7,7 +7,6 @@ const NAV_ITEMS = [
   { label: "会社概要", href: "/company" },
   { label: "代表紹介", href: "/founder" },
   { label: "サービス", href: "/services" },
-  { label: "組織診断", href: "/diagnosis" },
   { label: "支援実績", href: "/case-study" },
   { label: "知見・ノウハウ", href: "/news" },
   { label: "採用情報", href: "/careers" },

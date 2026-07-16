@@ -62,13 +62,13 @@ export default function Problem() {
 
         <div className="mt-8 text-center">
           <Link
-            href="/diagnosis"
+            href="/contact"
             className="inline-block btn-accent font-medium px-8 py-3.5 rounded-full shadow-sm"
           >
-            うちの会社はどの段階？ 3分でわかる組織診断
+            無料で相談する
           </Link>
           <p className="mt-3 text-xs text-muted">
-            いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられます
+            現状の課題整理から、最適なアプローチのご提案まで。初回相談は無料です
           </p>
         </div>
       </div>
