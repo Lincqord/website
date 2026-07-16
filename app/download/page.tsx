@@ -5,7 +5,7 @@ import PageHero from "../components/PageHero";
 export const metadata: Metadata = {
   title: "資料ダウンロード | Lincqord",
   description:
-    "Lincqordの会社案内・サービス資料・CQ（文化知性）に関するホワイトペーパーのダウンロードページ。準備が整い次第、順次公開します。",
+    "Lincqordの会社案内・サービス資料・CQ（文化知性）に関するホワイトペーパーのダウンロードページ。準備が整い次第、順次公開します",
 };
 
 export default function DownloadPage() {
@@ -14,7 +14,7 @@ export default function DownloadPage() {
       <PageHero
         eyebrow="DOWNLOAD"
         title="資料ダウンロード"
-        lead="会社案内・サービス資料・CQ（文化知性）に関するホワイトペーパーをご用意します。"
+        lead="会社案内・サービス資料・CQ（文化知性）に関するホワイトペーパーをご用意します"
       />
 
       <section className="bg-white py-20 lg:py-28">
@@ -27,7 +27,7 @@ export default function DownloadPage() {
               近日中に、ダウンロード資料を公開予定です。
               <br className="hidden sm:block" />
               お急ぎの場合は、お問い合わせフォームよりご連絡ください。
-              ご要望に応じて個別に資料をお送りします。
+              ご要望に応じて個別に資料をお送りします
             </p>
             <Link
               href="/contact"

@@ -5,7 +5,7 @@ import PageCTA from "../components/PageCTA";
 export const metadata: Metadata = {
   title: "知見・ノウハウ | Lincqord",
   description:
-    "CQ（文化知性）の基礎知識、組織開発・ダイバーシティに関するコラム、お知らせ、セミナー情報。Lincqordが毎週発信する知見をお届けします。",
+    "CQ（文化知性）の基礎知識、組織開発・ダイバーシティに関するコラム、お知らせ、セミナー情報。Lincqordが毎週発信する知見をお届けします",
 };
 
 type Post = {
@@ -42,7 +42,7 @@ export default function NewsPage() {
       <PageHero
         eyebrow="INSIGHTS"
         title="知見・ノウハウ"
-        lead="CQ（文化知性）の基礎知識を中心に、組織開発やダイバーシティに関するコラム・セミナー情報を、毎週発信しています。"
+        lead="CQ（文化知性）の基礎知識を中心に、組織開発やダイバーシティに関するコラム・セミナー情報を、毎週発信しています"
       />
 
       <section className="bg-white py-16 lg:py-24">

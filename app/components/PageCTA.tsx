@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PageCTA({
   title = "組織の“違い”を、チカラに変えませんか",
-  body = "現状の課題整理から、最適なアプローチのご提案まで。まずはお気軽にご相談ください。初回相談は無料です。",
+  body = "現状の課題整理から、最適なアプローチのご提案まで。まずはお気軽にご相談ください。初回相談は無料です",
 }: {
   title?: string;
   body?: string;

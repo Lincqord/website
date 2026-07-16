@@ -5,7 +5,7 @@ import PageHero from "../components/PageHero";
 export const metadata: Metadata = {
   title: "採用情報 | Lincqord",
   description:
-    "Lincqordの採用情報。CQ（文化知性）を軸に、違いをチカラに変える組織づくりに共に挑む仲間を募集しています。",
+    "Lincqordの採用情報。CQ（文化知性）を軸に、違いをチカラに変える組織づくりに共に挑む仲間を募集しています",
 };
 
 export default function CareersPage() {
@@ -14,7 +14,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="CAREERS"
         title="採用情報"
-        lead="“違い”をチカラに変える挑戦を、共に。多様なバックグラウンドを歓迎します。"
+        lead="“違い”をチカラに変える挑戦を、共に。多様なバックグラウンドを歓迎します"
       />
 
       <section className="bg-white py-20 lg:py-28">
@@ -27,7 +27,7 @@ export default function CareersPage() {
               新たな募集が開始された際に、こちらのページでお知らせします。
               <br className="hidden sm:block" />
               Lincqordの活動やCQ（文化知性）にご関心のある方は、
-              お気軽にお問い合わせください。
+              お気軽にお問い合わせください
             </p>
             <Link
               href="/contact"

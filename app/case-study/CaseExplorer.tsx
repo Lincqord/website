@@ -101,7 +101,7 @@ export default function CaseExplorer() {
 
       {filtered.length === 0 && (
         <p className="mt-10 text-sm text-muted">
-          この組み合わせの事例は準備中です。近い課題の事例をご紹介できますので、お気軽にお問い合わせください。
+          この組み合わせの事例は準備中です。近い課題の事例をご紹介できますので、お気軽にお問い合わせください
         </p>
       )}
     </div>

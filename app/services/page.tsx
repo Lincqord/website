@@ -6,7 +6,7 @@ import WaveDivider from "../components/WaveDivider";
 export const metadata: Metadata = {
   title: "サービス | Lincqord",
   description:
-    "Lincqordのサービス一覧。「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」の4つのステップで、組織文化診断・アセスメント・対話の場づくり・研修・コーチング・変革プロジェクトを課題起点で組み合わせて提供します。",
+    "Lincqordのサービス一覧。「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」の4つのアプローチで、組織文化診断・アセスメント・対話の場づくり・研修・コーチング・変革プロジェクトを課題起点で組み合わせて提供します",
 };
 
 type Group = {
@@ -36,14 +36,14 @@ const LAYERS: Layer[] = [
         id: "know-org",
         aliases: ["s1"],
         name: "組織を知る",
-        desc: "組織文化と課題の構造を可視化する。",
+        desc: "組織文化と課題の構造を可視化する",
         methods: ["組織文化診断", "社員アンケート", "インタビュー"],
       },
       {
         id: "know-self",
         aliases: ["s2"],
         name: "個人を知る",
-        desc: "リーダー・個人の強みと意識の構造を可視化する。",
+        desc: "リーダー・個人の強みと意識の構造を可視化する",
         methods: [
           "アセスメント（LCP／ストレングスファインダー®）",
           "コーチング",
@@ -59,7 +59,7 @@ const LAYERS: Layer[] = [
       {
         id: "dialogue-skill",
         name: "対話の作法を知る",
-        desc: "対話の質を決める技術を身につける。",
+        desc: "対話の質を決める技術を身につける",
         methods: [
           "クリティカルシンキング研修",
           "ファシリテーション研修",
@@ -71,13 +71,13 @@ const LAYERS: Layer[] = [
         id: "dialogue-do",
         aliases: ["s3", "s4", "s5"],
         name: "対話をする",
-        desc: "立場や世代を越えて、本音を安全に扱う場を実践する。",
+        desc: "立場や世代を越えて、本音を安全に扱う場を実践する",
         methods: ["座談会", "システムコーチング®", "2on2コーチング"],
       },
       {
         id: "dialogue-reflect",
         name: "対話を内省する",
-        desc: "対話で得た気づきを、自分の変化に落とし込む。",
+        desc: "対話で得た気づきを、自分の変化に落とし込む",
         methods: ["コーチング", "ジャーナリング"],
       },
     ],
@@ -90,7 +90,7 @@ const LAYERS: Layer[] = [
       {
         id: "grow-skill",
         name: "自分の能力を高める",
-        desc: "成果を出すためのビジネススキルを鍛える。",
+        desc: "成果を出すためのビジネススキルを鍛える",
         methods: [
           "クリティカルシンキング研修",
           "ファシリテーション研修",
@@ -105,14 +105,14 @@ const LAYERS: Layer[] = [
         id: "grow-mindset",
         aliases: ["s6", "s7"],
         name: "自分の意識を変える",
-        desc: "ものの見方と、リーダーとしてのあり方を変える。",
+        desc: "ものの見方と、リーダーとしてのあり方を変える",
         methods: ["コーチング", "2on2コーチング", "リーダーシップ研修"],
       },
       {
         id: "culture-change",
         aliases: ["s8"],
         name: "組織の文化が変わる",
-        desc: "「私たちのやり方」を、未来に向けてつくり直す。",
+        desc: "「私たちのやり方」を、未来に向けてつくり直す",
         methods: ["ビジョン策定・浸透プロジェクト", "組織変革プロジェクト組成"],
       },
     ],
@@ -125,14 +125,14 @@ const LAYERS: Layer[] = [
       {
         id: "results-individual",
         name: "個人が成果を産む",
-        desc: "現実の業務テーマで、成果を出し切るまで伴走する。",
+        desc: "現実の業務テーマで、成果を出し切るまで伴走する",
         methods: ["業務テーマ推進アドバイス", "進捗フォロー", "コーチング"],
       },
       {
         id: "results-org",
         aliases: ["s9"],
         name: "組織が成果を産む",
-        desc: "組織の変化を定点で確かめ、次の一手につなげる。",
+        desc: "組織の変化を定点で確かめ、次の一手につなげる",
         methods: ["定点観測", "システムコーチング®", "2on2コーチング"],
       },
     ],
@@ -142,13 +142,13 @@ const LAYERS: Layer[] = [
 const ASSESSMENT_NOTES = [
   {
     name: "LCP（The Leadership Circle Profile）",
-    desc: "リーダーの意識構造（クリエイティブ／リアクティブ）を360度で可視化する国際的なアセスメント。",
+    desc: "リーダーの意識構造（クリエイティブ／リアクティブ）を360度で可視化する国際的なアセスメント",
     href: "https://leadershipcircle.com/ja/",
     label: "公式サイト",
   },
   {
     name: "ストレングスファインダー®（現・クリフトンストレングス）",
-    desc: "個人の強みを34の資質で可視化する、Gallup社のアセスメント。",
+    desc: "個人の強みを34の資質で可視化する、Gallup社のアセスメント",
     href: "https://www.gallup.com/cliftonstrengths/ja/home.aspx",
     label: "公式サイト",
   },
@@ -168,7 +168,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="SERVICES"
         title="サービス"
-        lead="Lincqordのサービスは、研修ありきではなく「課題起点」。まず自分たちを知ることから始め、対話で土壌を耕し、個人と組織の変化を起こし、成果につなげる——4つのステップで貴社に伴走します。"
+        lead="Lincqordのサービスは、研修ありきではなく「課題起点」。まず自分たちを知ることから始め、対話で土壌を耕し、個人と組織の変化を起こし、成果につなげる——4つのアプローチで貴社に伴走します"
       />
 
       {/* 導入 */}
@@ -183,20 +183,26 @@ export default function ServicesPage() {
               組織の文化、つまり「私たちのやり方」のぶつかり合いが隠れていることが少なくありません。
               だからLincqordは、目に見える症状にすぐ手を打つのではなく、
               課題の構造を明らかにするところから始めます。
-              自分たちを知ることから成果の実感まで、4つのステップでご一緒します。
+              自分たちを知ることから成果の実感まで、4つのアプローチでご一緒します
             </p>
+            <a
+              href="/uniqueness"
+              className="mt-4 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
+            >
+              なぜ文化に注目するのか——CQ（文化知性）とは →
+            </a>
           </div>
         </div>
       </section>
 
       <WaveDivider from="white" to="surface" />
 
-      {/* 4ステップ × 10カテゴリ */}
+      {/* 4アプローチ × 10カテゴリ */}
       <section className="bg-surface py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
             <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
-              4 STEPS
+              APPROACH
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
               自分たちを知る → 他者と対話する →
@@ -204,7 +210,7 @@ export default function ServicesPage() {
               個人と組織が変わる → 成果を産む
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-              課題とフェーズに合わせて、各ステップのメニューを組み合わせて提供します。
+              課題とフェーズに合わせて、各アプローチのメニューを組み合わせて提供します
             </p>
           </div>
 
@@ -216,7 +222,7 @@ export default function ServicesPage() {
               >
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                   <span className="font-display tracking-widest text-sm text-brand-teal">
-                    STEP {layer.no}
+                    APPROACH {layer.no}
                   </span>
                   <h3 className="text-xl lg:text-2xl font-700 tracking-tight">
                     {layer.name}
@@ -290,7 +296,7 @@ export default function ServicesPage() {
 
           <p className="mt-8 text-xs leading-relaxed text-muted">
             ※「システムコーチング」はCRR Global Japan合同会社の、「ストレングスファインダー」「クリフトンストレングス」はGallup,
-            Inc.の登録商標です。
+            Inc.の登録商標です
           </p>
         </div>
       </section>

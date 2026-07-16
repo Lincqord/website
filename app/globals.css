@@ -18,8 +18,8 @@
   --foreground: #1a1a1a;
   --muted: #5c6670;
   /* surface: ティールをほのかに含む上質なオフホワイト（旧 #d8ecef はポップな印象が強かったため変更） */
-  --surface: #f1f6f7;
-  --border: #dde8ea;
+  --surface: #EFF8F9;
+  --border: #d8e9ec;
 }
 
 @theme inline {

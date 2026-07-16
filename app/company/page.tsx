@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHero from "../components/PageHero";
 import PageCTA from "../components/PageCTA";
 import WaveDivider from "../components/WaveDivider";
 
 export const metadata: Metadata = {
-  title: "私たちについて | Lincqord",
+  title: "会社概要 | Lincqord",
   description:
-    "株式会社リンクォード（Lincqord）について。ミッション・ビジョン、Difference（違い）の考え方、社名の由来、会社概要、代表紹介。CQ（文化知性）を軸に“違い”をチカラにする組織づくりを支援します。",
+    "株式会社リンクォード（Lincqord）の会社概要。ミッション・ビジョン、Difference（違い）の考え方、社名の由来、会社情報。CQ（文化知性）を軸に“違い”をチカラにする組織づくりを支援します",
 };
 
 const DIFFERENCE_LAYERS = [
@@ -38,13 +39,13 @@ const COMPANY = [
   ["URL", "https://lincqord.com/"],
 ];
 
-export default function AboutPage() {
+export default function CompanyPage() {
   return (
     <main className="flex-1">
       <PageHero
-        eyebrow="ABOUT"
-        title="私たちについて"
-        lead="Lincqordは、CQ（文化知性）の知恵を用いるカルチャーの専門家集団。それぞれの個性を保ったまま協働できる“第三の組織文化”づくりを支援します。"
+        eyebrow="COMPANY"
+        title="会社概要"
+        lead="Lincqordは、CQ（文化知性）の知恵を用いるカルチャーの専門家集団。それぞれの個性を保ったまま協働できる“第三の組織文化”づくりを支援します"
       />
 
       {/* Mission / Vision */}
@@ -67,7 +68,7 @@ export default function AboutPage() {
             <p className="mt-5 text-base leading-relaxed text-muted">
               違いは、チカラだ。同じような空間で、同じように考え、同じように働くだけでは、もう何も生まれません。
               現代のビジネスに必要なのは、異なる発想・異なる仕組み・異なる空気——つまり
-              “Difference”。組織に必要な“Difference”を築く。それが私たちの使命です。
+              “Difference”。組織に必要な“Difference”を築く。それが私たちの使命です
             </p>
           </div>
 
@@ -81,8 +82,14 @@ export default function AboutPage() {
             <p className="mt-5 text-base leading-relaxed text-muted">
               国籍・ジェンダー・年代・学歴・部門——違いのある社員の個性が、
               「面倒なもの」として扱われていないか。その声は十分に生かされているか。Lincqordは、
-              CQの知恵でその課題に答えを見つけ、全ての社員が力を発揮できる組織づくりを支援します。
+              CQの知恵でその課題に答えを見つけ、全ての社員が力を発揮できる組織づくりを支援します
             </p>
+            <Link
+              href="/uniqueness"
+              className="mt-4 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
+            >
+              CQ（文化知性）とは →
+            </Link>
           </div>
         </div>
       </section>
@@ -98,7 +105,7 @@ export default function AboutPage() {
           <p className="mt-5 max-w-3xl text-base lg:text-lg leading-relaxed text-muted">
             ひとりひとりが人生で得た属性や経験が&ldquo;Difference&rdquo;、つまり文化を創ります。
             組織とは、私たちのDifferenceのぶつかり合い。&ldquo;あなた自身&rdquo;を中心に、
-            違いは幾重もの層で重なり合っています。
+            違いは幾重もの層で重なり合っています
           </p>
 
           <div className="mt-10 grid md:grid-cols-3 gap-6">
@@ -140,7 +147,7 @@ export default function AboutPage() {
             <strong className="text-foreground font-500">Chord</strong>という
             3つの言葉を重ね合わせたものです。私たちは、CQの知恵によって、
             多様な文化的バックグラウンドを持つ人々の心（Chord）をつなぎます（Linkage）。
-            複数色のロゴは、&ldquo;違い：Difference&rdquo;を尊重するLincqordの理念を表しています。
+            複数色のロゴは、&ldquo;違い：Difference&rdquo;を尊重するLincqordの理念を表しています
           </p>
         </div>
       </section>
@@ -150,7 +157,7 @@ export default function AboutPage() {
       {/* Company profile */}
       <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">会社概要</h2>
+          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">会社情報</h2>
           <dl className="mt-8 border-t border-border">
             {COMPANY.map(([k, v]) => (
               <div
@@ -164,34 +171,16 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
-        </div>
-      </section>
-
-      <WaveDivider from="surface" to="white" />
-
-      {/* Founder */}
-      <section id="founder" className="bg-white py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
-            FOUNDER
+          <p className="mt-8 text-sm text-muted">
+            代表のプロフィールは
+            <Link
+              href="/founder"
+              className="mx-1 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
+            >
+              代表紹介
+            </Link>
+            をご覧ください
           </p>
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">代表</h2>
-
-          {/* TODO: 代表写真・詳細経歴（書籍・登壇・資格等）に差し替え */}
-          <div className="mt-10 grid lg:grid-cols-[280px_1fr] gap-8 lg:gap-12 items-start max-w-4xl">
-            <div className="aspect-square w-56 lg:w-full rounded-2xl bg-gradient-to-br from-brand-teal/15 to-brand-orange/15" />
-            <div>
-              <h3 className="text-xl font-700">石井 由香梨</h3>
-              <p className="mt-1 text-sm text-brand-teal">
-                代表取締役 / Founder
-              </p>
-              <p className="mt-5 text-sm lg:text-base leading-relaxed text-muted">
-                Lincqord創業者。CQ（文化知性）を軸に、多様性を組織のチカラへ変える組織・人材開発をリードする。
-                経営チームの対話、女性活躍の風土改革、リーダーシップ開発など、
-                国内組織の「内なる多様性」に向き合う変革の現場に伴走している。
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "私たちについて", href: "/about" },
-  { label: "CQとは", href: "/uniqueness" },
+  { label: "会社概要", href: "/company" },
+  { label: "代表紹介", href: "/founder" },
   { label: "サービス", href: "/services" },
   { label: "組織診断", href: "/diagnosis" },
   { label: "支援実績", href: "/case-study" },

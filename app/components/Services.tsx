@@ -1,23 +1,23 @@
 const STEPS = [
   {
-    no: "STEP 1",
+    no: "APPROACH 1",
     title: "自分たちを知る",
-    body: "組織文化診断やアンケート、アセスメント（LCP等）で、組織と一人ひとりの現在地を可視化します。",
+    body: "組織文化診断やアンケート、アセスメント（LCP等）で、組織と一人ひとりの現在地を可視化します",
   },
   {
-    no: "STEP 2",
+    no: "APPROACH 2",
     title: "他者と対話する",
-    body: "対話の技術を学び、座談会やシステムコーチング®で本音を扱える場を実践し、内省まで深めます。",
+    body: "対話の技術を学び、座談会やシステムコーチング®で本音を扱える場を実践し、内省まで深めます",
   },
   {
-    no: "STEP 3",
+    no: "APPROACH 3",
     title: "個人と組織が変わる",
-    body: "能力・意識・文化の3つの次元に働きかけ、人と組織の変化を実際に起こします。",
+    body: "能力・意識・文化の3つの次元に働きかけ、人と組織の変化を実際に起こします",
   },
   {
-    no: "STEP 4",
+    no: "APPROACH 4",
     title: "成果を産む",
-    body: "業務テーマの推進と定点観測で、変化を個人と組織の成果へつなげます。",
+    body: "業務テーマの推進と定点観測で、変化を個人と組織の成果へつなげます",
   },
 ];
 
@@ -32,11 +32,11 @@ export default function Services() {
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
             課題起点で伴走する、
             <br className="hidden sm:block" />
-            4つのステップ
+            4つのアプローチ
           </h2>
           <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
             研修ありきではなく、貴社の課題が出発点。現状の把握から成果の実感まで、
-            4つのステップでご一緒します。
+            4つのアプローチでご一緒します
           </p>
         </div>
 

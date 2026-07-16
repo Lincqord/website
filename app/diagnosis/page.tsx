@@ -6,7 +6,7 @@ import { DIAGNOSIS_THEMES } from "./data";
 export const metadata: Metadata = {
   title: "組織の現在地診断 | Lincqord",
   description:
-    "貴社の組織課題は今、どの段階にあるのか。いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断です。6つの組織課題からお選びいただけます。",
+    "貴社の組織課題は今、どの段階にあるのか。いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断です。6つの組織課題からお選びいただけます",
 };
 
 export default function DiagnosisIndexPage() {
@@ -15,7 +15,7 @@ export default function DiagnosisIndexPage() {
       <PageHero
         eyebrow="DIAGNOSIS"
         title="組織の現在地診断"
-        lead="いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断です（約3分）。気になる課題を選んでください。"
+        lead="いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断です（約3分）。気になる課題を選んでください"
       />
 
       <section className="bg-white pb-20 lg:pb-28">
@@ -24,7 +24,7 @@ export default function DiagnosisIndexPage() {
             どの課題で診断しますか？
           </h2>
           <p className="mt-4 max-w-2xl text-muted leading-relaxed">
-            6つの組織課題すべての診断を公開しています。いま一番気になる課題からお試しください。
+            6つの組織課題すべての診断を公開しています。いま一番気になる課題からお試しください
           </p>
 
           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">

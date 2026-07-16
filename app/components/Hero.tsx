@@ -77,7 +77,7 @@ export default function Hero() {
           <p className="mt-8 max-w-2xl text-base lg:text-lg leading-relaxed text-muted">
             国籍・世代・経験——あらゆる&ldquo;違い&rdquo;を組織の推進力に。
             <br className="hidden sm:block" />
-            CQ（文化知性）を軸に、多様な人材が力を発揮できる組織づくりを支援します。
+            CQ（文化知性）を軸に、多様な人材が力を発揮できる組織づくりを支援します
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">

@@ -9,7 +9,7 @@ import { CASES, SERVICE_LINKS } from "./data";
 export const metadata: Metadata = {
   title: "支援実績 | Lincqord",
   description:
-    "Lincqordの支援実績。女性活躍の風土改革、経営チームの対話、若手の離職・育成、組織文化の変革など、各業界の組織課題に「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」のステップで伴走した事例をご紹介します。",
+    "Lincqordの支援実績。女性活躍の風土改革、経営チームの対話、若手の離職・育成、組織文化の変革など、各業界の組織課題に「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」のアプローチで伴走した事例をご紹介します",
 };
 
 const FEATURED = CASES.slice(0, 4);
@@ -20,7 +20,7 @@ export default function CaseStudyPage() {
       <PageHero
         eyebrow="CASE STUDY"
         title="支援実績"
-        lead="業界を問わず、多くの企業の組織課題に伴走してきました。「課題 → 支援内容 → 変化」の流れで、代表的な事例をご紹介します。"
+        lead="業界を問わず、多くの企業の組織課題に伴走してきました。「課題 → 支援内容 → 変化」の流れで、代表的な事例をご紹介します"
       />
 
       {/* Featured */}
@@ -88,13 +88,13 @@ export default function CaseStudyPage() {
           </h2>
           <p className="mt-4 max-w-2xl text-muted leading-relaxed">
             業界・テーマを問わず、多様な組織課題に伴走してきました。
-            課題やサービスで絞り込んで、貴社に近い事例をお探しいただけます。
+            課題やサービスで絞り込んで、貴社に近い事例をお探しいただけます
           </p>
 
           <CaseExplorer />
 
           <p className="mt-8 text-xs text-muted">
-            ※ 掲載企業の特定を避けるため、業種のみを記載し、内容を一部一般化しています。
+            ※ 掲載企業の特定を避けるため、業種のみを記載し、内容を一部一般化しています
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function CaseStudyPage() {
 
       <PageCTA
         title="貴社の課題に近い事例をご紹介します"
-        body="業界・テーマに応じた具体的な支援事例を、個別にご説明します。まずはお気軽にご相談ください。"
+        body="業界・テーマに応じた具体的な支援事例を、個別にご説明します。まずはお気軽にご相談ください"
       />
     </main>
   );

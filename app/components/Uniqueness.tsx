@@ -2,22 +2,22 @@ const CQ_ELEMENTS = [
   {
     label: "動機",
     title: "違いに向き合う意欲",
-    body: "違いを避けずに「向き合ってみよう」と思える心のエネルギー。",
+    body: "違いを避けずに「向き合ってみよう」と思える心のエネルギー",
   },
   {
     label: "知識",
     title: "違いを知る知識",
-    body: "何が・なぜ違うのかを理解し、「文化の違い」として捉え直す土台。",
+    body: "何が・なぜ違うのかを理解し、「文化の違い」として捉え直す土台",
   },
   {
     label: "戦略",
     title: "自分を俯瞰し調整する力",
-    body: "自分の当たり前を一歩引いて見直し、その場でやり方を修正する力。",
+    body: "自分の当たり前を一歩引いて見直し、その場でやり方を修正する力",
   },
   {
     label: "行動",
     title: "行動を変える力",
-    body: "相手や状況に合わせて、伝え方や進め方を柔軟に変えられる力。",
+    body: "相手や状況に合わせて、伝え方や進め方を柔軟に変えられる力",
   },
 ];
 
@@ -39,11 +39,11 @@ export default function Uniqueness() {
 
             <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
               CQ（Cultural Intelligence／文化知性）とは、文化背景の異なる人々と協働し、
-              成果を出す力。グローバル時代のリーダーに求められる、思考と行動のフレームワークです。
+              成果を出す力。グローバル時代のリーダーに求められる、思考と行動のフレームワークです
             </p>
             <p className="mt-4 text-base lg:text-lg leading-relaxed text-muted">
               Lincqordは、このCQを体系的に高めるメソッドで、あらゆる&ldquo;違い&rdquo;を
-              &ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます。
+              &ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます
             </p>
 
             <a

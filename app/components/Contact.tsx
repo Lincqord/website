@@ -12,7 +12,7 @@ export default function Contact() {
           <p className="mt-5 text-base leading-relaxed text-muted">
             サービスのご相談・ご質問など、お気軽にお問い合わせください。
             <br className="hidden sm:block" />
-            担当者より2営業日以内にご返信いたします。
+            担当者より2営業日以内にご返信いたします
           </p>
         </div>
 

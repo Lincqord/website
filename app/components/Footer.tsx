@@ -1,5 +1,6 @@
 const NAV = [
-  { label: "私たちについて", href: "/about" },
+  { label: "会社概要", href: "/company" },
+  { label: "代表紹介", href: "/founder" },
   { label: "CQとは", href: "/uniqueness" },
   { label: "サービス", href: "/services" },
   { label: "組織診断", href: "/diagnosis" },
