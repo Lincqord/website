@@ -18,7 +18,8 @@ export const DIAGNOSIS_THEMES: DiagnosisTheme[] = [
   {
     challenge: "中間管理職が疲弊している",
     body: "経営と若手の板挟み。調整・確認業務に追われ、変革の起点になれない。",
-    slug: null,
+    slug: "managers",
+    label: "中間管理職編",
   },
   {
     challenge: "女性活躍が「形だけ」になっている",
@@ -29,21 +30,25 @@ export const DIAGNOSIS_THEMES: DiagnosisTheme[] = [
   {
     challenge: "優秀な若手ほど辞めていく・育たない",
     body: "指示待ち・チャレンジしない。若手の価値観と組織文化のギャップ。",
-    slug: null,
+    slug: "youth",
+    label: "若手定着編",
   },
   {
     challenge: "経営チーム・組織長がバラバラ",
     body: "部門間の相互不可侵。対話の不在。次世代経営者も育っていない。",
-    slug: null,
+    slug: "executives",
+    label: "経営チーム編",
   },
   {
     challenge: "制度を変えても現場が変わらない",
     body: "ハード施策だけでソフト（意識・言動）が置き去り。施策が定着しない。",
-    slug: null,
+    slug: "change",
+    label: "変革定着編",
   },
   {
     challenge: "部門・世代・立場の間に壁がある",
     body: "一体感がない。対立、あるいは遠慮。「私たちのやり方」同士の衝突。",
-    slug: null,
+    slug: "boundaries",
+    label: "組織の壁編",
   },
 ];
