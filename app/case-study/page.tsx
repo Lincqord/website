@@ -9,7 +9,7 @@ import { CASES, SERVICE_LINKS } from "./data";
 export const metadata: Metadata = {
   title: "支援実績 | Lincqord",
   description:
-    "Lincqordの支援実績。女性活躍の風土改革、経営チームの対話、若手の離職・育成、組織文化の変革など、各業界の組織課題に「現状を知る→対話する→変える→成果につなげる」のステップで伴走した事例をご紹介します。",
+    "Lincqordの支援実績。女性活躍の風土改革、経営チームの対話、若手の離職・育成、組織文化の変革など、各業界の組織課題に「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」のステップで伴走した事例をご紹介します。",
 };
 
 const FEATURED = CASES.slice(0, 4);

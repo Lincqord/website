@@ -6,143 +6,157 @@ import WaveDivider from "../components/WaveDivider";
 export const metadata: Metadata = {
   title: "サービス | Lincqord",
   description:
-    "Lincqordのサービス一覧。「現状を知る→対話する→変える→成果につなげる」の4ステップで、組織文化診断・経営チームの対話・リーダーシップ開発・組織開発コンサルティングなどを、課題起点で組み合わせて提供します。",
+    "Lincqordのサービス一覧。「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」の4つのステップで、組織文化診断・アセスメント・対話の場づくり・研修・コーチング・変革プロジェクトを課題起点で組み合わせて提供します。",
 };
 
-type Service = {
+type Group = {
+  /** ページ内アンカー */
   id: string;
+  /** 旧サービス体系(s1〜s9)からのリンク互換用エイリアス */
+  aliases?: string[];
   name: string;
   desc: string;
-  tools?: string[];
-  themes?: string[];
+  methods: string[];
 };
 
-type Step = {
+type Layer = {
   no: string;
   name: string;
   lead: string;
-  services: Service[];
-  note?: string;
-  subdued?: boolean;
+  groups: Group[];
 };
 
-const STEPS: Step[] = [
+const LAYERS: Layer[] = [
   {
-    no: "STEP 1",
-    name: "現状を知る",
-    lead: "組織と人の現在地を可視化する",
-    services: [
+    no: "01",
+    name: "自分たちを知る",
+    lead: "組織と個人の現在地を、データと対話で可視化する",
+    groups: [
       {
-        id: "s1",
-        name: "組織文化診断",
-        desc: "組織文化と課題構造を定量×定性で可視化し、5段階モデルの現在地と優先課題を特定する。",
-        tools: [
-          "社員アンケート",
-          "インタビュー",
-          "座談会",
-          "ホフステード6次元",
-          "IDI",
-        ],
+        id: "know-org",
+        aliases: ["s1"],
+        name: "組織を知る",
+        desc: "組織文化と課題の構造を可視化する。",
+        methods: ["組織文化診断", "社員アンケート", "インタビュー"],
       },
       {
-        id: "s2",
-        name: "リーダー・個人アセスメント",
-        desc: "リーダー・個人の意識構造や強みを可視化し、育成・登用・コーチングの起点にする。",
-        tools: [
-          "LCP（Leadership Circle Profile）",
-          "ストレングスファインダー",
-          "IDI",
-          "360度サーベイ",
+        id: "know-self",
+        aliases: ["s2"],
+        name: "個人を知る",
+        desc: "リーダー・個人の強みと意識の構造を可視化する。",
+        methods: [
+          "アセスメント（LCP／ストレングスファインダー®）",
+          "コーチング",
         ],
       },
     ],
   },
   {
-    no: "STEP 2",
-    name: "対話する",
-    lead: "違いを扱える関係をつくる",
-    services: [
+    no: "02",
+    name: "他者と対話する",
+    lead: "違いを扱える対話を、学び・実践し・深める",
+    groups: [
       {
-        id: "s3",
-        name: "経営チーム・組織長ダイアログ",
-        desc: "経営層・組織長が本音で向き合い、認識を揃え、変革のリーダーシップを起動する対話セッション。",
-        tools: ["システムコーチング", "2on2"],
-      },
-      {
-        id: "s4",
-        name: "「違いをチカラに変える」ワークショップ",
-        desc: "違いを「認識→理解→活かす」へ転換する対話型ワークショップ。テーマ別に展開。",
-        themes: [
-          "アンコンシャスバイアス",
-          "マジョリティのインクルージョン",
-          "世代間・部門間の相互理解",
+        id: "dialogue-skill",
+        name: "対話の作法を知る",
+        desc: "対話の質を決める技術を身につける。",
+        methods: [
+          "クリティカルシンキング研修",
+          "ファシリテーション研修",
+          "質問力研修",
+          "コーチング研修",
         ],
       },
       {
-        id: "s5",
-        name: "対話の場の設計・ファシリテーション",
-        desc: "声を集め、聴き合い、動き出す「場」を設計・運営。組織の中に対話の文化を根づかせる。",
-        tools: ["タウンホール", "座談会", "2on2"],
+        id: "dialogue-do",
+        aliases: ["s3", "s4", "s5"],
+        name: "対話をする",
+        desc: "立場や世代を越えて、本音を安全に扱う場を実践する。",
+        methods: ["座談会", "システムコーチング®", "2on2コーチング"],
+      },
+      {
+        id: "dialogue-reflect",
+        name: "対話を内省する",
+        desc: "対話で得た気づきを、自分の変化に落とし込む。",
+        methods: ["コーチング", "ジャーナリング"],
       },
     ],
   },
   {
-    no: "STEP 3",
-    name: "変える",
-    lead: "人と組織の変化を定着させる",
-    services: [
+    no: "03",
+    name: "個人と組織が変わる",
+    lead: "能力・意識・文化——3つの次元で変化を起こす",
+    groups: [
       {
-        id: "s6",
-        name: "リーダーシップ開発プログラム",
-        desc: "階層・対象別に設計する研修プログラム。知識・感情・メタ認知・行動（CQの4つの力）を一気通貫で扱う。",
-        themes: ["次世代経営層", "管理職", "女性リーダー", "若手・中堅"],
-        tools: ["ファシリテーション・会議運営モジュール"],
-      },
-      {
-        id: "s7",
-        name: "エグゼクティブ／チームコーチング",
-        desc: "経営層個人の内省・メタ認知と、経営チーム・部門の「関係性そのもの」への働きかけを、プロコーチが伴走。",
-        tools: [
-          "エグゼクティブ1on1",
-          "関係性システムコーチング（ORSC）",
-          "LCP",
-          "360度FB",
+        id: "grow-skill",
+        name: "自分の能力を高める",
+        desc: "成果を出すためのビジネススキルを鍛える。",
+        methods: [
+          "クリティカルシンキング研修",
+          "ファシリテーション研修",
+          "経営戦略研修",
+          "マーケティング研修",
+          "営業力強化",
+          "マネジメント力強化",
+          "コーチング研修",
         ],
       },
       {
-        id: "s8",
-        name: "組織開発コンサルティング（変革伴走）",
-        desc: "診断・対話・育成を組み合わせ、変革テーマの方針策定から現場の定着まで中長期で伴走する。",
-        themes: ["DE&I戦略", "ビジョン策定・浸透", "DX・働き方のカルチャー変革"],
+        id: "grow-mindset",
+        aliases: ["s6", "s7"],
+        name: "自分の意識を変える",
+        desc: "ものの見方と、リーダーとしてのあり方を変える。",
+        methods: ["コーチング", "2on2コーチング", "リーダーシップ研修"],
+      },
+      {
+        id: "culture-change",
+        aliases: ["s8"],
+        name: "組織の文化が変わる",
+        desc: "「私たちのやり方」を、未来に向けてつくり直す。",
+        methods: ["ビジョン策定・浸透プロジェクト", "組織変革プロジェクト組成"],
       },
     ],
   },
   {
-    no: "STEP 4",
-    name: "成果につなげる",
-    lead: "変化を事業の成果に結びつける",
-    subdued: true,
-    services: [
+    no: "04",
+    name: "成果を産む",
+    lead: "変化を一過性で終わらせず、個人と組織の成果へつなげる",
+    groups: [
       {
-        id: "s9",
-        name: "成果の見える化・定着レビュー",
-        desc: "変革の効果を定点観測し、行動変容→組織指標（エンゲージメント・離職率・登用率など）→事業成果への接続を可視化する。再診断とセットで「Before / After」を示し、次の一手につなげる。",
-        tools: ["パルスサーベイ・再診断", "効果測定レポート", "経営報告会"],
+        id: "results-individual",
+        name: "個人が成果を産む",
+        desc: "現実の業務テーマで、成果を出し切るまで伴走する。",
+        methods: ["業務テーマ推進アドバイス", "進捗フォロー", "コーチング"],
+      },
+      {
+        id: "results-org",
+        aliases: ["s9"],
+        name: "組織が成果を産む",
+        desc: "組織の変化を定点で確かめ、次の一手につなげる。",
+        methods: ["定点観測", "システムコーチング®", "2on2コーチング"],
       },
     ],
-    note: "新設のステップとして設計を進めています。詳細はお気軽にご相談ください。",
   },
 ];
 
-function Tag({ label, ghost }: { label: string; ghost?: boolean }) {
+const ASSESSMENT_NOTES = [
+  {
+    name: "LCP（The Leadership Circle Profile）",
+    desc: "リーダーの意識構造（クリエイティブ／リアクティブ）を360度で可視化する国際的なアセスメント。",
+    href: "https://leadershipcircle.com/ja/",
+    label: "公式サイト",
+  },
+  {
+    name: "ストレングスファインダー®（現・クリフトンストレングス）",
+    desc: "個人の強みを34の資質で可視化する、Gallup社のアセスメント。",
+    href: "https://www.gallup.com/cliftonstrengths/ja/home.aspx",
+    label: "公式サイト",
+  },
+];
+
+function Tag({ label }: { label: string }) {
   return (
-    <span
-      className={`inline-block text-xs px-2.5 py-0.5 rounded-full border whitespace-nowrap ${
-        ghost
-          ? "bg-surface/60 text-muted border-border"
-          : "bg-brand-orange/10 text-brand-orange border-brand-orange/30"
-      }`}
-    >
+    <span className="inline-block text-xs px-2.5 py-1 rounded-full border bg-brand-teal/5 text-brand-teal-deep border-brand-teal/25 whitespace-nowrap">
       {label}
     </span>
   );
@@ -154,7 +168,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="SERVICES"
         title="サービス"
-        lead="Lincqordのサービスは、研修ありきではなく「課題起点」。まず組織の現状を知ることから始め、対話で土壌を耕し、人と組織の行動を変え、成果につなげる——4つのステップで貴社に伴走します。"
+        lead="Lincqordのサービスは、研修ありきではなく「課題起点」。まず自分たちを知ることから始め、対話で土壌を耕し、個人と組織の変化を起こし、成果につなげる——4つのステップで貴社に伴走します。"
       />
 
       {/* 導入 */}
@@ -162,14 +176,14 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
             <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
-              いきなり研修から入らない。まず、現状を知ることから
+              いきなり研修から入らない。まず、自分たちを知ることから
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
               施策の形骸化・離職・管理職の疲弊——こうした症状の裏には、
               組織の文化、つまり「私たちのやり方」のぶつかり合いが隠れていることが少なくありません。
               だからLincqordは、目に見える症状にすぐ手を打つのではなく、
               課題の構造を明らかにするところから始めます。
-              現状の把握から成果の実感まで、4つのステップでご一緒します。
+              自分たちを知ることから成果の実感まで、4つのステップでご一緒します。
             </p>
           </div>
         </div>
@@ -177,7 +191,7 @@ export default function ServicesPage() {
 
       <WaveDivider from="white" to="surface" />
 
-      {/* 4ステップ */}
+      {/* 4ステップ × 10カテゴリ */}
       <section className="bg-surface py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
@@ -185,83 +199,99 @@ export default function ServicesPage() {
               4 STEPS
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-              現状を知る → 対話する → 変える →
+              自分たちを知る → 他者と対話する →
               <br className="hidden sm:block" />
-              成果につなげる
+              個人と組織が変わる → 成果を産む
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-              課題とフェーズに合わせて、9つのサービスを組み合わせて提供します。
+              課題とフェーズに合わせて、各ステップのメニューを組み合わせて提供します。
             </p>
           </div>
 
           <div className="mt-14 space-y-8">
-            {STEPS.map((step) => (
+            {LAYERS.map((layer) => (
               <div
-                key={step.no}
-                className={`rounded-2xl border bg-white p-7 lg:p-10 ${
-                  step.subdued ? "border-brand-orange/30" : "border-border"
-                }`}
+                key={layer.no}
+                className="rounded-2xl border border-border bg-white p-7 lg:p-10"
               >
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span
-                    className={`font-display tracking-widest text-sm ${
-                      step.subdued ? "text-brand-orange" : "text-brand-teal"
-                    }`}
-                  >
-                    {step.no}
+                  <span className="font-display tracking-widest text-sm text-brand-teal">
+                    STEP {layer.no}
                   </span>
                   <h3 className="text-xl lg:text-2xl font-700 tracking-tight">
-                    {step.name}
+                    {layer.name}
                     <span className="ml-3 text-sm lg:text-base font-500 text-muted">
-                      ― {step.lead}
+                      ― {layer.lead}
                     </span>
                   </h3>
                 </div>
 
                 <div
                   className={`mt-6 grid gap-5 ${
-                    step.services.length >= 3
-                      ? "md:grid-cols-3"
-                      : step.services.length === 2
-                        ? "md:grid-cols-2"
-                        : ""
+                    layer.groups.length >= 3 ? "md:grid-cols-3" : "md:grid-cols-2"
                   }`}
                 >
-                  {step.services.map((svc) => (
+                  {layer.groups.map((g) => (
                     <div
-                      key={svc.name}
-                      id={svc.id}
+                      key={g.id}
+                      id={g.id}
                       className="scroll-mt-28 rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
                     >
+                      {g.aliases?.map((a) => (
+                        <span key={a} id={a} className="scroll-mt-28" aria-hidden />
+                      ))}
                       <h4 className="text-base lg:text-lg font-700 leading-snug flex items-start gap-2.5">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-orange shrink-0" />
-                        {svc.name}
+                        {g.name}
                       </h4>
                       <p className="mt-3 text-sm leading-relaxed text-muted flex-1">
-                        {svc.desc}
+                        {g.desc}
                       </p>
-                      {(svc.tools || svc.themes) && (
-                        <div className="mt-4 flex flex-wrap gap-1.5">
-                          {svc.themes?.map((t) => (
-                            <Tag key={t} label={t} ghost />
-                          ))}
-                          {svc.tools?.map((t) => (
-                            <Tag key={t} label={t} />
-                          ))}
-                        </div>
-                      )}
+                      <div className="mt-4 flex flex-wrap gap-1.5">
+                        {g.methods.map((m) => (
+                          <Tag key={m} label={m} />
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
 
-                {step.note && (
-                  <p className="mt-5 text-xs leading-relaxed text-muted">
-                    ※ {step.note}
-                  </p>
+                {layer.no === "01" && (
+                  <div className="mt-5 rounded-xl bg-surface/70 border border-border p-5">
+                    <p className="text-xs font-700 text-foreground/70 mb-2">
+                      アセスメントについて
+                    </p>
+                    <ul className="space-y-1.5">
+                      {ASSESSMENT_NOTES.map((n) => (
+                        <li
+                          key={n.name}
+                          className="text-xs leading-relaxed text-muted"
+                        >
+                          <span className="font-700 text-foreground/80">
+                            {n.name}
+                          </span>
+                          ：{n.desc}
+                          <a
+                            href={n.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-1 text-brand-teal underline underline-offset-2 hover:text-brand-teal-deep"
+                          >
+                            {n.label} ↗
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
               </div>
             ))}
           </div>
+
+          <p className="mt-8 text-xs leading-relaxed text-muted">
+            ※「システムコーチング」はCRR Global Japan合同会社の、「ストレングスファインダー」「クリフトンストレングス」はGallup,
+            Inc.の登録商標です。
+          </p>
         </div>
       </section>
 

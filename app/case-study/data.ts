@@ -10,15 +10,15 @@ export type Case = {
 
 /* サービス連鎖用: /services ページの各サービスカード（アンカーid）との対応 */
 export const SERVICE_LINKS: Record<string, { name: string; href: string }> = {
-  s1: { name: "組織文化診断", href: "/services#s1" },
-  s2: { name: "リーダー・個人アセスメント", href: "/services#s2" },
-  s3: { name: "経営チーム・組織長ダイアログ", href: "/services#s3" },
-  s4: { name: "「違いをチカラに変える」ワークショップ", href: "/services#s4" },
-  s5: { name: "対話の場の設計・ファシリテーション", href: "/services#s5" },
-  s6: { name: "リーダーシップ開発プログラム", href: "/services#s6" },
-  s7: { name: "エグゼクティブ／チームコーチング", href: "/services#s7" },
-  s8: { name: "組織開発コンサルティング（変革伴走）", href: "/services#s8" },
-  s9: { name: "成果の見える化・定着レビュー", href: "/services#s9" },
+  s1: { name: "組織文化診断", href: "/services#know-org" },
+  s2: { name: "個人アセスメント", href: "/services#know-self" },
+  s3: { name: "経営チーム・組織長の対話", href: "/services#dialogue-do" },
+  s4: { name: "対話ワークショップ", href: "/services#dialogue-do" },
+  s5: { name: "対話の場づくり", href: "/services#dialogue-do" },
+  s6: { name: "リーダーシップ研修", href: "/services#grow-mindset" },
+  s7: { name: "エグゼクティブ／チームコーチング", href: "/services#grow-mindset" },
+  s8: { name: "組織変革プロジェクト", href: "/services#culture-change" },
+  s9: { name: "定点観測（成果の見える化）", href: "/services#results-org" },
 };
 
 export const CHALLENGES: string[] = [
@@ -40,7 +40,7 @@ export const CASES: Case[] = [
     issue:
       "制度や女性向け研修を重ねても女性管理職が増えず、「結局、形だけでは」という声が社内から出ていた。",
     action:
-      "意識調査で実態と構造を可視化（現状を知る）。男性管理職を中心とした意識改革ワークショップ（対話する）と、女性リーダー育成プログラム（変える）を組み合わせて実施。",
+      "意識調査で実態と構造を可視化（自分たちを知る）。男性管理職を中心とした意識改革ワークショップ（他者と対話する）と、女性リーダー育成プログラム（個人と組織が変わる）を組み合わせて実施。",
     change:
       "「変わるべきは女性ではなく組織の側かもしれない」という認識が管理職に広がり、仕事のアサインや登用基準を見直す動きが始まった。",
   },
@@ -52,7 +52,7 @@ export const CASES: Case[] = [
     issue:
       "制度や方針を変えても現場の行動が変わらず、改革が掛け声で終わることが繰り返されていた。",
     action:
-      "組織文化診断で課題の構造を可視化（現状を知る）。組織長同士が本音で語り合う対話セッションを重ね（対話する）、各職場での行動の変化に伴走（変える）。",
+      "組織文化診断で課題の構造を可視化（自分たちを知る）。組織長同士が本音で語り合う対話セッションを重ね（他者と対話する）、各職場での行動の変化に伴走（個人と組織が変わる）。",
     change:
       "組織長の間で部門を越えた本音の対話が生まれ、現場でも新しい行動を試す動きが出てきた。",
   },
