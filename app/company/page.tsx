@@ -27,7 +27,6 @@ export default function CompanyPage() {
       <PageHero
         eyebrow="COMPANY"
         title="会社概要"
-        lead="Lincqordは、CQ（文化知性）の知恵を用いるカルチャーの専門家集団。それぞれの個性を保ったまま協働できる“第三の組織文化”づくりを支援します"
       />
 
       {/* Mission / Vision */}
@@ -47,11 +46,13 @@ export default function CompanyPage() {
                 className="w-full max-w-[22rem] h-auto"
               />
             </h2>
+            <p className="mt-6 text-lg text-foreground">組織は、違いの集合体だ。</p>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              違いは、チカラだ。同じような空間で、同じように考え、同じように働くだけでは、もう何も生まれません。
-              現代のビジネスに必要なのは、異なる発想・異なる仕組み・異なる空気——つまり
-              “Difference”。組織に必要な“Difference”を築く。それが私たちの使命です
+              リンクォードは、個人と組織の文化知性（CQ）を高め、
+              違いを新たな価値や成果へとつなげることを、
+              一人ひとりと、一社一社と、共に実現します。
             </p>
+            <p className="mt-6 text-lg text-foreground">違いを、力に。</p>
           </div>
 
           <div className="rounded-2xl bg-surface p-9 lg:p-11">
@@ -59,12 +60,15 @@ export default function CompanyPage() {
               VISION
             </p>
             <h2 className="mt-4 text-2xl font-700 leading-snug">
-              “違い”をチカラにする組織をつくる
+              個人と組織が、互いの真価を引き出す社会へ。
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              国籍・ジェンダー・年代・学歴・部門——違いのある社員の個性が、
-              「面倒なもの」として扱われていないか。その声は十分に生かされているか。Lincqordは、
-              CQの知恵でその課題に答えを見つけ、全ての社員が力を発揮できる組織づくりを支援します
+              個人は組織に新しい視点をもたらし、組織は個人の強みを引き出す。
+              互いに影響を与え合うことで、個人も組織も、共に成長していく。
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted">
+              リンクォードが描くのは、この活かし合う関係があらゆる組織に息づき、
+              個人と組織が共に未来を創る社会です。
             </p>
             <Link
               href="/uniqueness"
@@ -76,21 +80,58 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* Differenceをチカラにする組織 */}
+      {/* Lincqordの4つの視点 */}
       <section className="bg-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
           <div className="rounded-2xl border border-border bg-white p-7 lg:p-12">
             <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">
-              Differenceをチカラにする組織
+              Lincqordは4つの視点を持って、クライアントと向き合います
             </h2>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/difference-organization.png"
-              alt="Differenceをチカラにする組織 — 組織の視点と個人の視点、Logicの世界とMentalityの世界の4象限"
-              width={1536}
-              height={946}
-              className="mt-8 w-full h-auto"
-            />
+            <div className="relative mt-12 sm:px-14 lg:px-20 sm:py-8">
+              {/* 軸と中心点 */}
+              <div aria-hidden className="hidden sm:block absolute left-1/2 top-0 bottom-0 w-px bg-brand-teal/30" />
+              <div aria-hidden className="hidden sm:block absolute top-1/2 left-4 right-4 h-px bg-brand-teal/30" />
+              <div aria-hidden className="hidden sm:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-brand-orange" />
+              {/* 4隅ラベル */}
+              <span className="hidden sm:block absolute left-1/2 -top-4 -translate-x-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">組織</span>
+              <span className="hidden sm:block absolute left-1/2 -bottom-4 -translate-x-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">個人</span>
+              <span className="hidden sm:block absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">論理</span>
+              <span className="hidden sm:block absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">心理</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-x-14 sm:gap-y-12">
+                {[
+                  [
+                    "激変する外部環境は、事業にどんな影響を与えているか？",
+                    "経営戦略・組織戦略は、その変化に応えられているか？",
+                  ],
+                  [
+                    "今の組織文化は事業を推進させているか？阻害しているか？",
+                    "未来を見据えた時に、どのような組織文化が必要なのか？",
+                  ],
+                  [
+                    "事業を推進する力は、いま十分に備わっているか？",
+                    "これからの事業に、どんな能力が必要になるのか？",
+                  ],
+                  [
+                    "リーダーシップの発揮を阻む思い込みはなにか？",
+                    "どんな価値観や経験が、その人の判断とリーダーシップを形づくっているか？",
+                  ],
+                ].map((qs, i) => (
+                  <div
+                    key={i}
+                    className="rounded-xl border border-border bg-white p-6 shadow-[0_4px_16px_rgba(3,52,55,0.05)]"
+                  >
+                    {qs.map((q) => (
+                      <p key={q} className="text-sm leading-loose text-foreground [&+&]:mt-3 mt-3 first:mt-0">
+                        {q}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <p className="mt-10 text-center text-sm text-muted">
+              Lincqordは、この4つの視点を行き来しながら、課題の本質を捉えます
+            </p>
           </div>
         </div>
       </section>

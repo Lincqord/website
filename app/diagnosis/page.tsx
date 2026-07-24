@@ -16,7 +16,6 @@ export default function DiagnosisIndexPage() {
       <PageHero
         eyebrow="DIAGNOSIS"
         title="組織の現在地診断"
-        lead="いくつかの質問に答えるだけで、組織の現在地を5段階で確かめられる無料の簡易診断です（約3分）。気になる課題を選んでください"
       />
 
       <section className="bg-white pb-20 lg:pb-28">

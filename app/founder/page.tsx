@@ -15,7 +15,6 @@ export default function FounderPage() {
       <PageHero
         eyebrow="FOUNDER"
         title="代表紹介"
-        lead="“違い”をチカラにする組織づくりに、経営の現場で伴走する"
       />
 
       {/* Profile */}

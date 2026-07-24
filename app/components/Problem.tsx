@@ -18,9 +18,7 @@ export default function Problem() {
             CHALLENGES
           </p>
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-            こんな組織課題は
-            <br className="sm:hidden" />
-            ありませんか？
+            こんな組織課題はありませんか？
           </h2>
         </div>
 
@@ -28,9 +26,9 @@ export default function Problem() {
           {PROBLEMS.map((p) => (
             <div
               key={p.title}
-              className="bg-surface rounded-2xl border border-border p-8 hover:shadow-md transition-shadow"
+              className="group bg-surface rounded-2xl border border-transparent p-8 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)] hover:border-brand-teal/25"
             >
-              <span className="block h-1 w-10 rounded-full bg-brand-teal/40" />
+              <span className="block h-1 w-10 rounded-full bg-brand-teal/40 transition-all duration-200 group-hover:w-16 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-orange" />
               <h3 className="mt-5 text-lg font-700 leading-relaxed">{p.title}</h3>
             </div>
           ))}

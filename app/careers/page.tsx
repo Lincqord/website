@@ -14,7 +14,6 @@ export default function CareersPage() {
       <PageHero
         eyebrow="CAREERS"
         title="採用情報"
-        lead="“違い”をチカラに変える挑戦を、共に。多様なバックグラウンドを歓迎します"
       />
 
       <section className="bg-white py-20 lg:py-28">

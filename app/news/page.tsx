@@ -42,7 +42,6 @@ export default function NewsPage() {
       <PageHero
         eyebrow="INSIGHTS"
         title="知見・ノウハウ"
-        lead="CQ（文化知性）の基礎知識を中心に、組織開発やダイバーシティに関するコラム・セミナー情報を、毎週発信しています"
       />
 
       <section className="bg-white py-16 lg:py-24">

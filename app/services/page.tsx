@@ -168,7 +168,6 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="SERVICES"
         title="サービス"
-        lead="Lincqordのサービスは、研修ありきではなく「課題起点」。まず自分たちを知ることから始め、対話で土壌を耕し、個人と組織の変化を起こし、成果につなげる——4つのアプローチで貴社に伴走します"
       />
 
       {/* 導入 */}
@@ -205,9 +204,7 @@ export default function ServicesPage() {
               APPROACH
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-              自分たちを知る → 他者と対話する →
-              <br className="hidden sm:block" />
-              個人と組織が変わる → 成果を産む
+              自分たちを知る → 他者と対話する → 個人と組織が変わる → 成果を産む
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
               課題とフェーズに合わせて、各アプローチのメニューを組み合わせて提供します

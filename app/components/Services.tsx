@@ -8,12 +8,12 @@ const STEPS = [
     body: "対話の技術を学び、座談会やシステムコーチング®で本音を扱える場を実践し、内省まで深めます",
   },
   {
-    title: "個人と組織が変わる",
-    body: "能力・意識・文化の3つの次元に働きかけ、人と組織の変化を実際に起こします",
+    title: "個人が育つ",
+    body: "研修とコーチングで、一人ひとりの能力と意識を磨き、行動の変化につなげます",
   },
   {
-    title: "成果を産む",
-    body: "業務テーマの推進と定点観測で、変化を個人と組織の成果へつなげます",
+    title: "組織が育つ",
+    body: "ビジョンと文化に働きかけ、組織の変化を定着させ、成果へつなげます",
   },
 ];
 
@@ -26,13 +26,10 @@ export default function Services() {
             SERVICES
           </p>
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-            課題起点で伴走する、
-            <br className="hidden sm:block" />
-            4つのアプローチ
+            課題起点で伴走する、4つのアプローチ
           </h2>
           <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-            研修ありきではなく、貴社の課題が出発点。現状の把握から成果の実感まで、
-            4つのアプローチでご一緒します
+            研修などの施策ありきではなく、貴社の現状把握と課題抽出が出発点。丁寧に4つのアプローチをご一緒します
           </p>
         </div>
 

@@ -69,7 +69,6 @@ export default function CQPage() {
       <PageHero
         eyebrow="WHAT IS CQ"
         title="CQ（文化知性）とは"
-        lead="CQ（Cultural Intelligence）は、文化背景の異なる人々と協働し、成果を出す力。Lincqordのすべての支援の土台にある考え方です"
       />
 
       {/* 文化＝私たちのやり方 */}

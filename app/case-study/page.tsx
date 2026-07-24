@@ -20,7 +20,6 @@ export default function CaseStudyPage() {
       <PageHero
         eyebrow="CASE STUDY"
         title="支援実績"
-        lead="業界を問わず、多くの企業の組織課題に伴走してきました。「課題 → 支援内容 → 変化」の流れで、代表的な事例をご紹介します"
       />
 
       {/* Featured */}
