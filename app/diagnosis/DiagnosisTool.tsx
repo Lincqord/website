@@ -63,8 +63,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
           ))}
         </ul>
         <div className="mt-8 text-center">
-          <button
-            type="button"
+          <button type="button"
             onClick={start}
             className="btn-primary font-700 text-base px-10 py-3.5 rounded-2xl shadow-sm cursor-pointer"
           >
@@ -80,15 +79,13 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
     const q = data.questions[idx];
     return (
       <div className="bg-white rounded-2xl border border-border p-7 lg:p-10 shadow-sm">
-        <div
-          className="h-1.5 rounded-full bg-border overflow-hidden"
+        <div className="h-1.5 rounded-full bg-border overflow-hidden"
           role="progressbar"
           aria-valuemin={0}
           aria-valuemax={total}
           aria-valuenow={idx}
         >
-          <div
-            className="h-full bg-brand-teal transition-all duration-300"
+          <div className="h-full bg-brand-teal transition-all duration-300"
             style={{ width: `${(idx / total) * 100}%` }}
           />
         </div>
@@ -103,8 +100,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
         </p>
         <div className="mt-5 grid gap-2.5">
           {OPTIONS.map((opt) => (
-            <button
-              key={opt.value}
+            <button key={opt.value}
               type="button"
               onClick={() => answer(opt.value)}
               className="w-full text-left text-sm lg:text-base px-5 py-3 rounded-xl border border-border bg-white hover:border-brand-teal hover:bg-surface transition-colors cursor-pointer"
@@ -114,8 +110,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
           ))}
         </div>
         {idx > 0 && (
-          <button
-            type="button"
+          <button type="button"
             onClick={goBack}
             className="mt-5 text-sm text-muted underline underline-offset-2 hover:text-brand-teal transition-colors cursor-pointer"
           >
@@ -142,8 +137,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
           const isActive = s === result.current;
           const isSub = s === result.sub;
           return (
-            <div
-              key={s}
+            <div key={s}
               className={`flex-1 pt-1.5 text-center border-t-4 ${
                 isActive
                   ? "border-brand-orange"
@@ -152,8 +146,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
                     : "border-border"
               }`}
             >
-              <p
-                className={`text-[11px] leading-tight ${
+              <p className={`text-[11px] leading-tight ${
                   isActive ? "font-700 text-foreground" : "text-muted"
                 }`}
               >
@@ -202,11 +195,9 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
         <p className="text-sm lg:text-base leading-relaxed">
           <span className="font-700">この結果、思い当たるところはありましたか？</span>
           <br />
-          実際の組織はもっと複雑です。Lincqordは診断・対話・変革伴走で
-          「違いをチカラにする組織」づくりを支援しています。
+          実際の組織はもっと複雑です。Lincqordは診断・対話・変革伴走で「違いをチカラにする組織」づくりを支援しています。
         </p>
-        <Link
-          href="/contact"
+        <Link href="/contact"
           className="mt-5 inline-block btn-accent font-700 px-10 py-3.5 rounded-2xl shadow-sm"
         >
           無料で相談する
@@ -214,8 +205,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
       </div>
 
       <div className="mt-5 text-center">
-        <button
-          type="button"
+        <button type="button"
           onClick={start}
           className="text-sm text-muted underline underline-offset-2 hover:text-brand-teal transition-colors cursor-pointer"
         >

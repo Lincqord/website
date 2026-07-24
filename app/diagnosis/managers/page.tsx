@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 export default function ManagersDiagnosisPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="DIAGNOSIS"
+      <PageHero eyebrow="DIAGNOSIS"
         title={MANAGERS_DIAGNOSIS.title}
         lead={MANAGERS_DIAGNOSIS.lead}
       />

@@ -29,8 +29,7 @@ export default function News() {
               知見・ノウハウ
             </h2>
           </div>
-          <a
-            href="/news"
+          <a href="/news"
             className="text-sm font-500 text-brand-teal hover:underline shrink-0"
           >
             すべて見る →
@@ -40,8 +39,7 @@ export default function News() {
         <ul className="mt-10 divide-y divide-border border-t border-border">
           {NEWS.map((n) => (
             <li key={n.title}>
-              <a
-                href="/news"
+              <a href="/news"
                 className="group flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 hover:bg-surface -mx-4 px-4 rounded-lg transition-colors"
               >
                 <time className="text-sm text-muted font-display tracking-wide shrink-0">

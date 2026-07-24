@@ -22,14 +22,12 @@ export default function CaseExplorer() {
           課題から探す
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <FilterChip
-            label="すべて"
+          <FilterChip label="すべて"
             active={challenge === null}
             onClick={() => setChallenge(null)}
           />
           {CHALLENGES.map((c) => (
-            <FilterChip
-              key={c}
+            <FilterChip key={c}
               label={c}
               active={challenge === c}
               onClick={() => setChallenge(challenge === c ? null : c)}
@@ -44,14 +42,12 @@ export default function CaseExplorer() {
           サービスから探す
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <FilterChip
-            label="すべて"
+          <FilterChip label="すべて"
             active={service === null}
             onClick={() => setService(null)}
           />
           {Object.entries(SERVICE_LINKS).map(([id, s]) => (
-            <FilterChip
-              key={id}
+            <FilterChip key={id}
               label={s.name}
               active={service === id}
               onClick={() => setService(service === id ? null : id)}
@@ -63,16 +59,14 @@ export default function CaseExplorer() {
       {/* 一覧 */}
       <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((c) => (
-          <div
-            key={c.theme + c.industry}
+          <div key={c.theme + c.industry}
             className="bg-white rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
           >
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-xs font-500 text-white bg-foreground/70 rounded-full px-2.5 py-0.5">
                 {c.industry}
               </span>
-              <button
-                onClick={() =>
+              <button onClick={() =>
                   setChallenge(challenge === c.challenge ? null : c.challenge)
                 }
                 className="text-[11px] font-500 text-brand-teal hover:underline"
@@ -86,8 +80,7 @@ export default function CaseExplorer() {
             </p>
             <div className="mt-4 pt-3 border-t border-border flex flex-wrap gap-1.5">
               {c.services.map((id) => (
-                <Link
-                  key={id}
+                <Link key={id}
                   href={SERVICE_LINKS[id].href}
                   className="text-[11px] px-2.5 py-0.5 rounded-full border border-brand-teal/30 bg-brand-teal/5 text-brand-teal-deep hover:bg-brand-teal/10 transition-colors"
                 >
@@ -118,8 +111,7 @@ function FilterChip({
   onClick: () => void;
 }) {
   return (
-    <button
-      onClick={onClick}
+    <button onClick={onClick}
       className={`text-xs px-3.5 py-1.5 rounded-full border transition-colors ${
         active
           ? "bg-brand-teal text-white border-brand-teal"

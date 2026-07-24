@@ -66,8 +66,7 @@ const POWERS = [
 export default function CQPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="WHAT IS CQ"
+      <PageHero eyebrow="WHAT IS CQ"
         title="CQ（文化知性）とは"
       />
 
@@ -78,18 +77,13 @@ export default function CQPage() {
             文化とは、「私たちのやり方」のこと
           </h2>
           <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
-            文化と聞くと、国や民族の話に思えるかもしれません。しかし文化とは、
-            もっと身近な「私たちのやり方」のこと。部門には部門の、世代には世代の、
-            会社には会社の「当たり前」があります
+            文化と聞くと、国や民族の話に思えるかもしれません。しかし文化とは、もっと身近な「私たちのやり方」のこと。部門には部門の、世代には世代の、会社には会社の「当たり前」があります
           </p>
           <p className="mt-4 text-base lg:text-lg leading-relaxed text-muted">
-            組織とは、この「私たちのやり方」同士のぶつかり合いです。
-            部門間の壁、世代のギャップ、施策が現場に根づかない——
-            多くの組織課題の裏には、このぶつかり合いをうまく扱えていないという共通の構造があります
+            組織とは、この「私たちのやり方」同士のぶつかり合いです。部門間の壁、世代のギャップ、施策が現場に根づかない——多くの組織課題の裏には、このぶつかり合いをうまく扱えていないという共通の構造があります
           </p>
           <p className="mt-4 text-base lg:text-lg leading-relaxed text-muted">
-            CQ（文化知性）は、その違いを対立の火種ではなく成果の源泉に変える力。
-            生まれ持った才能ではなく、誰もが伸ばせる能力です
+            CQ（文化知性）は、その違いを対立の火種ではなく成果の源泉に変える力。生まれ持った才能ではなく、誰もが伸ばせる能力です
           </p>
         </div>
       </section>
@@ -103,15 +97,12 @@ export default function CQPage() {
             組織の現在地がわかる、5段階モデル
           </h2>
           <p className="mt-4 max-w-2xl text-muted leading-relaxed">
-            違いへの向き合い方には、5つの段階があります。
-            組織が今どの段階にいるかがわかると、打つべき手も見えてきます。
-            多くの企業は3つめの「最小化」——制度は整えたのに実態が変わらない段階——で停滞しています
+            違いへの向き合い方には、5つの段階があります。組織が今どの段階にいるかがわかると、打つべき手も見えてきます。多くの企業は3つめの「最小化」——制度は整えたのに実態が変わらない段階——で停滞しています
           </p>
 
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {STAGES.map((s, i) => (
-              <div
-                key={s.en}
+              <div key={s.en}
                 className="relative rounded-2xl border border-border p-6"
                 style={{
                   background: `linear-gradient(135deg, rgba(0,127,137,${0.04 + i * 0.02}) 0%, rgba(255,127,0,${0.02 + i * 0.03}) 100%)`,
@@ -151,18 +142,14 @@ export default function CQPage() {
             CQを構成する、4つの力
           </h2>
           <p className="mt-4 max-w-2xl text-muted leading-relaxed">
-            CQは、4つの力の組み合わせで成り立ちます。
-            どれか1つ欠けても、行動は変わりません。
-            知識を学ぶ研修だけで組織が変わらないのは、このためです
+            CQは、4つの力の組み合わせで成り立ちます。どれか1つ欠けても、行動は変わりません。知識を学ぶ研修だけで組織が変わらないのは、このためです
           </p>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {POWERS.map((c, i) => (
-              <div
-                key={c.plain}
+              <div key={c.plain}
                 className="rounded-2xl border border-border bg-white p-7"
               >
-                <span
-                  className={`font-display text-xs tracking-widest ${
+                <span className={`font-display text-xs tracking-widest ${
                     i % 2 === 0 ? "text-brand-teal" : "text-brand-orange"
                   }`}
                 >
@@ -177,9 +164,7 @@ export default function CQPage() {
             ))}
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted">
-            Lincqordの支援は、この4つを一気通貫で扱います。知識のインプットに、
-            コーチングによる意欲づけ、自分を俯瞰するフレームワーク、行動の実践と振り返りを組み合わせ、
-            「学んだのに変わらない」を乗り越えます
+            Lincqordの支援は、この4つを一気通貫で扱います。知識のインプットに、コーチングによる意欲づけ、自分を俯瞰するフレームワーク、行動の実践と振り返りを組み合わせ、「学んだのに変わらない」を乗り越えます
           </p>
         </div>
       </section>
@@ -190,9 +175,7 @@ export default function CQPage() {
       <section className="bg-surface py-12 lg:py-16">
         <div className="mx-auto max-w-3xl px-5 lg:px-8 text-center">
           <p className="text-xs leading-relaxed text-muted/80">
-            ※ CQは Earley &amp; Ang らの Cultural Intelligence 研究、5段階モデルは
-            IDI（Intercultural Development Inventory）等の異文化発達研究に基づくフレームワークです。
-            文化の違いを読み解く際には、国民文化を6つの次元で捉えるホフステードのモデルも活用します
+            ※ CQは Earley &amp; Ang らの Cultural Intelligence 研究、5段階モデルはIDI（Intercultural Development Inventory）等の異文化発達研究に基づくフレームワークです。文化の違いを読み解く際には、国民文化を6つの次元で捉えるホフステードのモデルも活用します
           </p>
         </div>
       </section>

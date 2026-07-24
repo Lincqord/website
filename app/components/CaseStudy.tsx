@@ -29,8 +29,7 @@ export default function CaseStudy() {
               成果につながる、変革の実績
             </h2>
           </div>
-          <a
-            href="/case-study"
+          <a href="/case-study"
             className="text-sm font-500 text-brand-teal hover:underline shrink-0"
           >
             事例をもっと見る →
@@ -39,8 +38,7 @@ export default function CaseStudy() {
 
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           {CASES.map((c) => (
-            <article
-              key={c.title}
+            <article key={c.title}
               className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
             >
               {/* placeholder visual */}

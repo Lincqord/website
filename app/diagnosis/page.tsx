@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 export default function DiagnosisIndexPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="DIAGNOSIS"
+      <PageHero eyebrow="DIAGNOSIS"
         title="組織の現在地診断"
       />
 
@@ -30,8 +29,7 @@ export default function DiagnosisIndexPage() {
           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {DIAGNOSIS_THEMES.map((t) =>
               t.slug ? (
-                <Link
-                  key={t.challenge}
+                <Link key={t.challenge}
                   href={`/diagnosis/${t.slug}`}
                   className="group bg-surface rounded-2xl border-2 border-brand-teal/50 p-8 hover:border-brand-teal hover:shadow-lg transition-all flex flex-col"
                 >
@@ -49,8 +47,7 @@ export default function DiagnosisIndexPage() {
                   </span>
                 </Link>
               ) : (
-                <div
-                  key={t.challenge}
+                <div key={t.challenge}
                   className="bg-surface/50 rounded-2xl border border-border p-8 flex flex-col"
                   aria-disabled
                 >
@@ -70,8 +67,7 @@ export default function DiagnosisIndexPage() {
 
           <p className="mt-10 text-sm text-muted text-center">
             診断を待たずにご相談いただくことも可能です。
-            <Link
-              href="/contact"
+            <Link href="/contact"
               className="ml-1 font-500 text-brand-teal hover:underline"
             >
               無料で相談する →

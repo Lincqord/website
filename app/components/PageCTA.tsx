@@ -26,14 +26,12 @@ export default function PageCTA({
               {body}
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
+              <Link href="/contact"
                 className="btn-accent font-medium px-9 py-3.5 rounded-2xl shadow-sm"
               >
                 無料で相談する
               </Link>
-              <Link
-                href="/services"
+              <Link href="/services"
                 className="btn-outline font-medium px-9 py-3.5 rounded-2xl bg-white/70 backdrop-blur-sm"
               >
                 サービスを見る

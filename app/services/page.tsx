@@ -6,7 +6,7 @@ import WaveDivider from "../components/WaveDivider";
 export const metadata: Metadata = {
   title: "サービス | Lincqord",
   description:
-    "Lincqordのサービス一覧。「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」の4つのアプローチで、組織文化診断・アセスメント・対話の場づくり・研修・コーチング・変革プロジェクトを課題起点で組み合わせて提供します",
+    "Lincqordのサービス一覧。「自分たちを知る→他者と対話する→個人が育つ→組織が育つ」の4つのアプローチで、組織文化診断・アセスメント・対話の場づくり・研修・コーチング・変革プロジェクトを課題起点で組み合わせて提供します",
 };
 
 type Group = {
@@ -84,8 +84,8 @@ const LAYERS: Layer[] = [
   },
   {
     no: "03",
-    name: "個人と組織が変わる",
-    lead: "能力・意識・文化——3つの次元で変化を起こす",
+    name: "個人が育つ",
+    lead: "能力と意識を磨き、行動の変化と成果につなげる",
     groups: [
       {
         id: "grow-skill",
@@ -109,24 +109,24 @@ const LAYERS: Layer[] = [
         methods: ["コーチング", "2on2コーチング", "リーダーシップ研修"],
       },
       {
-        id: "culture-change",
-        aliases: ["s8"],
-        name: "組織の文化が変わる",
-        desc: "「私たちのやり方」を、未来に向けてつくり直す",
-        methods: ["ビジョン策定・浸透プロジェクト", "組織変革プロジェクト組成"],
+        id: "results-individual",
+        name: "個人が成果を産む",
+        desc: "現実の業務テーマで、成果を出し切るまで伴走する",
+        methods: ["業務テーマ推進アドバイス", "進捗フォロー", "コーチング"],
       },
     ],
   },
   {
     no: "04",
-    name: "成果を産む",
-    lead: "変化を一過性で終わらせず、個人と組織の成果へつなげる",
+    name: "組織が育つ",
+    lead: "文化に働きかけ、組織の変化を定着させ成果につなげる",
     groups: [
       {
-        id: "results-individual",
-        name: "個人が成果を産む",
-        desc: "現実の業務テーマで、成果を出し切るまで伴走する",
-        methods: ["業務テーマ推進アドバイス", "進捗フォロー", "コーチング"],
+        id: "culture-change",
+        aliases: ["s8"],
+        name: "組織の文化が変わる",
+        desc: "「私たちのやり方」を、未来に向けてつくり直す",
+        methods: ["ビジョン策定・浸透プロジェクト", "組織変革プロジェクト組成"],
       },
       {
         id: "results-org",
@@ -165,8 +165,7 @@ function Tag({ label }: { label: string }) {
 export default function ServicesPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="SERVICES"
+      <PageHero eyebrow="SERVICES"
         title="サービス"
       />
 
@@ -178,14 +177,9 @@ export default function ServicesPage() {
               いきなり研修から入らない。まず、自分たちを知ることから
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-              施策の形骸化・離職・管理職の疲弊——こうした症状の裏には、
-              組織の文化、つまり「私たちのやり方」のぶつかり合いが隠れていることが少なくありません。
-              だからLincqordは、目に見える症状にすぐ手を打つのではなく、
-              課題の構造を明らかにするところから始めます。
-              自分たちを知ることから成果の実感まで、4つのアプローチでご一緒します
+              施策の形骸化・離職・管理職の疲弊——こうした症状の裏には、組織の文化、つまり「私たちのやり方」のぶつかり合いが隠れていることが少なくありません。だからLincqordは、目に見える症状にすぐ手を打つのではなく、課題の構造を明らかにするところから始めます。自分たちを知ることから成果の実感まで、4つのアプローチでご一緒します
             </p>
-            <a
-              href="/uniqueness"
+            <a href="/uniqueness"
               className="mt-4 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
             >
               なぜ文化に注目するのか——CQ（文化知性）とは →
@@ -204,7 +198,7 @@ export default function ServicesPage() {
               APPROACH
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-              自分たちを知る → 他者と対話する → 個人と組織が変わる → 成果を産む
+              自分たちを知る → 他者と対話する → 個人が育つ → 組織が育つ
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
               課題とフェーズに合わせて、各アプローチのメニューを組み合わせて提供します
@@ -213,14 +207,10 @@ export default function ServicesPage() {
 
           <div className="mt-14 space-y-8">
             {LAYERS.map((layer) => (
-              <div
-                key={layer.no}
+              <div key={layer.no}
                 className="rounded-2xl border border-border bg-white p-7 lg:p-10"
               >
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span className="font-display tracking-widest text-sm text-brand-teal">
-                    APPROACH {layer.no}
-                  </span>
                   <h3 className="text-xl lg:text-2xl font-700 tracking-tight">
                     {layer.name}
                     <span className="ml-3 text-sm lg:text-base font-500 text-muted">
@@ -229,14 +219,12 @@ export default function ServicesPage() {
                   </h3>
                 </div>
 
-                <div
-                  className={`mt-6 grid gap-5 ${
+                <div className={`mt-6 grid gap-5 ${
                     layer.groups.length >= 3 ? "md:grid-cols-3" : "md:grid-cols-2"
                   }`}
                 >
                   {layer.groups.map((g) => (
-                    <div
-                      key={g.id}
+                    <div key={g.id}
                       id={g.id}
                       className="scroll-mt-28 rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
                     >
@@ -266,16 +254,14 @@ export default function ServicesPage() {
                     </p>
                     <ul className="space-y-1.5">
                       {ASSESSMENT_NOTES.map((n) => (
-                        <li
-                          key={n.name}
+                        <li key={n.name}
                           className="text-xs leading-relaxed text-muted"
                         >
                           <span className="font-700 text-foreground/80">
                             {n.name}
                           </span>
                           ：{n.desc}
-                          <a
-                            href={n.href}
+                          <a href={n.href}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-1 text-brand-teal underline underline-offset-2 hover:text-brand-teal-deep"

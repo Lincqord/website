@@ -39,8 +39,7 @@ const CATEGORY_COLOR: Record<Post["category"], string> = {
 export default function NewsPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="INSIGHTS"
+      <PageHero eyebrow="INSIGHTS"
         title="知見・ノウハウ"
       />
 
@@ -49,8 +48,7 @@ export default function NewsPage() {
           {/* category filter (表示のみ・後でフィルタ機能を実装) */}
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((c, i) => (
-              <span
-                key={c}
+              <span key={c}
                 className={`text-sm rounded-full px-4 py-1.5 border transition-colors cursor-default ${
                   i === 0
                     ? "bg-brand-teal text-white border-brand-teal"
@@ -65,13 +63,11 @@ export default function NewsPage() {
           {/* card grid */}
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {POSTS.map((p) => (
-              <article
-                key={p.title}
+              <article key={p.title}
                 className="group rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
               >
                 {/* thumbnail placeholder (キャッチ画像は後で差し替え可) */}
-                <div
-                  className={`h-40 bg-gradient-to-br ${CATEGORY_COLOR[p.category]} flex items-center justify-center`}
+                <div className={`h-40 bg-gradient-to-br ${CATEGORY_COLOR[p.category]} flex items-center justify-center`}
                 >
                   <span className="font-display tracking-widest text-foreground/40 text-sm">
                     Lincqord
@@ -95,8 +91,7 @@ export default function NewsPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <button
-              type="button"
+            <button type="button"
               className="btn-outline font-medium px-8 py-3 rounded-2xl"
             >
               もっと見る

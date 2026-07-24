@@ -22,8 +22,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo.png"
+          <img src="/logo.png"
             alt="Lincqord"
             width={1647}
             height={370}
@@ -34,8 +33,7 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-6">
           {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.label}
+            <Link key={item.label}
               href={item.href}
               className="text-sm font-500 text-white/85 hover:text-white transition-colors whitespace-nowrap"
             >
@@ -46,14 +44,12 @@ export default function Header() {
 
         {/* CTAs (desktop) */}
         <div className="hidden lg:flex items-center gap-3">
-          <Link
-            href="/download"
+          <Link href="/download"
             className="text-sm font-500 px-5 py-2.5 rounded-2xl whitespace-nowrap border border-white/45 text-white hover:border-white transition-colors"
           >
             資料ダウンロード
           </Link>
-          <Link
-            href="/contact"
+          <Link href="/contact"
             className="btn-primary text-sm font-500 px-5 py-2.5 rounded-2xl whitespace-nowrap"
           >
             お問い合わせ
@@ -61,19 +57,15 @@ export default function Header() {
         </div>
 
         {/* Mobile toggle */}
-        <button
-          aria-label="メニュー"
+        <button aria-label="メニュー"
           className="lg:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setOpen((v) => !v)}
         >
-          <span
-            className={`block w-6 h-0.5 bg-white transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+          <span className={`block w-6 h-0.5 bg-white transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
           />
-          <span
-            className={`block w-6 h-0.5 bg-white transition-opacity ${open ? "opacity-0" : ""}`}
+          <span className={`block w-6 h-0.5 bg-white transition-opacity ${open ? "opacity-0" : ""}`}
           />
-          <span
-            className={`block w-6 h-0.5 bg-white transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+          <span className={`block w-6 h-0.5 bg-white transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
           />
         </button>
       </div>
@@ -82,8 +74,7 @@ export default function Header() {
       {open && (
         <nav className="lg:hidden bg-white border-t border-border px-5 py-6 flex flex-col gap-4">
           {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.label}
+            <Link key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
               className="text-base font-500 text-foreground/85"
@@ -91,15 +82,13 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href="/download"
+          <Link href="/download"
             onClick={() => setOpen(false)}
             className="btn-outline text-center font-500 px-6 py-3 rounded-2xl mt-2"
           >
             資料ダウンロード
           </Link>
-          <Link
-            href="/contact"
+          <Link href="/contact"
             onClick={() => setOpen(false)}
             className="btn-primary text-center font-500 px-6 py-3 rounded-2xl"
           >

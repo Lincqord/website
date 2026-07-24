@@ -24,8 +24,7 @@ export default function Problem() {
 
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROBLEMS.map((p) => (
-            <div
-              key={p.title}
+            <div key={p.title}
               className="group bg-surface rounded-2xl border border-transparent p-8 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)] hover:border-brand-teal/25"
             >
               <span className="block h-1 w-10 rounded-full bg-brand-teal/40 transition-all duration-200 group-hover:w-16 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-orange" />
@@ -40,8 +39,7 @@ export default function Problem() {
         </p>
 
         <div className="mt-8 text-center">
-          <Link
-            href="/contact"
+          <Link href="/contact"
             className="inline-block btn-accent font-medium px-8 py-3.5 rounded-2xl shadow-sm"
           >
             無料で相談する

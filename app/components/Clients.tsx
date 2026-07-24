@@ -34,14 +34,12 @@ export default function Clients() {
       <div className="mt-12 overflow-hidden marquee-mask">
         <div className="flex w-max marquee-anim items-center">
           {loop.map((client, i) => (
-            <div
-              key={`${client.name}-${i}`}
+            <div key={`${client.name}-${i}`}
               className="flex items-center justify-center shrink-0 px-10"
               style={{ height: "160px" }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`/clients-processed/${client.file}`}
+              <img src={`/clients-processed/${client.file}`}
                 alt={client.name}
                 style={{ height: `${client.h}px`, width: "auto" }}
               />

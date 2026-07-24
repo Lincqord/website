@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 export default function FounderPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="FOUNDER"
+      <PageHero eyebrow="FOUNDER"
         title="代表紹介"
       />
 
@@ -31,9 +30,7 @@ export default function FounderPage() {
                 代表取締役 / Founder
               </p>
               <p className="mt-6 text-sm lg:text-base leading-relaxed text-muted">
-                Lincqord創業者。CQ（文化知性）を軸に、多様性を組織のチカラへ変える組織・人材開発をリードする。
-                経営チームの対話、女性活躍の風土改革、リーダーシップ開発など、
-                国内組織の「内なる多様性」に向き合う変革の現場に伴走している
+                Lincqord創業者。CQ（文化知性）を軸に、多様性を組織のチカラへ変える組織・人材開発をリードする。経営チームの対話、女性活躍の風土改革、リーダーシップ開発など、国内組織の「内なる多様性」に向き合う変革の現場に伴走している
               </p>
             </div>
           </div>

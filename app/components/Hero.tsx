@@ -4,8 +4,7 @@ export default function Hero() {
       {/* Aurora background: drifting brand-color blobs */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
         {/* teal: top-left */}
-        <div
-          className="aurora-blob aurora-1"
+        <div className="aurora-blob aurora-1"
           style={{
             top: "-14%",
             left: "-6%",
@@ -16,8 +15,7 @@ export default function Hero() {
           }}
         />
         {/* orange: top-right (brought into view) */}
-        <div
-          className="aurora-blob aurora-2"
+        <div className="aurora-blob aurora-2"
           style={{
             top: "-10%",
             right: "-2%",
@@ -28,8 +26,7 @@ export default function Hero() {
           }}
         />
         {/* orange-soft: bottom-left */}
-        <div
-          className="aurora-blob aurora-3"
+        <div className="aurora-blob aurora-3"
           style={{
             bottom: "-16%",
             left: "8%",
@@ -40,8 +37,7 @@ export default function Hero() {
           }}
         />
         {/* teal-soft: bottom-right */}
-        <div
-          className="aurora-blob aurora-4"
+        <div className="aurora-blob aurora-4"
           style={{
             bottom: "-18%",
             right: "6%",
@@ -59,8 +55,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex flex-col items-center text-center min-h-[42rem] lg:min-h-[46rem] justify-center pt-24 lg:pt-28 pb-16">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/difference-is-power.png"
+          <img src="/difference-is-power.png"
             alt="Difference Is Power"
             width={2083}
             height={237}
@@ -68,24 +63,20 @@ export default function Hero() {
           />
 
           <h1 className="text-4xl sm:text-5xl lg:text-[3.8rem] font-900 leading-[1.22] tracking-tight text-foreground">
-            <span className="text-brand-gradient">&ldquo;違い&rdquo;</span>を
-            チカラにする組織をつくる
+            <span className="text-brand-gradient">&ldquo;違い&rdquo;</span>をチカラにする組織をつくる
           </h1>
 
           <p className="mt-8 max-w-2xl text-base lg:text-lg leading-relaxed text-muted">
-            国籍・世代・経験——あらゆる&ldquo;違い&rdquo;を組織の推進力に。
-            CQ（文化知性）を軸に、多様な人材が力を発揮できる組織づくりを支援します
+            国籍・世代・経験——あらゆる&ldquo;違い&rdquo;を組織の推進力に。CQ（文化知性）を軸に、多様な人材が力を発揮できる組織づくりを支援します
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#contact"
+            <a href="#contact"
               className="btn-primary text-center font-medium px-8 py-3.5 rounded-2xl shadow-sm"
             >
               無料で相談する
             </a>
-            <a
-              href="#services"
+            <a href="#services"
               className="btn-outline text-center font-medium px-8 py-3.5 rounded-2xl bg-white/70 backdrop-blur-sm"
             >
               サービスを見る

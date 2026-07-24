@@ -28,16 +28,12 @@ export default function Services() {
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
             課題起点で伴走する、4つのアプローチ
           </h2>
-          <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-            研修などの施策ありきではなく、貴社の現状把握と課題抽出が出発点。丁寧に4つのアプローチをご一緒します
-          </p>
         </div>
 
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {STEPS.map((s) => (
-            <div
-              key={s.title}
-              className="bg-white rounded-2xl border border-border p-8 hover:border-brand-teal/40 hover:shadow-lg transition-all flex flex-col"
+            <div key={s.title}
+              className="bg-white rounded-2xl border border-border p-8 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)] hover:border-brand-teal/25 flex flex-col"
             >
               <h3 className="text-xl font-700 leading-snug">{s.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted flex-1">
@@ -48,14 +44,12 @@ export default function Services() {
         </div>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/services"
+          <a href="/services"
             className="inline-block btn-primary text-center font-medium px-8 py-3.5 rounded-2xl shadow-sm"
           >
             サービスの詳細を見る
           </a>
-          <a
-            href="#contact"
+          <a href="#contact"
             className="inline-block btn-outline text-center font-medium px-8 py-3.5 rounded-2xl bg-white"
           >
             サービスについて相談する

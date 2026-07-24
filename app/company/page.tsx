@@ -24,8 +24,7 @@ const COMPANY = [
 export default function CompanyPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="COMPANY"
+      <PageHero eyebrow="COMPANY"
         title="会社概要"
       />
 
@@ -38,8 +37,7 @@ export default function CompanyPage() {
             </p>
             <h2 className="mt-4 text-2xl font-700 leading-snug">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/difference-is-power.png"
+              <img src="/difference-is-power.png"
                 alt="Difference Is Power"
                 width={2083}
                 height={237}
@@ -47,10 +45,8 @@ export default function CompanyPage() {
               />
             </h2>
             <p className="mt-6 text-lg text-foreground">組織は、違いの集合体だ。</p>
-            <p className="mt-5 text-base leading-relaxed text-muted">
-              リンクォードは、個人と組織の文化知性（CQ）を高め、
-              違いを新たな価値や成果へとつなげることを、
-              一人ひとりと、一社一社と、共に実現します。
+            <p className="mt-5 text-lg leading-relaxed text-foreground">
+              リンクォードは、個人と組織の文化知性（CQ）を高め、違いを新たな価値や成果へとつなげることを、一人ひとりと、一社一社と、共に実現します。
             </p>
             <p className="mt-6 text-lg text-foreground">違いを、力に。</p>
           </div>
@@ -62,16 +58,13 @@ export default function CompanyPage() {
             <h2 className="mt-4 text-2xl font-700 leading-snug">
               個人と組織が、互いの真価を引き出す社会へ。
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted">
-              個人は組織に新しい視点をもたらし、組織は個人の強みを引き出す。
-              互いに影響を与え合うことで、個人も組織も、共に成長していく。
+            <p className="mt-5 text-lg leading-relaxed text-foreground">
+              個人は組織に新しい視点をもたらし、組織は個人の強みを引き出す。互いに影響を与え合うことで、個人も組織も、共に成長していく。
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted">
-              リンクォードが描くのは、この活かし合う関係があらゆる組織に息づき、
-              個人と組織が共に未来を創る社会です。
+            <p className="mt-4 text-lg leading-relaxed text-foreground">
+              リンクォードが描くのは、この活かし合う関係があらゆる組織に息づき、個人と組織が共に未来を創る社会です。
             </p>
-            <Link
-              href="/uniqueness"
+            <Link href="/uniqueness"
               className="mt-4 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
             >
               CQ（文化知性）とは →
@@ -80,8 +73,10 @@ export default function CompanyPage() {
         </div>
       </section>
 
+      <WaveDivider from="white" to="surface" />
+
       {/* Lincqordの4つの視点 */}
-      <section className="bg-white pb-20 lg:pb-28">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
           <div className="rounded-2xl border border-border bg-white p-7 lg:p-12">
             <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">
@@ -116,8 +111,7 @@ export default function CompanyPage() {
                     "どんな価値観や経験が、その人の判断とリーダーシップを形づくっているか？",
                   ],
                 ].map((qs, i) => (
-                  <div
-                    key={i}
+                  <div key={i}
                     className="rounded-xl border border-border bg-white p-6 shadow-[0_4px_16px_rgba(3,52,55,0.05)]"
                   >
                     {qs.map((q) => (
@@ -136,24 +130,21 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <WaveDivider from="white" to="surface" />
+      <WaveDivider from="surface" to="white" />
 
       {/* Difference */}
-      <section className="bg-surface py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <section className="bg-white py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8 text-center">
           <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
             Difference（違い）とは何か
           </h2>
-          <p className="mt-5 max-w-3xl text-base lg:text-lg leading-relaxed text-muted">
-            ひとりひとりが人生で得た属性や経験が&ldquo;Difference&rdquo;、つまり文化を創ります。
-            組織とは、私たちのDifferenceのぶつかり合い。&ldquo;あなた自身&rdquo;を中心に、
-            違いは幾重もの層で重なり合っています
+          <p className="mt-5 mx-auto max-w-3xl text-base lg:text-lg leading-relaxed text-muted">
+            ひとりひとりが人生で得た属性や経験が&ldquo;Difference&rdquo;、つまり文化を創ります。組織とは、私たちのDifferenceのぶつかり合い。&ldquo;あなた自身&rdquo;を中心に、違いは幾重もの層で重なり合っています
           </p>
 
           <div className="mt-10 mx-auto max-w-3xl rounded-2xl border border-border bg-white p-6 lg:p-10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/what-is-difference.jpg"
+            <img src="/what-is-difference.jpg"
               alt="Differenceとは何か — あなた自身を中心に、内向きな側面・外向きの側面・組織的な側面が重なり合う同心円"
               width={768}
               height={763}
@@ -163,36 +154,32 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <WaveDivider from="surface" to="white" />
+      <WaveDivider from="white" to="surface" />
 
       {/* Name origin */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
+          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">
             社名「Lincqord」に込めた思い
           </h2>
           <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
             リンクォード／Lincqordという社名は、
             <strong className="text-foreground font-500">Linkage</strong>・
             <strong className="text-foreground font-500">CQ</strong>・
-            <strong className="text-foreground font-500">Chord</strong>という
-            3つの言葉を重ね合わせたものです。私たちは、CQの知恵によって、
-            多様な文化的バックグラウンドを持つ人々の心（Chord）をつなぎます（Linkage）。
-            複数色のロゴは、&ldquo;違い：Difference&rdquo;を尊重するLincqordの理念を表しています
+            <strong className="text-foreground font-500">Chord</strong>という3つの言葉を重ね合わせたものです。私たちは、CQの知恵によって、多様な文化的バックグラウンドを持つ人々の心（Chord）をつなぎます（Linkage）。複数色のロゴは、&ldquo;違い：Difference&rdquo;を尊重するLincqordの理念を表しています
           </p>
         </div>
       </section>
 
-      <WaveDivider from="white" to="surface" />
+      <WaveDivider from="surface" to="white" />
 
       {/* Company profile */}
-      <section className="bg-surface py-20 lg:py-28">
+      <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">会社情報</h2>
+          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">会社情報</h2>
           <dl className="mt-8 border-t border-border">
             {COMPANY.map(([k, v]) => (
-              <div
-                key={k}
+              <div key={k}
                 className="flex flex-col sm:flex-row gap-1 sm:gap-6 py-5 border-b border-border"
               >
                 <dt className="sm:w-56 shrink-0 text-sm font-700 text-foreground/80">
@@ -204,8 +191,7 @@ export default function CompanyPage() {
           </dl>
           <p className="mt-8 text-sm text-muted">
             代表のプロフィールは
-            <Link
-              href="/founder"
+            <Link href="/founder"
               className="mx-1 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
             >
               代表紹介

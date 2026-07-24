@@ -38,16 +38,13 @@ export default function Uniqueness() {
             </h2>
 
             <p className="mt-6 text-base lg:text-lg leading-relaxed text-muted">
-              CQ（Cultural Intelligence／文化知性）とは、文化背景の異なる人々と協働し、
-              成果を出す力。グローバル時代のリーダーに求められる、思考と行動のフレームワークです
+              CQ（Cultural Intelligence／文化知性）とは、文化背景の異なる人々と協働し、成果を出す力。グローバル時代のリーダーに求められる、思考と行動のフレームワークです
             </p>
             <p className="mt-4 text-base lg:text-lg leading-relaxed text-muted">
-              Lincqordは、このCQを体系的に高めるメソッドで、あらゆる&ldquo;違い&rdquo;を
-              &ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます
+              Lincqordは、このCQを体系的に高めるメソッドで、あらゆる&ldquo;違い&rdquo;を&ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます
             </p>
 
-            <a
-              href="/uniqueness"
+            <a href="/uniqueness"
               className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-2xl"
             >
               CQについて詳しく知る
@@ -61,12 +58,10 @@ export default function Uniqueness() {
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {CQ_ELEMENTS.map((el, i) => (
-                <div
-                  key={el.label}
+                <div key={el.label}
                   className="bg-white rounded-2xl border border-border p-6"
                 >
-                  <span
-                    className={`text-xs font-700 tracking-widest ${
+                  <span className={`text-xs font-700 tracking-widest ${
                       i % 2 === 0 ? "text-brand-teal" : "text-brand-orange"
                     }`}
                   >

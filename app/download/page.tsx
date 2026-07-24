@@ -11,8 +11,7 @@ export const metadata: Metadata = {
 export default function DownloadPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="DOWNLOAD"
+      <PageHero eyebrow="DOWNLOAD"
         title="資料ダウンロード"
       />
 
@@ -25,11 +24,9 @@ export default function DownloadPage() {
             <p className="mt-5 text-sm lg:text-base leading-relaxed text-muted">
               近日中に、ダウンロード資料を公開予定です。
               <br className="hidden sm:block" />
-              お急ぎの場合は、お問い合わせフォームよりご連絡ください。
-              ご要望に応じて個別に資料をお送りします
+              お急ぎの場合は、お問い合わせフォームよりご連絡ください。ご要望に応じて個別に資料をお送りします
             </p>
-            <Link
-              href="/contact"
+            <Link href="/contact"
               className="inline-block mt-8 btn-primary font-medium px-8 py-3.5 rounded-2xl"
             >
               お問い合わせ

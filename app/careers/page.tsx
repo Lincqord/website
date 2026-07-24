@@ -11,8 +11,7 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="CAREERS"
+      <PageHero eyebrow="CAREERS"
         title="採用情報"
       />
 
@@ -25,11 +24,9 @@ export default function CareersPage() {
             <p className="mt-5 text-sm lg:text-base leading-relaxed text-muted">
               新たな募集が開始された際に、こちらのページでお知らせします。
               <br className="hidden sm:block" />
-              Lincqordの活動やCQ（文化知性）にご関心のある方は、
-              お気軽にお問い合わせください
+              Lincqordの活動やCQ（文化知性）にご関心のある方は、お気軽にお問い合わせください
             </p>
-            <Link
-              href="/contact"
+            <Link href="/contact"
               className="inline-block mt-8 btn-primary font-medium px-8 py-3.5 rounded-2xl"
             >
               お問い合わせ

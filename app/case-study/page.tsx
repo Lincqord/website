@@ -9,7 +9,7 @@ import { CASES, SERVICE_LINKS } from "./data";
 export const metadata: Metadata = {
   title: "支援実績 | Lincqord",
   description:
-    "Lincqordの支援実績。女性活躍の風土改革、経営チームの対話、若手の離職・育成、組織文化の変革など、各業界の組織課題に「自分たちを知る→他者と対話する→個人と組織が変わる→成果を産む」のアプローチで伴走した事例をご紹介します",
+    "Lincqordの支援実績。女性活躍の風土改革、経営チームの対話、若手の離職・育成、組織文化の変革など、各業界の組織課題に「自分たちを知る→他者と対話する→個人が育つ→組織が育つ」のアプローチで伴走した事例をご紹介します",
 };
 
 const FEATURED = CASES.slice(0, 4);
@@ -17,8 +17,7 @@ const FEATURED = CASES.slice(0, 4);
 export default function CaseStudyPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        eyebrow="CASE STUDY"
+      <PageHero eyebrow="CASE STUDY"
         title="支援実績"
       />
 
@@ -30,8 +29,7 @@ export default function CaseStudyPage() {
           </h2>
           <div className="mt-10 grid md:grid-cols-2 gap-7">
             {FEATURED.map((c) => (
-              <article
-                key={c.theme}
+              <article key={c.theme}
                 className="rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
               >
                 <div className="h-1.5 bg-brand-gradient" />
@@ -61,8 +59,7 @@ export default function CaseStudyPage() {
                   </dl>
                   <div className="mt-5 pt-4 border-t border-border flex flex-wrap gap-1.5">
                     {c.services.map((id) => (
-                      <Link
-                        key={id}
+                      <Link key={id}
                         href={SERVICE_LINKS[id].href}
                         className="text-xs px-3 py-1 rounded-full border border-brand-teal/30 bg-brand-teal/5 text-brand-teal-deep hover:bg-brand-teal/10 transition-colors"
                       >
@@ -86,8 +83,7 @@ export default function CaseStudyPage() {
             すべての支援実績
           </h2>
           <p className="mt-4 max-w-2xl text-muted leading-relaxed">
-            業界・テーマを問わず、多様な組織課題に伴走してきました。
-            課題やサービスで絞り込んで、貴社に近い事例をお探しいただけます
+            業界・テーマを問わず、多様な組織課題に伴走してきました。課題やサービスで絞り込んで、貴社に近い事例をお探しいただけます
           </p>
 
           <CaseExplorer />
@@ -100,8 +96,7 @@ export default function CaseStudyPage() {
 
       <WaveDivider from="surface" to="white" />
 
-      <PageCTA
-        title="貴社の課題に近い事例をご紹介します"
+      <PageCTA title="貴社の課題に近い事例をご紹介します"
         body="業界・テーマに応じた具体的な支援事例を、個別にご説明します。まずはお気軽にご相談ください"
       />
     </main>
