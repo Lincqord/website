@@ -169,10 +169,8 @@ export default function ServicesPage() {
         title="サービス"
       />
 
-      <WaveDivider from="white" to="surface" />
-
       {/* 4アプローチ × 10カテゴリ */}
-      <section className="bg-surface py-16 lg:py-24">
+      <section className="bg-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
             <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
@@ -189,7 +187,7 @@ export default function ServicesPage() {
           <div className="mt-14 space-y-8">
             {LAYERS.map((layer) => (
               <div key={layer.no}
-                className="rounded-2xl border border-border bg-white p-7 lg:p-10"
+                className="rounded-2xl bg-surface p-7 lg:p-10"
               >
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                   <h3 className="text-xl lg:text-2xl font-700 tracking-tight">
@@ -207,7 +205,7 @@ export default function ServicesPage() {
                   {layer.groups.map((g) => (
                     <div key={g.id}
                       id={g.id}
-                      className="scroll-mt-28 rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
+                      className="scroll-mt-28 rounded-xl border border-border bg-white p-6 hover:shadow-md transition-shadow flex flex-col"
                     >
                       {g.aliases?.map((a) => (
                         <span key={a} id={a} className="scroll-mt-28" aria-hidden />
@@ -229,7 +227,7 @@ export default function ServicesPage() {
                 </div>
 
                 {layer.no === "01" && (
-                  <div className="mt-5 rounded-xl bg-surface/70 border border-border p-5">
+                  <div className="mt-5 rounded-xl bg-white border border-border p-5">
                     <p className="text-xs font-700 text-foreground/70 mb-2">
                       アセスメントについて
                     </p>
@@ -264,8 +262,6 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
-
-      <WaveDivider from="surface" to="white" />
 
       <PageCTA />
     </main>

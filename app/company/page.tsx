@@ -146,10 +146,10 @@ export default function CompanyPage() {
 
           <div className="mt-10 mx-auto max-w-3xl rounded-2xl border border-border bg-white p-6 lg:p-10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/what-is-difference.jpg"
+            <img src="/difference-circles.png"
               alt="Differenceとは何か — あなた自身を中心に、内向きな側面・外向きの側面・組織的な側面が重なり合う同心円"
-              width={768}
-              height={763}
+              width={1200}
+              height={1234}
               className="w-full h-auto"
             />
           </div>
