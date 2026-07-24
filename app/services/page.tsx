@@ -169,25 +169,6 @@ export default function ServicesPage() {
         title="サービス"
       />
 
-      {/* 導入 */}
-      <section className="bg-white pb-4 lg:pb-8">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
-              いきなり研修から入らない。まず、自分たちを知ることから
-            </h2>
-            <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
-              施策の形骸化・離職・管理職の疲弊——こうした症状の裏には、組織の文化、つまり「私たちのやり方」のぶつかり合いが隠れていることが少なくありません。だからLincqordは、目に見える症状にすぐ手を打つのではなく、課題の構造を明らかにするところから始めます。自分たちを知ることから成果の実感まで、4つのアプローチでご一緒します
-            </p>
-            <a href="/uniqueness"
-              className="mt-4 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
-            >
-              なぜ文化に注目するのか——CQ（文化知性）とは →
-            </a>
-          </div>
-        </div>
-      </section>
-
       <WaveDivider from="white" to="surface" />
 
       {/* 4アプローチ × 10カテゴリ */}

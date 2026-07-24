@@ -30,7 +30,8 @@ export default function CompanyPage() {
 
       {/* Mission / Vision */}
       <section className="bg-white py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-10">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10">
           <div className="rounded-2xl bg-surface p-9 lg:p-11">
             <p className="font-display tracking-[0.2em] text-brand-teal text-lg">
               MISSION
@@ -64,12 +65,13 @@ export default function CompanyPage() {
             <p className="mt-4 text-lg leading-relaxed text-foreground">
               リンクォードが描くのは、この活かし合う関係があらゆる組織に息づき、個人と組織が共に未来を創る社会です。
             </p>
-            <Link href="/uniqueness"
-              className="mt-4 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
-            >
-              CQ（文化知性）とは →
-            </Link>
           </div>
+        </div>
+        <Link href="/uniqueness"
+          className="mt-8 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
+        >
+          CQ（文化知性）とは →
+        </Link>
         </div>
       </section>
 
