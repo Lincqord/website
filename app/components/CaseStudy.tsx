@@ -22,7 +22,7 @@ export default function CaseStudy() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div className="max-w-2xl">
-            <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
+            <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
               CASE STUDY
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">

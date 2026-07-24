@@ -3,7 +3,7 @@ export default function Contact() {
     <section id="contact" className="bg-surface py-24 lg:py-32">
       <div className="mx-auto max-w-3xl px-5 lg:px-8">
         <div className="text-center">
-          <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
+          <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
             CONTACT
           </p>
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
@@ -66,7 +66,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="btn-primary w-full font-medium py-4 rounded-full"
+            className="btn-primary w-full font-medium py-4 rounded-2xl"
           >
             送信する
           </button>

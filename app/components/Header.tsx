@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 const NAV_ITEMS = [
+  { label: "HOME", href: "/" },
   { label: "会社概要", href: "/company" },
   { label: "代表紹介", href: "/founder" },
   { label: "サービス", href: "/services" },
@@ -16,7 +17,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 inset-x-0 z-50 bg-[#033437]">
       <div className="mx-auto max-w-7xl px-5 lg:px-8 h-16 lg:h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
@@ -36,7 +37,7 @@ export default function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-sm font-500 text-foreground/80 hover:text-brand-teal transition-colors whitespace-nowrap"
+              className="text-sm font-500 text-white/85 hover:text-white transition-colors whitespace-nowrap"
             >
               {item.label}
             </Link>
@@ -47,13 +48,13 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-3">
           <Link
             href="/download"
-            className="btn-outline text-sm font-500 px-5 py-2.5 rounded-full whitespace-nowrap"
+            className="text-sm font-500 px-5 py-2.5 rounded-2xl whitespace-nowrap border border-white/45 text-white hover:border-white transition-colors"
           >
             資料ダウンロード
           </Link>
           <Link
             href="/contact"
-            className="btn-primary text-sm font-500 px-5 py-2.5 rounded-full whitespace-nowrap"
+            className="btn-primary text-sm font-500 px-5 py-2.5 rounded-2xl whitespace-nowrap"
           >
             お問い合わせ
           </Link>
@@ -66,13 +67,13 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
         >
           <span
-            className={`block w-6 h-0.5 bg-foreground transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+            className={`block w-6 h-0.5 bg-white transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
           />
           <span
-            className={`block w-6 h-0.5 bg-foreground transition-opacity ${open ? "opacity-0" : ""}`}
+            className={`block w-6 h-0.5 bg-white transition-opacity ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`block w-6 h-0.5 bg-foreground transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+            className={`block w-6 h-0.5 bg-white transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
           />
         </button>
       </div>
@@ -93,14 +94,14 @@ export default function Header() {
           <Link
             href="/download"
             onClick={() => setOpen(false)}
-            className="btn-outline text-center font-500 px-6 py-3 rounded-full mt-2"
+            className="btn-outline text-center font-500 px-6 py-3 rounded-2xl mt-2"
           >
             資料ダウンロード
           </Link>
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="btn-primary text-center font-500 px-6 py-3 rounded-full"
+            className="btn-primary text-center font-500 px-6 py-3 rounded-2xl"
           >
             お問い合わせ
           </Link>

@@ -201,7 +201,7 @@ export default function ServicesPage() {
       <section className="bg-surface py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-3xl">
-            <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
+            <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
               APPROACH
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">

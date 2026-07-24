@@ -28,7 +28,7 @@ export default function Uniqueness() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: narrative */}
           <div>
-            <p className="font-display tracking-[0.2em] text-brand-orange text-sm mb-4">
+            <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
               WHAT IS CQ
             </p>
             <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
@@ -48,7 +48,7 @@ export default function Uniqueness() {
 
             <a
               href="/uniqueness"
-              className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-full"
+              className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-2xl"
             >
               CQについて詳しく知る
             </a>

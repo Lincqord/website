@@ -22,7 +22,7 @@ export default function Services() {
     <section id="services" className="bg-surface py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="max-w-3xl">
-          <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
+          <p className="font-display tracking-[0.2em] text-brand-teal text-lg mb-4">
             SERVICES
           </p>
           <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
@@ -53,13 +53,13 @@ export default function Services() {
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/services"
-            className="inline-block btn-primary text-center font-medium px-8 py-3.5 rounded-full shadow-sm"
+            className="inline-block btn-primary text-center font-medium px-8 py-3.5 rounded-2xl shadow-sm"
           >
             サービスの詳細を見る
           </a>
           <a
             href="#contact"
-            className="inline-block btn-outline text-center font-medium px-8 py-3.5 rounded-full bg-white"
+            className="inline-block btn-outline text-center font-medium px-8 py-3.5 rounded-2xl bg-white"
           >
             サービスについて相談する
           </a>

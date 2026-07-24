@@ -22,7 +22,7 @@ export default function Clients() {
     <section className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="max-w-2xl">
-          <p className="font-display tracking-[0.2em] text-brand-teal text-sm mb-4">
+          <p className="font-display tracking-[0.2em] text-brand-teal text-lg mb-4">
             OUR CLIENTS
           </p>
           <h2 className="text-2xl lg:text-3xl font-700 leading-snug tracking-tight">

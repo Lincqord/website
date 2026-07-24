@@ -98,7 +98,7 @@ export default function NewsPage() {
           <div className="mt-12 text-center">
             <button
               type="button"
-              className="btn-outline font-medium px-8 py-3 rounded-full"
+              className="btn-outline font-medium px-8 py-3 rounded-2xl"
             >
               もっと見る
             </button>

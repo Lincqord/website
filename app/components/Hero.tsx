@@ -83,13 +83,13 @@ export default function Hero() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
               href="#contact"
-              className="btn-primary text-center font-medium px-8 py-3.5 rounded-full shadow-sm"
+              className="btn-primary text-center font-medium px-8 py-3.5 rounded-2xl shadow-sm"
             >
               無料で相談する
             </a>
             <a
               href="#services"
-              className="btn-outline text-center font-medium px-8 py-3.5 rounded-full bg-white/70 backdrop-blur-sm"
+              className="btn-outline text-center font-medium px-8 py-3.5 rounded-2xl bg-white/70 backdrop-blur-sm"
             >
               サービスを見る
             </a>

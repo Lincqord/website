@@ -31,7 +31,7 @@ export default function DownloadPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block mt-8 btn-primary font-medium px-8 py-3.5 rounded-full"
+              className="inline-block mt-8 btn-primary font-medium px-8 py-3.5 rounded-2xl"
             >
               お問い合わせ
             </Link>

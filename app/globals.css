@@ -64,12 +64,13 @@ body {
   background: var(--color-teal-deep);
 }
 .btn-accent {
-  background: var(--color-orange);
-  color: #ffffff;
+  /* CTAボタンは薄いオレンジ×黒文字（2026-07-24 代表決定。文字色のオレンジ #FF7F00 は従来どおり） */
+  background: #ffb973;
+  color: var(--foreground);
   transition: filter 0.2s ease;
 }
 .btn-accent:hover {
-  filter: brightness(0.94);
+  filter: brightness(0.96);
 }
 .btn-outline {
   border: 1px solid var(--border);

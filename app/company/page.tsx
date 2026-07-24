@@ -34,7 +34,7 @@ export default function CompanyPage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-10">
           <div className="rounded-2xl bg-surface p-9 lg:p-11">
-            <p className="font-display tracking-[0.2em] text-brand-teal text-sm">
+            <p className="font-display tracking-[0.2em] text-brand-teal text-lg">
               MISSION
             </p>
             <h2 className="mt-4 text-2xl font-700 leading-snug">
@@ -55,7 +55,7 @@ export default function CompanyPage() {
           </div>
 
           <div className="rounded-2xl bg-surface p-9 lg:p-11">
-            <p className="font-display tracking-[0.2em] text-brand-orange text-sm">
+            <p className="font-display tracking-[0.2em] text-brand-orange text-lg">
               VISION
             </p>
             <h2 className="mt-4 text-2xl font-700 leading-snug">

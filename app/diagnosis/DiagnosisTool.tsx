@@ -66,7 +66,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
           <button
             type="button"
             onClick={start}
-            className="btn-primary font-700 text-base px-10 py-3.5 rounded-full shadow-sm cursor-pointer"
+            className="btn-primary font-700 text-base px-10 py-3.5 rounded-2xl shadow-sm cursor-pointer"
           >
             診断をはじめる
           </button>
@@ -207,7 +207,7 @@ export default function DiagnosisTool({ data }: { data: DiagnosisData }) {
         </p>
         <Link
           href="/contact"
-          className="mt-5 inline-block btn-accent font-700 px-10 py-3.5 rounded-full shadow-sm"
+          className="mt-5 inline-block btn-accent font-700 px-10 py-3.5 rounded-2xl shadow-sm"
         >
           無料で相談する
         </Link>
