@@ -59,10 +59,10 @@ export default function Hero() {
             alt="Difference Is Power"
             width={2083}
             height={237}
-            className="w-[19rem] sm:w-[26rem] lg:w-[34rem] h-auto mb-8"
+            className="w-[21rem] sm:w-[30rem] lg:w-[40rem] h-auto mb-9"
           />
 
-          <h1 className="text-3xl sm:text-4xl lg:text-[3.2rem] font-900 leading-[1.3] tracking-tight text-foreground">
+          <h1 className="text-xl sm:text-2xl lg:text-[2rem] font-900 leading-[1.4] tracking-tight text-foreground">
             <span className="inline-block">個人と組織が、</span>
             <span className="inline-block">互いの真価を引き出す社会へ</span>
           </h1>

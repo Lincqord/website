@@ -133,7 +133,7 @@ export default function CompanyPage() {
                     className="rounded-xl border border-border bg-white p-6 shadow-[0_4px_16px_rgba(3,52,55,0.05)]"
                   >
                     {qs.map((q) => (
-                      <p key={q} className="text-sm leading-loose text-foreground text-center [&+&]:mt-3 mt-3 first:mt-0">
+                      <p key={q} className="text-sm leading-loose text-foreground text-center text-balance [&+&]:mt-3 mt-3 first:mt-0">
                         {q}
                       </p>
                     ))}
