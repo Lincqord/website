@@ -26,7 +26,7 @@ export default function Clients() {
             OUR CLIENTS
           </p>
           <h2 className="text-2xl lg:text-3xl font-700 leading-snug tracking-tight">
-            多くの企業に選ばれています
+            多くのお客様に選ばれています
           </h2>
         </div>
       </div>

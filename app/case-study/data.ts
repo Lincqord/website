@@ -13,10 +13,10 @@ export const SERVICE_LINKS: Record<string, { name: string; href: string }> = {
   "know-org": { name: "組織を知る", href: "/services#know-org" },
   "know-self": { name: "個人を知る", href: "/services#know-self" },
   "dialogue-do": { name: "対話をする", href: "/services#dialogue-do" },
-  "grow-skill": { name: "自分の能力を高める", href: "/services#grow-skill" },
-  "grow-mindset": { name: "自分の意識を変える", href: "/services#grow-mindset" },
+  "grow-skill": { name: "個人の能力を高める", href: "/services#grow-skill" },
+  "grow-mindset": { name: "個人の意識が変わる", href: "/services#grow-mindset" },
   "culture-change": { name: "組織の文化が変わる", href: "/services#culture-change" },
-  "results-individual": { name: "個人が成果を産む", href: "/services#results-individual" },
+  "results-individual": { name: "個人が成果を生む", href: "/services#results-individual" },
 };
 
 export const CHALLENGES: string[] = [

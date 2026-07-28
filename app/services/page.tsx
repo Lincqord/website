@@ -89,7 +89,7 @@ const LAYERS: Layer[] = [
     groups: [
       {
         id: "grow-skill",
-        name: "自分の能力を高める",
+        name: "個人の能力を高める",
         desc: "成果を出すためのビジネススキルを鍛える",
         methods: [
           "クリティカルシンキング研修",
@@ -104,14 +104,14 @@ const LAYERS: Layer[] = [
       {
         id: "grow-mindset",
         aliases: ["s6", "s7"],
-        name: "自分の意識を変える",
-        desc: "ものの見方と、リーダーとしてのあり方を変える",
+        name: "個人の意識が変わる",
+        desc: "個人の視野・視点が広がり、リーダーとしての在り方が広がる",
         methods: ["コーチング", "2on2コーチング", "リーダーシップ研修"],
       },
       {
         id: "results-individual",
-        name: "個人が成果を産む",
-        desc: "現実の業務テーマで、成果を出し切るまで伴走する",
+        name: "個人が成果を生む",
+        desc: "実践において、チャレンジングなテーマを設定し、成果を出す",
         methods: ["業務テーマ推進アドバイス", "進捗フォロー", "コーチング"],
       },
     ],
@@ -176,10 +176,24 @@ export default function ServicesPage() {
             <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
               APPROACH
             </p>
-            <h2 className="text-3xl lg:text-4xl font-700 leading-snug tracking-tight">
-              自分たちを知る → 他者と対話する → 個人が育つ → 組織が育つ
+            <h2 className="sr-only">
+              自分たちを知る、他者と対話する、個人が育つ、組織が育つ
             </h2>
-            <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
+            <ol className="mt-2 space-y-3">
+              {["自分たちを知る", "他者と対話する", "個人が育つ", "組織が育つ"].map(
+                (n, i) => (
+                  <li key={n} className="flex items-center gap-5">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF2E5] border border-brand-orange/30 font-display text-brand-orange tracking-wider">
+                      0{i + 1}
+                    </span>
+                    <span className="text-2xl lg:text-3xl font-700 leading-snug tracking-tight">
+                      {n}
+                    </span>
+                  </li>
+                )
+              )}
+            </ol>
+            <p className="mt-7 text-base lg:text-lg leading-relaxed text-muted">
               課題とフェーズに合わせて、各アプローチのメニューを組み合わせて提供します
             </p>
           </div>

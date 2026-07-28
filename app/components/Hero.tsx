@@ -62,13 +62,9 @@ export default function Hero() {
             className="w-[19rem] sm:w-[26rem] lg:w-[34rem] h-auto mb-8"
           />
 
-          <h1 className="text-4xl sm:text-5xl lg:text-[3.8rem] font-900 leading-[1.22] tracking-tight text-foreground">
-            <span className="text-brand-gradient">&ldquo;違い&rdquo;</span>をチカラにする組織をつくる
+          <h1 className="text-3xl sm:text-4xl lg:text-[3.2rem] font-900 leading-[1.3] tracking-tight text-foreground">
+            個人と組織が、互いの真価を引き出す社会へ
           </h1>
-
-          <p className="mt-8 max-w-2xl text-base lg:text-lg leading-relaxed text-muted">
-            国籍・世代・経験——あらゆる&ldquo;違い&rdquo;を組織の推進力に。CQ（文化知性）を軸に、多様な人材が力を発揮できる組織づくりを支援します
-          </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a href="#contact"
