@@ -1,22 +1,10 @@
-const NEWS = [
-  {
-    date: "2026.06.01",
-    category: "お知らせ",
-    title: "コーポレートサイトをリニューアルしました",
-  },
-  {
-    date: "2026.05.20",
-    category: "コラム",
-    title: "CQ（文化知性）が組織にもたらす3つの変化とは",
-  },
-  {
-    date: "2026.05.08",
-    category: "セミナー",
-    title: "【無料ウェビナー】多様性を成果に変える組織づくり",
-  },
-];
+import Link from "next/link";
+import { getAllPosts, displayTitle, formatDate } from "@/lib/posts";
+import { displayCategory } from "@/lib/post-display";
 
 export default function News() {
+  const latest = getAllPosts().slice(0, 3);
+
   return (
     <section id="news" className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -29,29 +17,29 @@ export default function News() {
               知見・ノウハウ
             </h2>
           </div>
-          <a href="/news"
+          <Link href="/news"
             className="text-sm font-500 text-brand-teal hover:underline shrink-0"
           >
             すべて見る →
-          </a>
+          </Link>
         </div>
 
         <ul className="mt-10 divide-y divide-border border-t border-border">
-          {NEWS.map((n) => (
-            <li key={n.title}>
-              <a href="/news"
+          {latest.map((n) => (
+            <li key={n.id}>
+              <Link href={`/news/${n.id}`}
                 className="group flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 hover:bg-surface -mx-4 px-4 rounded-lg transition-colors"
               >
                 <time className="text-sm text-muted font-display tracking-wide shrink-0">
-                  {n.date}
+                  {formatDate(n.date)}
                 </time>
                 <span className="text-xs font-500 text-brand-orange border border-brand-orange/30 rounded-full px-3 py-0.5 shrink-0 w-fit">
-                  {n.category}
+                  {displayCategory(n.category)}
                 </span>
                 <span className="text-base font-500 group-hover:text-brand-teal transition-colors">
-                  {n.title}
+                  {displayTitle(n.title)}
                 </span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
