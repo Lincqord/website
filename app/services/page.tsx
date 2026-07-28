@@ -131,7 +131,7 @@ const LAYERS: Layer[] = [
       {
         id: "results-org",
         aliases: ["s9"],
-        name: "組織が成果を産む",
+        name: "組織が成果を生む",
         desc: "組織の変化を定点で確かめ、次の一手につなげる",
         methods: ["定点観測", "システムコーチング®", "2on2コーチング"],
       },
@@ -172,28 +172,15 @@ export default function ServicesPage() {
       {/* 4アプローチ × 10カテゴリ */}
       <section className="bg-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="max-w-3xl">
+          <div>
             <p className="font-display tracking-[0.2em] text-brand-orange text-lg mb-4">
               APPROACH
             </p>
-            <h2 className="sr-only">
-              自分たちを知る、他者と対話する、個人が育つ、組織が育つ
+            {/* 改行させない: 画面幅に応じてフォントサイズを自動縮小し常に一行で表示 */}
+            <h2 className="font-700 leading-snug tracking-tight whitespace-nowrap text-[clamp(0.6rem,2.7vw,2.25rem)]">
+              自分たちを知る → 他者と対話する → 個人が育つ → 組織が育つ
             </h2>
-            <ol className="mt-2 space-y-3">
-              {["自分たちを知る", "他者と対話する", "個人が育つ", "組織が育つ"].map(
-                (n, i) => (
-                  <li key={n} className="flex items-center gap-5">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF2E5] border border-brand-orange/30 font-display text-brand-orange tracking-wider">
-                      0{i + 1}
-                    </span>
-                    <span className="text-2xl lg:text-3xl font-700 leading-snug tracking-tight">
-                      {n}
-                    </span>
-                  </li>
-                )
-              )}
-            </ol>
-            <p className="mt-7 text-base lg:text-lg leading-relaxed text-muted">
+            <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
               課題とフェーズに合わせて、各アプローチのメニューを組み合わせて提供します
             </p>
           </div>

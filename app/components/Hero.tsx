@@ -63,7 +63,8 @@ export default function Hero() {
           />
 
           <h1 className="text-3xl sm:text-4xl lg:text-[3.2rem] font-900 leading-[1.3] tracking-tight text-foreground">
-            個人と組織が、互いの真価を引き出す社会へ
+            <span className="inline-block">個人と組織が、</span>
+            <span className="inline-block">互いの真価を引き出す社会へ</span>
           </h1>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">

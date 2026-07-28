@@ -42,13 +42,17 @@ export default function CompanyPage() {
               className="mx-auto w-full max-w-[24rem] h-auto"
             />
           </h2>
-          <p className="mt-9 text-lg lg:text-xl text-foreground">
+          <p className="mt-9 text-base sm:text-lg lg:text-xl text-foreground">
             組織は、違いの集合体だ。
           </p>
-          <p className="mt-6 text-lg leading-loose text-foreground">
-            リンクォードは、個人と組織の文化知性（CQ）を高め、違いを新たな価値や成果へとつなげることを、一人ひとりと、一社一社と、共に実現します。
+          <p className="mt-6 text-base sm:text-lg leading-loose text-foreground">
+            リンクォードは、個人と組織の文化知性（CQ）を高め、
+            <br />
+            違いを新たな価値や成果へとつなげることを、
+            <br />
+            一人ひとりと、一社一社と、共に実現します。
           </p>
-          <p className="mt-6 text-lg lg:text-xl text-foreground">
+          <p className="mt-6 text-base sm:text-lg lg:text-xl text-foreground">
             違いを、力に。
           </p>
 
@@ -56,13 +60,24 @@ export default function CompanyPage() {
             VISION
           </p>
           <h2 className="mt-7 text-2xl lg:text-3xl font-700 leading-snug tracking-tight">
-            個人と組織が、互いの真価を引き出す社会へ。
+            <span className="inline-block">個人と組織が、</span>
+            <span className="inline-block">互いの真価を引き出す社会へ</span>
           </h2>
-          <p className="mt-8 text-lg leading-loose text-foreground">
-            個人は組織に新しい視点をもたらし、組織は個人の強みを引き出す。互いに影響を与え合うことで、個人も組織も、共に成長していく。
+          <p className="mt-8 text-base sm:text-lg leading-loose text-foreground">
+            個人は組織に新しい視点をもたらし、
+            <br />
+            組織は個人の強みを引き出す。
+            <br />
+            互いに影響を与え合うことで、
+            <br />
+            個人も組織も、共に成長していく。
           </p>
-          <p className="mt-6 text-lg leading-loose text-foreground">
-            リンクォードが描くのは、この活かし合う関係があらゆる組織に息づき、個人と組織が共に未来を創る社会です。
+          <p className="mt-6 text-base sm:text-lg leading-loose text-foreground">
+            リンクォードが描くのは、
+            <br />
+            この活かし合う関係があらゆる組織に息づき、
+            <br />
+            個人と組織が共に未来を創る社会です。
           </p>
 
           <Link href="/cq"
@@ -78,9 +93,12 @@ export default function CompanyPage() {
       {/* Lincqordの4つの視点 */}
       <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
-          <div className="rounded-2xl border border-border bg-white p-7 lg:p-12">
+          <div>
+            {/* 読点単位でのみ折り返す（変な位置での改行を防ぐ） */}
             <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">
-              Lincqordは、この4つの視点を行き来しながら、課題の本質を捉えます
+              <span className="inline-block">Lincqordは、</span>
+              <span className="inline-block">この4つの視点を行き来しながら、</span>
+              <span className="inline-block">課題の本質を捉えます</span>
             </h2>
             <div className="relative mt-12 sm:px-14 lg:px-20 sm:py-8">
               {/* 軸と中心点 */}
