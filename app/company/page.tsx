@@ -67,7 +67,7 @@ export default function CompanyPage() {
             </p>
           </div>
         </div>
-        <Link href="/uniqueness"
+        <Link href="/cq"
           className="mt-8 inline-block text-sm font-500 text-brand-teal hover:text-brand-teal-deep underline underline-offset-4"
         >
           CQ（文化知性）とは →

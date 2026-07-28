@@ -73,7 +73,7 @@ export default async function NewsArticlePage({
           />
 
           <div className="mt-14 pt-8 border-t border-border">
-            <Link href="/news"
+            <Link href="/insights"
               className="text-sm font-500 text-brand-teal hover:underline"
             >
               ← 知見・ノウハウ一覧へ戻る

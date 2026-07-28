@@ -44,7 +44,7 @@ export default function Uniqueness() {
               Lincqordは、このCQを体系的に高めるメソッドで、あらゆる&ldquo;違い&rdquo;を&ldquo;対立の火種&rdquo;ではなく&ldquo;成果の源泉&rdquo;へと変えていきます
             </p>
 
-            <a href="/uniqueness"
+            <a href="/cq"
               className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-2xl"
             >
               CQについて詳しく知る

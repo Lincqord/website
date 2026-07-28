@@ -1,10 +1,10 @@
 const NAV = [
   { label: "会社概要", href: "/company" },
   { label: "代表紹介", href: "/founder" },
-  { label: "CQとは", href: "/uniqueness" },
+  { label: "CQとは", href: "/cq" },
   { label: "サービス", href: "/services" },
   { label: "支援実績", href: "/case-study" },
-  { label: "知見・ノウハウ", href: "/news" },
+  { label: "知見・ノウハウ", href: "/insights" },
   { label: "採用情報", href: "/careers" },
   { label: "資料ダウンロード", href: "/download" },
   { label: "お問い合わせ", href: "/contact" },
