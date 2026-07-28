@@ -58,6 +58,16 @@ export default async function NewsArticlePage({
       {/* article body */}
       <section className="bg-white py-12 lg:py-16">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
+          {post.image && (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={post.image}
+              alt=""
+              width={1200}
+              height={630}
+              className="w-full h-auto max-h-[420px] object-cover rounded-2xl mb-10"
+            />
+          )}
           <div className="article-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
