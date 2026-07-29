@@ -27,7 +27,7 @@ export default function DownloadPage() {
               お急ぎの場合は、お問い合わせフォームよりご連絡ください。ご要望に応じて個別に資料をお送りします
             </p>
             <Link href="/contact"
-              className="inline-block mt-8 btn-primary font-medium px-8 py-3.5 rounded-2xl"
+              className="inline-block mt-14 btn-primary font-medium px-8 py-3.5 rounded-2xl"
             >
               お問い合わせ
             </Link>

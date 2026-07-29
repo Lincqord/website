@@ -58,7 +58,7 @@ export default function Contact() {
           </div>
 
           <button type="submit"
-            className="btn-primary w-full font-medium py-4 rounded-2xl"
+            className="btn-primary w-full font-medium py-4 rounded-2xl !mt-14"
           >
             送信する
           </button>

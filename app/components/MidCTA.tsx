@@ -17,7 +17,7 @@ export default function MidCTA() {
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted max-w-2xl mx-auto">
               現状の課題整理から、最適なアプローチのご提案まで。まずはお気軽にご相談ください。初回相談は無料です
             </p>
-            <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-14 lg:mt-16 flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact"
                 className="btn-accent font-medium px-9 py-3.5 rounded-2xl shadow-sm"
               >

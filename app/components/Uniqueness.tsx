@@ -45,7 +45,7 @@ export default function Uniqueness() {
             </p>
 
             <a href="/cq"
-              className="inline-block mt-8 btn-outline font-medium px-7 py-3 rounded-2xl"
+              className="inline-block mt-14 lg:mt-16 btn-outline font-medium px-7 py-3 rounded-2xl"
             >
               CQについて詳しく知る
             </a>

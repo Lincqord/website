@@ -27,7 +27,7 @@ export default function CareersPage() {
               Lincqordの活動やCQ（文化知性）にご関心のある方は、お気軽にお問い合わせください
             </p>
             <Link href="/contact"
-              className="inline-block mt-8 btn-primary font-medium px-8 py-3.5 rounded-2xl"
+              className="inline-block mt-14 btn-primary font-medium px-8 py-3.5 rounded-2xl"
             >
               お問い合わせ
             </Link>

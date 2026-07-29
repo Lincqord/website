@@ -38,7 +38,7 @@ export default function Problem() {
           で解決できます
         </p>
 
-        <div className="mt-8 text-center">
+        <div className="mt-16 lg:mt-20 text-center">
           <Link href="/contact"
             className="inline-block btn-accent font-medium px-8 py-3.5 rounded-2xl shadow-sm"
           >

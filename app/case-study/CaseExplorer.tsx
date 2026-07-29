@@ -60,7 +60,7 @@ export default function CaseExplorer() {
       <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((c) => (
           <div key={c.theme + c.industry}
-            className="bg-white rounded-xl border border-border p-6 hover:shadow-md transition-shadow flex flex-col"
+            className="bg-white rounded-xl p-6 hover:shadow-md transition-shadow flex flex-col"
           >
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-xs font-500 text-white bg-foreground/70 rounded-full px-2.5 py-0.5">

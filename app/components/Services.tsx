@@ -44,7 +44,7 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-16 lg:mt-20 flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/services"
             className="inline-block btn-primary text-center font-medium px-8 py-3.5 rounded-2xl shadow-sm"
           >
