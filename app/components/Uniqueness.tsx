@@ -59,7 +59,7 @@ export default function Uniqueness() {
             <div className="grid sm:grid-cols-2 gap-4">
               {CQ_ELEMENTS.map((el, i) => (
                 <div key={el.label}
-                  className="bg-white rounded-2xl border border-border p-6"
+                  className="bg-white rounded-2xl p-6"
                 >
                   <span className={`text-xs font-700 tracking-widest ${
                       i % 2 === 0 ? "text-brand-teal" : "text-brand-orange"

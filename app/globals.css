@@ -64,23 +64,24 @@ body {
   background: var(--color-teal-deep);
 }
 .btn-accent {
-  /* CTAボタンは薄いオレンジ×黒文字（4隅ラベルの背景と同一トーン #FFF2E5・2026-07-24 代表決定） */
+  /* CTAボタンは薄いオレンジ×黒文字（#FFF2E5・2026-07-24 代表決定）。枠線なし（2026-07-29 代表指示） */
   background: #fff2e5;
   color: var(--foreground);
-  border: 1px solid rgba(255, 127, 0, 0.4);
   transition: filter 0.2s ease;
 }
 .btn-accent:hover {
   filter: brightness(0.97);
 }
 .btn-outline {
-  border: 1px solid var(--border);
+  /* 旧: 枠線ボタン。枠線を廃止し、白背景＋淡い影で押せる要素として示す（2026-07-29 代表指示） */
+  background: #ffffff;
   color: var(--foreground);
-  transition: border-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 1px 3px rgba(3, 52, 55, 0.1);
+  transition: color 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-outline:hover {
-  border-color: var(--color-teal);
   color: var(--color-teal);
+  box-shadow: 0 3px 10px rgba(3, 52, 55, 0.14);
 }
 
 /* Hero image: feather edges to transparent + multiply so the

@@ -31,30 +31,8 @@ export default function CQPage() {
 
       <WaveDivider from="white" to="surface" />
 
-      {/* CQを高める4つの要素 */}
-      <section className="bg-surface py-20 lg:py-28">
-        <div className="mx-auto max-w-5xl px-5 lg:px-8 text-center">
-          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
-            CQを高める4つの要素
-          </h2>
-          <p className="mt-5 mx-auto max-w-3xl text-base lg:text-lg leading-relaxed text-muted">
-            Lincqordは文化の専門家集団として、CQの4つのコンピテンシーであるDrive／Knowledge／Strategy／Actionを起点にした組織・人材開発のためのコンサルティング・サービスを提供します
-          </p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/cq-four-elements.png"
-            alt="CQを高める4つの要素 — Drive（動機）・Knowledge（知識）・Strategy（戦略）・Action（行動）"
-            width={1280}
-            height={1280}
-            className="mt-10 mx-auto w-full max-w-3xl h-auto"
-          />
-        </div>
-      </section>
-
-      <WaveDivider from="surface" to="white" />
-
       {/* 5段階モデル */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-5 lg:px-8 text-center">
           <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
             <span className="inline-block">組織の現在地がわかる、</span>
@@ -70,6 +48,28 @@ export default function CQPage() {
             width={1188}
             height={566}
             className="mt-10 mx-auto w-full h-auto"
+          />
+        </div>
+      </section>
+
+      <WaveDivider from="surface" to="white" />
+
+      {/* CQを高める4つの要素 */}
+      <section className="bg-white py-20 lg:py-28">
+        <div className="mx-auto max-w-5xl px-5 lg:px-8 text-center">
+          <h2 className="text-2xl lg:text-3xl font-700 tracking-tight">
+            CQを高める4つの要素
+          </h2>
+          <p className="mt-5 mx-auto max-w-3xl text-base lg:text-lg leading-relaxed text-muted">
+            Lincqordは文化の専門家集団として、CQの4つのコンピテンシーであるDrive／Knowledge／Strategy／Actionを起点にした組織・人材開発のためのコンサルティング・サービスを提供します
+          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/cq-four-elements.png"
+            alt="CQを高める4つの要素 — Drive（動機）・Knowledge（知識）・Strategy（戦略）・Action（行動）"
+            width={1280}
+            height={1280}
+            className="mt-10 mx-auto w-full max-w-3xl h-auto"
           />
           <p className="mt-12 text-xs leading-relaxed text-muted/80">
             ※ CQはEarley &amp; Angらによって提唱されたCultural Intelligence研究に、5段階モデルはIDI（Intercultural Development Inventory）等の異文化発達研究に基づくフレームワークです

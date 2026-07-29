@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
 import PageCTA from "../components/PageCTA";
 import WaveDivider from "../components/WaveDivider";
+import DotDivider from "../components/DotDivider";
 
 export const metadata: Metadata = {
   title: "サービス | Lincqord",
@@ -185,11 +186,10 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="mt-14 space-y-8">
-            {LAYERS.map((layer) => (
-              <div key={layer.no}
-                className="rounded-2xl bg-surface p-7 lg:p-10"
-              >
+          <div className="mt-14">
+            {LAYERS.map((layer, li) => (
+              <div key={layer.no}>
+                {li > 0 && <DotDivider className="my-12 lg:my-14" />}
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                   <h3 className="text-xl lg:text-2xl font-700 tracking-tight">
                     {layer.name}
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                   {layer.groups.map((g) => (
                     <div key={g.id}
                       id={g.id}
-                      className="scroll-mt-28 rounded-xl border border-border bg-white p-6 hover:shadow-md transition-shadow flex flex-col"
+                      className="scroll-mt-28 rounded-xl bg-white p-6 hover:shadow-md transition-shadow flex flex-col"
                     >
                       {g.aliases?.map((a) => (
                         <span key={a} id={a} className="scroll-mt-28" aria-hidden />
@@ -228,29 +228,19 @@ export default function ServicesPage() {
                 </div>
 
                 {layer.no === "01" && (
-                  <div className="mt-5 rounded-xl bg-white border border-border p-5">
-                    <p className="text-xs font-700 text-foreground/70 mb-2">
-                      アセスメントについて
-                    </p>
-                    <ul className="space-y-1.5">
-                      {ASSESSMENT_NOTES.map((n) => (
-                        <li key={n.name}
-                          className="text-xs leading-relaxed text-muted"
+                  <div className="mt-5 space-y-1">
+                    {ASSESSMENT_NOTES.map((n) => (
+                      <p key={n.name} className="text-xs leading-relaxed text-muted">
+                        ※ {n.name}：{n.desc}
+                        <a href={n.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="ml-1 text-brand-teal underline underline-offset-2 hover:text-brand-teal-deep"
                         >
-                          <span className="font-700 text-foreground/80">
-                            {n.name}
-                          </span>
-                          ：{n.desc}
-                          <a href={n.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="ml-1 text-brand-teal underline underline-offset-2 hover:text-brand-teal-deep"
-                          >
-                            {n.label} ↗
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
+                          {n.label} ↗
+                        </a>
+                      </p>
+                    ))}
                   </div>
                 )}
               </div>

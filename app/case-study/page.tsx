@@ -30,7 +30,7 @@ export default function CaseStudyPage() {
           <div className="mt-10 grid md:grid-cols-2 gap-7">
             {FEATURED.map((c) => (
               <article key={c.theme}
-                className="rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
+                className="rounded-2xl bg-white overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
               >
                 <div className="h-1.5 bg-brand-gradient" />
                 <div className="p-8 flex flex-col flex-1">

@@ -17,7 +17,7 @@ export default function CareersPage() {
 
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-5 lg:px-8 text-center">
-          <div className="rounded-2xl border border-border bg-surface px-8 py-14 lg:py-16">
+          <div className="rounded-2xl bg-surface px-8 py-14 lg:py-16">
             <h2 className="text-xl lg:text-2xl font-700 tracking-tight">
               現在、募集中のポジションはありません
             </h2>

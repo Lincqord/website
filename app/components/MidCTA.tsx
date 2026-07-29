@@ -2,7 +2,7 @@ export default function MidCTA() {
   return (
     <section className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-white border border-border px-8 py-14 lg:px-16 lg:py-20 text-center">
+        <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-14 lg:px-16 lg:py-20 text-center">
           {/* Heroと同じ動くオーロラグラデーション */}
           <div aria-hidden className="absolute inset-0 pointer-events-none opacity-70">
             <div className="aurora-blob aurora-1" style={{ top: "-30%", left: "-8%", width: "26rem", height: "26rem", background: "radial-gradient(circle at 50% 50%, var(--color-teal), transparent 70%)" }} />

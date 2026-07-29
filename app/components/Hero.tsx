@@ -67,7 +67,7 @@ export default function Hero() {
             <span className="inline-block">互いの真価を引き出す社会へ</span>
           </h1>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <div className="mt-16 lg:mt-24 flex flex-col sm:flex-row gap-4">
             <a href="#contact"
               className="btn-primary text-center font-medium px-8 py-3.5 rounded-2xl shadow-sm"
             >

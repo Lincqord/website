@@ -33,9 +33,10 @@ export default function Services() {
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {STEPS.map((s) => (
             <div key={s.title}
-              className="bg-white rounded-2xl border border-border p-8 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)] hover:border-brand-teal/25 flex flex-col"
+              className="group bg-white rounded-2xl p-8 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)] flex flex-col"
             >
-              <h3 className="text-xl font-700 leading-snug">{s.title}</h3>
+              <span className="block h-1 w-10 rounded-full bg-brand-teal/40 transition-all duration-200 group-hover:w-16 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-orange" />
+              <h3 className="mt-5 text-xl font-700 leading-snug">{s.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted flex-1">
                 {s.body}
               </p>

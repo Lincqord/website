@@ -106,10 +106,10 @@ export default function CompanyPage() {
               <div aria-hidden className="hidden sm:block absolute top-1/2 left-4 right-4 h-px bg-brand-teal/30" />
               <div aria-hidden className="hidden sm:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-brand-orange" />
               {/* 4隅ラベル */}
-              <span className="hidden sm:block absolute left-1/2 -top-4 -translate-x-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">組織</span>
-              <span className="hidden sm:block absolute left-1/2 -bottom-4 -translate-x-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">個人</span>
-              <span className="hidden sm:block absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">論理</span>
-              <span className="hidden sm:block absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-[#FFF2E5] border border-brand-orange/30 px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">心理</span>
+              <span className="hidden sm:block absolute left-1/2 -top-4 -translate-x-1/2 rounded-full bg-[#FFF2E5] px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">組織</span>
+              <span className="hidden sm:block absolute left-1/2 -bottom-4 -translate-x-1/2 rounded-full bg-[#FFF2E5] px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">個人</span>
+              <span className="hidden sm:block absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-[#FFF2E5] px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">論理</span>
+              <span className="hidden sm:block absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-[#FFF2E5] px-7 py-1.5 text-[16px] text-brand-orange tracking-[0.1em]">心理</span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-x-14 sm:gap-y-12">
                 {[
                   [
@@ -129,12 +129,11 @@ export default function CompanyPage() {
                     "どんな価値観や経験が、その人の判断とリーダーシップを形づくっているか？",
                   ],
                 ].map((qs, i) => (
-                  <div key={i}
-                    className="rounded-xl border border-border bg-white p-6 shadow-[0_4px_16px_rgba(3,52,55,0.05)]"
-                  >
+                  <div key={i} className="p-3 sm:p-5">
                     {qs.map((q) => (
-                      <p key={q} className="text-sm leading-loose text-foreground text-center text-balance [&+&]:mt-3 mt-3 first:mt-0">
-                        {q}
+                      <p key={q} className="flex items-start gap-2.5 text-sm leading-loose text-foreground mt-3 first:mt-0">
+                        <span className="mt-[0.65em] h-1.5 w-1.5 rounded-full bg-brand-orange shrink-0" />
+                        <span>{q}</span>
                       </p>
                     ))}
                   </div>

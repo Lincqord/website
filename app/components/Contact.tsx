@@ -17,21 +17,21 @@ export default function Contact() {
         </div>
 
         {/* TODO: 送信先(フォームバックエンド/メール)を接続 */}
-        <form className="mt-12 bg-white rounded-2xl border border-border p-7 lg:p-10 space-y-6">
+        <form className="mt-12 space-y-7">
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-500 mb-2">
                 お名前 <span className="text-brand-orange">*</span>
               </label>
               <input type="text"
-                required className="w-full rounded-lg border border-border px-4 py-3 text-sm focus:outline-none focus:border-brand-teal"
+                required className="w-full border-b border-border bg-transparent px-1 py-3 text-sm focus:outline-none focus:border-brand-teal"
                 placeholder="山田 太郎"
               />
             </div>
             <div>
               <label className="block text-sm font-500 mb-2">会社名</label>
               <input type="text"
-                className="w-full rounded-lg border border-border px-4 py-3 text-sm focus:outline-none focus:border-brand-teal"
+                className="w-full border-b border-border bg-transparent px-1 py-3 text-sm focus:outline-none focus:border-brand-teal"
                 placeholder="株式会社○○"
               />
             </div>
@@ -42,7 +42,7 @@ export default function Contact() {
               メールアドレス <span className="text-brand-orange">*</span>
             </label>
             <input type="email"
-              required className="w-full rounded-lg border border-border px-4 py-3 text-sm focus:outline-none focus:border-brand-teal"
+              required className="w-full border-b border-border bg-transparent px-1 py-3 text-sm focus:outline-none focus:border-brand-teal"
               placeholder="name@example.com"
             />
           </div>
@@ -52,7 +52,7 @@ export default function Contact() {
               お問い合わせ内容 <span className="text-brand-orange">*</span>
             </label>
             <textarea required rows={5}
-              className="w-full rounded-lg border border-border px-4 py-3 text-sm focus:outline-none focus:border-brand-teal resize-y"
+              className="w-full border-b border-border bg-transparent px-1 py-3 text-sm focus:outline-none focus:border-brand-teal resize-y"
               placeholder="ご相談内容をご記入ください"
             />
           </div>

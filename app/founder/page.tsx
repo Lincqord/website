@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
 import PageCTA from "../components/PageCTA";
 import WaveDivider from "../components/WaveDivider";
+import DotDivider from "../components/DotDivider";
 
 export const metadata: Metadata = {
   title: "代表紹介 | Lincqord",
@@ -94,18 +95,18 @@ export default function FounderPage() {
           <h2 className="text-2xl lg:text-3xl font-700 tracking-tight text-center">
             経歴
           </h2>
-          <div className="mt-10 space-y-5">
-            {CAREER.map((c) => (
-              <div
-                key={c.year}
-                className="rounded-2xl bg-white border border-border p-6 lg:p-8 lg:grid lg:grid-cols-[120px_1fr] lg:gap-6"
-              >
-                <p className="font-display tracking-wider text-brand-teal text-lg">
-                  {c.year}
-                </p>
-                <p className="mt-2 lg:mt-0 text-sm lg:text-base leading-relaxed text-muted">
-                  {c.body}
-                </p>
+          <div className="mt-10">
+            {CAREER.map((c, i) => (
+              <div key={c.year}>
+                {i > 0 && <DotDivider className="my-8" />}
+                <div className="lg:grid lg:grid-cols-[120px_1fr] lg:gap-6">
+                  <p className="font-display tracking-wider text-brand-teal text-lg">
+                    {c.year}
+                  </p>
+                  <p className="mt-2 lg:mt-0 text-sm lg:text-base leading-relaxed text-muted">
+                    {c.body}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -117,7 +118,7 @@ export default function FounderPage() {
       {/* 学歴・資格 */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-5 lg:px-8 grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl bg-surface p-8">
+          <div>
             <h2 className="text-xl lg:text-2xl font-700 tracking-tight">学歴</h2>
             <ul className="mt-5 space-y-3">
               {EDUCATION.map((e) => (
@@ -131,7 +132,7 @@ export default function FounderPage() {
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl bg-surface p-8">
+          <div>
             <h2 className="text-xl lg:text-2xl font-700 tracking-tight">資格</h2>
             <ul className="mt-5 space-y-3">
               {CERTIFICATIONS.map((c) => (

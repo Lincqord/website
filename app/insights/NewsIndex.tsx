@@ -58,7 +58,7 @@ export default function NewsIndex({ posts }: { posts: NewsCard[] }) {
       <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
         {shown.map((p) => (
           <article key={p.id}
-            className="group rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
+            className="group rounded-2xl bg-white overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
           >
             <Link href={`/insights/${p.id}`} className="flex flex-col flex-1">
               {p.image ? (

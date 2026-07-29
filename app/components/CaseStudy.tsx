@@ -39,10 +39,8 @@ export default function CaseStudy() {
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           {CASES.map((c) => (
             <article key={c.title}
-              className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
+              className="bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
             >
-              {/* placeholder visual */}
-              <div className="h-40 bg-gradient-to-br from-brand-teal/15 to-brand-orange/15" />
               <div className="p-7 flex flex-col flex-1">
                 <span className="text-xs font-500 text-brand-teal">{c.tag}</span>
                 <h3 className="mt-3 text-lg font-700 leading-snug">{c.title}</h3>
