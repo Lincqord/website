@@ -43,7 +43,7 @@ export default function CQPage() {
           </p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/cq-five-stages.jpg"
+            src="/cq-five-stages.png"
             alt="CQの5段階モデル — 拒否・二極化・最小化・受容・適応の段階を上がるほどCQが高い"
             width={1188}
             height={566}
