@@ -1,12 +1,13 @@
 import Link from "next/link";
 
+/* title内の「／」は折り返してよい位置（語中での改行を防ぐ） */
 const PROBLEMS = [
-  { title: "経営チームで議論が尽くされず、未来を見据えた経営判断がされない" },
-  { title: "組織を変革するリーダーシップが育っていない" },
-  { title: "「DEI」という言葉が独り歩きし、社員はどう対応すればよいか戸惑いがある" },
-  { title: "社員のエンゲージメントが低く、キーパーソンの退職が続いている" },
-  { title: "「心理的安全性」を気にし過ぎて、社員同士が遠慮し合い、対話が深まらない" },
-  { title: "社員のキャリアオーナーシップが育たない" },
+  { title: "経営チームで議論が尽くされず、／未来を見据えた／経営判断がされない" },
+  { title: "組織を変革する／リーダーシップが／育っていない" },
+  { title: "「DEI」という言葉が独り歩きし、／社員はどう対応すればよいか／戸惑いがある" },
+  { title: "社員のエンゲージメントが低く、／キーパーソンの退職が／続いている" },
+  { title: "「心理的安全性」を気にし過ぎて、／社員同士が遠慮し合い、／対話が深まらない" },
+  { title: "社員の／キャリアオーナーシップが／育たない" },
 ];
 
 export default function Problem() {
@@ -28,7 +29,13 @@ export default function Problem() {
               className="group bg-surface rounded-2xl p-8 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)]"
             >
               <span className="block h-1 w-10 rounded-full bg-brand-teal/40 transition-all duration-200 group-hover:w-16 group-hover:bg-gradient-to-r group-hover:from-brand-teal group-hover:to-brand-orange" />
-              <h3 className="mt-5 text-lg font-700 leading-relaxed">{p.title}</h3>
+              <h3 className="mt-5 text-lg font-700 leading-relaxed">
+                {p.title.split("／").map((seg) => (
+                  <span key={seg} className="inline-block">
+                    {seg}
+                  </span>
+                ))}
+              </h3>
             </div>
           ))}
         </div>

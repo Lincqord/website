@@ -178,7 +178,7 @@ export default function ServicesPage() {
               APPROACH
             </p>
             {/* 改行させない: 画面幅に応じてフォントサイズを自動縮小し常に一行で表示 */}
-            <h2 className="font-700 leading-snug tracking-tight whitespace-nowrap text-[clamp(0.6rem,2.7vw,2.25rem)]">
+            <h2 className="font-700 leading-snug tracking-tight whitespace-nowrap text-[clamp(0.6rem,2.7vw,2.25rem)] text-brand-teal">
               自分たちを知る → 他者と対話する → 個人が育つ → 組織が育つ
             </h2>
             <p className="mt-5 text-base lg:text-lg leading-relaxed text-muted">
@@ -191,7 +191,7 @@ export default function ServicesPage() {
               <div key={layer.no}>
                 {li > 0 && <DotDivider className="my-12 lg:my-14" />}
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <h3 className="text-xl lg:text-2xl font-700 tracking-tight">
+                  <h3 className="text-xl lg:text-2xl font-700 tracking-tight text-brand-teal">
                     {layer.name}
                     <span className="ml-3 text-sm lg:text-base font-500 text-muted">
                       ― {layer.lead}

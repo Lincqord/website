@@ -140,7 +140,7 @@ export default function FounderPage() {
                   key={c}
                   className="flex items-start gap-2.5 text-sm leading-relaxed text-muted"
                 >
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-orange shrink-0" />
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-teal shrink-0" />
                   {c}
                 </li>
               ))}
