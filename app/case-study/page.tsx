@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "../components/PageHero";
 import PageCTA from "../components/PageCTA";
-import DotDivider from "../components/DotDivider";
 import { SERVICE_LINKS } from "./data";
 
 export const metadata: Metadata = {
@@ -86,20 +85,17 @@ export default function CaseStudyPage() {
       />
 
       <section className="bg-white pt-8 lg:pt-12 pb-20 lg:pb-28">
-        <div className="mx-auto max-w-4xl px-5 lg:px-8">
-          <p className="text-base lg:text-lg leading-relaxed text-muted">
-            よくある組織課題別に、Lincqordの代表的な支援事例をご紹介します
-          </p>
-
-          <div className="mt-14">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          {/* 2・2・1 の2列グリッド（モバイルは縦積み） */}
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-7">
             {PICKUPS.map((p, i) => (
-              <div key={p.theme}>
-                {i > 0 && <DotDivider className="my-14 lg:my-16" />}
-
-                <p className="font-display tracking-[0.2em] text-brand-orange text-lg">
+              <div key={p.theme}
+                className="rounded-2xl bg-surface p-7 lg:p-9 flex flex-col"
+              >
+                <p className="font-display tracking-[0.2em] text-brand-orange text-base">
                   CHALLENGE 0{i + 1}
                 </p>
-                <h2 className="mt-3 text-xl lg:text-2xl font-700 leading-snug tracking-tight">
+                <h2 className="mt-2 text-lg lg:text-xl font-700 leading-snug tracking-tight text-brand-teal">
                   {p.challenge.split("／").map((seg) => (
                     <span key={seg} className="inline-block">
                       {seg}
@@ -107,16 +103,16 @@ export default function CaseStudyPage() {
                   ))}
                 </h2>
 
-                <div className="mt-7 flex items-center gap-3 flex-wrap">
+                <div className="mt-6 flex items-center gap-3 flex-wrap">
                   <span className="text-xs font-500 text-white bg-brand-teal rounded-full px-3 py-1">
                     {p.industry}
                   </span>
-                  <h3 className="text-lg lg:text-xl font-700 leading-snug">
+                  <h3 className="text-base lg:text-lg font-700 leading-snug">
                     {p.theme}
                   </h3>
                 </div>
 
-                <dl className="mt-5 space-y-3 text-sm lg:text-base leading-relaxed">
+                <dl className="mt-5 space-y-3 text-sm leading-relaxed">
                   <div>
                     <dt className="font-700 text-foreground/80">課題</dt>
                     <dd className="text-muted">{p.issue}</dd>
@@ -131,11 +127,11 @@ export default function CaseStudyPage() {
                   </div>
                 </dl>
 
-                <div className="mt-6 flex flex-wrap gap-1.5">
+                <div className="mt-auto pt-6 flex flex-wrap gap-1.5">
                   {p.services.map((id) => (
                     <Link key={id}
                       href={SERVICE_LINKS[id].href}
-                      className="text-xs px-3 py-1 rounded-full bg-brand-teal/5 text-brand-teal-deep hover:bg-brand-teal/10 transition-colors"
+                      className="text-xs px-3 py-1 rounded-full bg-white text-brand-teal-deep hover:bg-brand-teal/10 transition-colors"
                     >
                       {SERVICE_LINKS[id].name}
                     </Link>
@@ -145,7 +141,7 @@ export default function CaseStudyPage() {
             ))}
           </div>
 
-          <p className="mt-16 text-xs leading-relaxed text-muted">
+          <p className="mt-12 text-xs leading-relaxed text-muted">
             ※ 掲載企業の特定を避けるため、業種のみを記載し、内容を一部一般化しています
           </p>
         </div>
