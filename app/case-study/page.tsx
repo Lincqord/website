@@ -90,7 +90,7 @@ export default function CaseStudyPage() {
           <div className="grid md:grid-cols-2 gap-6 lg:gap-7">
             {PICKUPS.map((p, i) => (
               <div key={p.theme}
-                className="rounded-2xl bg-surface p-7 lg:p-9 flex flex-col"
+                className="rounded-2xl p-7 lg:p-9 flex flex-col transition-all duration-200 ease-out hover:-translate-y-1.5 hover:shadow-[0_16px_34px_rgba(3,52,55,0.14)]"
               >
                 <p className="font-display tracking-[0.2em] text-brand-orange text-base">
                   CHALLENGE 0{i + 1}
@@ -131,7 +131,7 @@ export default function CaseStudyPage() {
                   {p.services.map((id) => (
                     <Link key={id}
                       href={SERVICE_LINKS[id].href}
-                      className="text-xs px-3 py-1 rounded-full bg-white text-brand-teal-deep hover:bg-brand-teal/10 transition-colors"
+                      className="text-xs px-3 py-1 rounded-full bg-brand-teal/5 text-brand-teal-deep hover:bg-brand-teal/10 transition-colors"
                     >
                       {SERVICE_LINKS[id].name}
                     </Link>
